@@ -1,0 +1,8 @@
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\obj\x86\Debug\Grafico_Teo.Form1.resources
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\obj\x86\Debug\Grafico_Tao.Properties.Resources.resources
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\obj\x86\Debug\Grafico_Tao.csproj.GenerateResource.Cache
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\bin\Debug\Grafico_Tao.exe
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\bin\Debug\Grafico_Tao.pdb
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\obj\x86\Debug\Grafico_Tao.exe
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\obj\x86\Debug\Grafico_Tao.pdb
+C:\temp\csharp\ejercicios\Grafico_Tao\Grafico_Tao\obj\x86\Debug\Grafico_Tao.csprojResolveAssemblyReference.cache

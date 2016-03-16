@@ -1,0 +1,28 @@
+2015-01-12 12:14:15 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-12 09:43:06 CET
+2015-01-12 12:14:15 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-12 12:14:16 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-12 12:14:16 CET LOG:  record with zero length at 0/185C3F0
+2015-01-12 12:14:16 CET LOG:  no se requiere redo
+2015-01-12 12:14:16 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-12 12:14:16 CET LOG:  lanzador de autovacuum iniciado
+2015-01-12 12:52:42 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:00:22 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:10:40 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:15:01 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:29:21 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:32:44 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:34:51 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:36:40 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:49:34 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para el tipo numeric: Â«89,23Â» en carÃ¡cter 61
+2015-01-12 13:49:34 CET SENTENCIA:  insert into tasas values(2015,'1.4','Hacienda - Modelo 303','89,23')
+2015-01-12 13:53:20 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-12 13:55:58 CET LOG:  se recibió petición de apagado rápido
+2015-01-12 13:55:58 CET LOG:  abortando transacciones activas
+2015-01-12 13:55:58 CET LOG:  apagando lanzador de autovacuum
+2015-01-12 13:55:58 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-12 13:55:59 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-12 13:56:00 CET LOG:  apagando lanzador de autovacuum
+2015-01-12 13:56:01 CET LOG:  proceso escritor de WAL (PID 4220) fue terminado por una excepción 0xC0000142
+2015-01-12 13:56:01 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-12 13:56:01 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-12 13:56:01 CET LOG:  apagado anormal del sistema de bases de datos

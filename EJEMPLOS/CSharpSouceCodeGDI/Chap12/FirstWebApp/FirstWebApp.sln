@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWebApp", "http://localhost/GDIPlusGuide/FirstWebApp/FirstWebApp.csproj", "{1A2E8FE9-FF09-40C3-920C-5E271772002B}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1A2E8FE9-FF09-40C3-920C-5E271772002B}.Debug.ActiveCfg = Debug|.NET
+		{1A2E8FE9-FF09-40C3-920C-5E271772002B}.Debug.Build.0 = Debug|.NET
+		{1A2E8FE9-FF09-40C3-920C-5E271772002B}.Release.ActiveCfg = Release|.NET
+		{1A2E8FE9-FF09-40C3-920C-5E271772002B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

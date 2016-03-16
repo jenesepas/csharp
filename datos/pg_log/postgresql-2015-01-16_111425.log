@@ -1,0 +1,32 @@
+2015-01-16 11:14:26 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-15 20:59:34 CET
+2015-01-16 11:14:27 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-16 11:14:27 CET LOG:  record with zero length at 0/190A0D0
+2015-01-16 11:14:27 CET LOG:  no se requiere redo
+2015-01-16 11:14:27 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-16 11:14:27 CET LOG:  lanzador de autovacuum iniciado
+2015-01-16 11:14:28 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-16 11:48:10 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 11:57:03 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 12:05:42 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 12:18:10 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 12:31:42 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 12:31:42 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 12:37:52 CET ERROR:  el valor es demasiado largo para el tipo character(10)
+2015-01-16 12:37:52 CET SENTENCIA:  update registros set fec_ent='09/01/2015 0:00:00', id_cte=2, id_titular=0, seccion_int='GESTASER', seccion='Seg. Social', t_tramite='Altas RETA', matricula='B-1244-MN aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', estado='PTE. CLIENTE', factura='150002', fec_fra='09/01/2015 0:00:00', observacion='', honorarios='68.09', p_iva='21', tasa='67.08', exp_tl='', fec_pre_exp='09/01/2015 0:00:00', et_tasa='12345678', t_tasa='1.4', cambio_serv='', bate_ant='', nif='', dcho_col='12.56', t_cte_fra='C', et_tasa2='23456789', t_tasa2='1.5', et_tasa3='0', t_tasa3='', et_tasa4='0', t_tasa4='', descripcion='Seg. Social - Altas RETA', ruta_pdf='', vehiculo='Seat Altea 1.9TDI negro' where delegacion='Y' and n_reg=2
+2015-01-16 13:01:55 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:05:58 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:16:02 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:36:36 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:38:58 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:44:16 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:46:40 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 13:52:24 CET LOG:  se recibió petición de apagado rápido
+2015-01-16 13:52:25 CET LOG:  abortando transacciones activas
+2015-01-16 13:52:25 CET LOG:  apagando lanzador de autovacuum
+2015-01-16 13:52:25 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-16 13:52:25 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-16 13:52:26 CET LOG:  apagando lanzador de autovacuum
+2015-01-16 13:52:30 CET LOG:  proceso escritor de WAL (PID 5848) fue terminado por una excepción 0xC0000142
+2015-01-16 13:52:30 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-16 13:52:30 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-16 13:52:30 CET LOG:  apagado anormal del sistema de bases de datos

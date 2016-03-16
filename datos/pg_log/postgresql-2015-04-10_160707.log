@@ -1,0 +1,126 @@
+2015-04-10 16:07:10 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-10 16:07:10 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-10 13:15:39 CEST
+2015-04-10 16:07:11 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-10 16:07:11 CEST LOG:  record with zero length at 0/1B5E2A0
+2015-04-10 16:07:11 CEST LOG:  no se requiere redo
+2015-04-10 16:07:12 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-10 16:07:12 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-10 16:07:12 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-10 16:07:13 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-10 16:23:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 16:35:57 CEST ERROR:  no existe la columna Â«t_cte_fraÂ» en carÃ¡cter 8
+2015-04-10 16:35:57 CEST SENTENCIA:  select t_cte_fra, id_cte, id_titular, id_colabora , honorarios + dcho_col as base,tasa
+	where factura <> 0 
+	group by t_cte
+2015-04-10 16:36:17 CEST ERROR:  no existe la columna Â«t_cteÂ» en carÃ¡cter 132
+2015-04-10 16:36:17 CEST SENTENCIA:  select t_cte_fra, id_cte, id_titular, id_colabora , honorarios + dcho_col as base,tasa
+	from registros
+	where factura <> 0 
+	group by t_cte
+2015-04-10 16:36:25 CEST ERROR:  la columna Â«registros.id_cteÂ» debe aparecer en la clÃ¡usula GROUP BY o ser usada en una funciÃ³n de agregaciÃ³n en carÃ¡cter 19
+2015-04-10 16:36:25 CEST SENTENCIA:  select t_cte_fra, id_cte, id_titular, id_colabora , honorarios + dcho_col as base,tasa
+	from registros
+	where factura <> 0 
+	group by t_cte_fra
+2015-04-10 16:37:22 CEST ERROR:  la columna Â«registros.honorariosÂ» debe aparecer en la clÃ¡usula GROUP BY o ser usada en una funciÃ³n de agregaciÃ³n en carÃ¡cter 53
+2015-04-10 16:37:22 CEST SENTENCIA:  select t_cte_fra, id_cte, id_titular, id_colabora , honorarios + dcho_col as base,tasa
+	from registros
+	where factura <> 0 
+	group by t_cte_fra,id_cte, id_titular, id_colabora
+2015-04-10 16:43:42 CEST ERROR:  la columna Â«registros.t_cte_fraÂ» debe aparecer en la clÃ¡usula GROUP BY o ser usada en una funciÃ³n de agregaciÃ³n en carÃ¡cter 8
+2015-04-10 16:43:42 CEST SENTENCIA:  select t_cte_fra, id_colabora , sum(honorarios + dcho_col) as base, sum(tasa)
+	from registros
+	where factura <> 0 and id_colabora <>0
+	order by t_cte_fra
+2015-04-10 16:54:03 CEST ERROR:  error de sintaxis en o cerca de Â«unionÂ» en carÃ¡cter 141
+2015-04-10 16:54:03 CEST SENTENCIA:  select t_cte_fra, id_colabora as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra ='B'
+	order by id
+	union
+	select t_cte_fra, id_cte as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='C'
+	order by id
+2015-04-10 16:54:28 CEST ERROR:  error de sintaxis en o cerca de Â«unnionÂ» en carÃ¡cter 143
+2015-04-10 16:54:28 CEST SENTENCIA:  (select t_cte_fra, id_colabora as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra ='B'
+	order by id)
+	unnion
+	(select t_cte_fra, id_cte as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='C'
+	order by id)
+2015-04-10 16:54:29 CEST ERROR:  error de sintaxis en o cerca de Â«unnionÂ» en carÃ¡cter 143
+2015-04-10 16:54:29 CEST SENTENCIA:  (select t_cte_fra, id_colabora as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra ='B'
+	order by id)
+	unnion
+	(select t_cte_fra, id_cte as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='C'
+	order by id)
+2015-04-10 16:56:54 CEST ERROR:  no existe la columna Â«t_fra_fraÂ» en carÃ¡cter 440
+2015-04-10 16:56:54 CEST SENTENCIA:  (select t_cte_fra, id_colabora as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra ='B'
+	order by id)
+	union
+	(select t_cte_fra, id_cte as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='C'
+	order by id)
+	union
+	(select t_cte_fra, id_titular as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='T'
+	order by id)
+	order by t_fra_fra,id
+2015-04-10 16:57:49 CEST ERROR:  error de sintaxis en o cerca de Â«,Â» en carÃ¡cter 107
+2015-04-10 16:57:49 CEST SENTENCIA:  (select t_cte_fra, id_colabora as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where t_cte_fra,factura <> 0 and t_cte_fra ='B'
+	order by id)
+	union
+	(select t_cte_fra, id_cte as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='C'
+	order t_cte_fra,by id)
+	union
+	(select t_cte_fra, id_titular as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='T'
+	order t_cte_fra,by id)
+	
+2015-04-10 16:59:53 CEST ERROR:  el operador no existe: character + integer en carÃ¡cter 18
+2015-04-10 16:59:53 CEST HINT:  NingÃºn operador coincide con el nombre y el tipo de los argumentos. Puede ser necesario agregar conversiones explÃ­citas de tipos.
+2015-04-10 16:59:53 CEST SENTENCIA:  (select t_cte_fra+ id_colabora as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra ='B'
+	order by id)
+	union
+	(select t_cte_fra + id_cte as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='C'
+	order by id)
+	union
+	(select t_cte_fra + id_titular as id, (honorarios + dcho_col) as base, tasa
+	from registros
+	where factura <> 0 and t_cte_fra='T'
+	order by id)
+	
+2015-04-10 17:19:07 CEST LOG:  se recibió petición de apagado rápido
+2015-04-10 17:19:07 CEST LOG:  abortando transacciones activas
+2015-04-10 17:19:07 CEST LOG:  apagando lanzador de autovacuum
+2015-04-10 17:19:07 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-10 17:19:07 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-10 17:19:08 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-10 17:19:08 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-10 17:19:08 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-10 17:19:09 CEST LOG:  apagando lanzador de autovacuum
+2015-04-10 17:19:09 CEST LOG:  proceso escritor de WAL (PID 5456) fue terminado por una excepción 0xC0000142
+2015-04-10 17:19:09 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-10 17:19:09 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-10 17:19:09 CEST LOG:  apagado anormal del sistema de bases de datos

@@ -1,0 +1,75 @@
+namespace Puche
+{
+    public partial class prueba : Form
+    {
+        ListBox lista = new ListBox();
+
+        public prueba()
+        {
+            InitializeComponent();
+            this.lista.Name = "lista";
+            this.lista.SelectedIndexChanged += new EventHandler(lista_SelectedIndexChanged);
+        }
+
+        void lista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // asignamos al txtBox el valor.
+            //this.lista.SelectedItem  o SelectedValue el que te sea más válido.
+            // Borra el control
+            this.lista.Dispose();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Control[] controles = this.Controls.Find("lista",false); //vemos si ya existe el listbox
+            if (controles.Count() > 0) 
+            {
+                // Consultamos a la BD en base a lo escrito.
+                this.lista.Items.Add(this.textBox1.Text);
+                // select * from tabla o tablas where ....
+            }
+            else
+            {
+                if (this.lista.IsDisposed) // se borra pero aun existe el listbox, ver como close().
+                {
+                }
+                else
+                {
+                    this.Controls.Add(this.lista); //creamos el listbox en ejecucion
+                    this.lista.Show();
+                    this.lista.Size = new Size(this.textBox1.Size.Width, 100);
+                    this.lista.Location = new Point(this.textBox1.Location.X, this.textBox1.Location.Y + 22);
+                    this.lista.BringToFront();
+                }
+            }
+
+        }
+
+        //con el evento, creamos el combobox con las opciones necesarias
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int seleccionado = Convert.ToInt32(((ComboBox)sender).SelectedIndex);
+
+            switch (seleccionado)
+            {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2: // ver si le podemos pasar la lista entera o item a item
+                    this.listBox1.Items.Clear();
+                    this.listBox1.Items.Add("Pepe");
+                    this.listBox1.Items.Add("Juan");
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        //evento cuando seleccionemos de la lista
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //textbox.text = listbox.value
+        }
+    }
+}

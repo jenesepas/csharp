@@ -1,0 +1,16 @@
+2015-04-28 10:02:35 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-28 10:02:35 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:02:35 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-28 09:56:16 CEST
+2015-04-28 10:02:35 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-28 10:02:36 CEST LOG:  redo comienza en 0/275CF28
+2015-04-28 10:02:36 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-28 10:02:36 CEST LOG:  record with zero length at 0/275EDF0
+2015-04-28 10:02:36 CEST LOG:  redo listo en 0/275CF28
+2015-04-28 10:02:36 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-28 10:02:37 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-28 10:02:38 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-28 10:07:04 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:07:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:07:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:07:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:08:00 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061

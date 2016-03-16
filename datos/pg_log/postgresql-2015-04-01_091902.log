@@ -1,0 +1,115 @@
+2015-04-01 09:19:03 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-03-31 20:53:49 CEST
+2015-04-01 09:19:03 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-01 09:19:03 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-01 09:19:04 CEST LOG:  record with zero length at 0/1A30C00
+2015-04-01 09:19:04 CEST LOG:  no se requiere redo
+2015-04-01 09:19:04 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-01 09:19:04 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-01 09:19:05 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-01 09:25:28 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 09:32:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 09:32:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 09:32:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 09:32:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 09:32:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:04:31 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:04:31 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:06:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:06:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:06:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:10:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:12:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:18:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:18:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:31:41 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:33:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:33:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:33:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:36:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:42:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:42:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 11:32:48 CEST ERROR:  la columna Â«id_colaboraÂ» contiene valores nulos
+2015-04-01 11:32:48 CEST SENTENCIA:  ALTER TABLE registros
+	   ALTER COLUMN id_colabora SET DEFAULT 0;
+	ALTER TABLE registros
+	   ALTER COLUMN id_colabora SET NOT NULL;
+	
+2015-04-01 11:32:57 CEST ERROR:  la columna Â«id_colaboraÂ» contiene valores nulos
+2015-04-01 11:32:57 CEST SENTENCIA:  ALTER TABLE registros
+	   ALTER COLUMN id_colabora SET DEFAULT 0;
+	ALTER TABLE registros
+	   ALTER COLUMN id_colabora SET NOT NULL;
+	
+2015-04-01 11:34:13 CEST ERROR:  no existe la columna Â«id_colaboraÂ» en la relaciÃ³n Â«registrosÂ» en carÃ¡cter 22
+2015-04-01 11:34:13 CEST SENTENCIA:  update registros set id_colabora=0;
+2015-04-01 11:43:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:13:04 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:14:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:14:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:28:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:28:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:31:59 CEST ERROR:  error de sintaxis en o cerca de Â«' where delegacion='Â» en carÃ¡cter 603
+2015-04-01 12:31:59 CEST SENTENCIA:  update registros set fec_ent='21/01/2015 0:00:00', id_cte=0, id_titular=0, seccion_int='GESTASER', seccion='Hacienda', t_tramite='Certificados Hacienda', matricula='', estado='PTE. CLIENTE', factura='0', fec_fra='21/01/2015 0:00:00', observacion='', honorarios='0.00', p_iva='21', tasa='0.00', exp_tl='', fec_pre_exp='21/01/2015 0:00:00', et_tasa='0', t_tasa='', cambio_serv='', bate_ant='', nif='', dcho_col='0.00', t_cte_fra='C', et_tasa2='0', t_tasa2='', et_tasa3='0', t_tasa3='', et_tasa4='0', t_tasa4='', descripcion='Hacienda - Certificados Hacienda -  -', ruta_pdf='', vehiculo='', id_colabora=0' where delegacion='Y' and n_reg=5
+2015-04-01 12:33:20 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:34:18 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:34:18 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:37:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:41:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:43:30 CEST ERROR:  una cadena de caracteres entre comillas estÃ¡ inconclusa en o cerca de Â«')Â» en carÃ¡cter 310
+2015-04-01 12:43:30 CEST SENTENCIA:  insert into registros values('A',(select max(n_reg) from registros where delegacion='A')+1,'01/04/2015 12:43:03',0,0,'GESTASER','ExtranjerÃ­a','Nacionalidad','','PTE. CLIENTE',0,'01/04/2015 12:43:03','','0.00','21','0.00','','01/04/2015 12:43:03','0','','','','','0.00','C','0','','0','','0','','','','','',10,')
+2015-04-01 12:45:48 CEST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 308
+2015-04-01 12:45:48 CEST SENTENCIA:  insert into registros values('A',(select max(n_reg) from registros where delegacion='A')+1,'01/04/2015 12:44:38',0,0,'GESTASER','Seg. Social','Altas RETA','','PTE. CLIENTE',0,'01/04/2015 12:44:38','','0.00','21','0.00','','01/04/2015 12:44:38','0','','','','','0.00','C','0','','0','','0','','','','','',10,)
+2015-04-01 12:47:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:47:02 CEST ERROR:  error de sintaxis en o cerca de Â«)Â» en carÃ¡cter 308
+2015-04-01 12:47:02 CEST SENTENCIA:  insert into registros values('A',(select max(n_reg) from registros where delegacion='A')+1,'01/04/2015 12:44:38',0,0,'GESTASER','Seg. Social','Altas RETA','','PTE. CLIENTE',0,'01/04/2015 12:44:38','','0.00','21','0.00','','01/04/2015 12:44:38','0','','','','','0.00','C','0','','0','','0','','','','','',10,)
+2015-04-01 12:47:52 CEST ERROR:  el valor null para la columna Â«n_regÂ» viola la restricciÃ³n not null
+2015-04-01 12:47:52 CEST DETALLE:  La fila que falla contiene (A, null, 2015-04-01, 0, 0, GESTASER  , Seg. Social                   , Altas RETA                    ,           , PTE. CLIENTE        , 0, 2015-04-01,                                                                 ..., 0.00, 21, 0.00,                     , 2015-04-01, 0,      ,                     ,           ,             , 0.00, C, 0,      , 0,      , 0,      ,                                                                 ...,                                                                 ...,                                                   , 10).
+2015-04-01 12:47:52 CEST SENTENCIA:  insert into registros values('A',(select max(n_reg) from registros where delegacion='A')+1,'01/04/2015 12:47:30',0,0,'GESTASER','Seg. Social','Altas RETA','','PTE. CLIENTE',0,'01/04/2015 12:47:30','','0.00','21','0.00','','01/04/2015 12:47:30','0','','','','','0.00','C','0','','0','','0','','','','',10)
+2015-04-01 12:50:11 CEST ERROR:  el valor null para la columna Â«n_regÂ» viola la restricciÃ³n not null
+2015-04-01 12:50:11 CEST DETALLE:  La fila que falla contiene (A, null, 2015-04-01, 0, 0, GESTASER  , Seg. Social                   , Altas RETA                    ,           , PTE. CLIENTE        , 0, 2015-04-01,                                                                 ..., 0.00, 21, 0.00,                     , 2015-04-01, 0,      ,                     ,           ,             , 0.00, C, 0,      , 0,      , 0,      ,                                                                 ...,                                                                 ...,                                                   , 10).
+2015-04-01 12:50:11 CEST SENTENCIA:  insert into registros values('A',(select max(n_reg) from registros where delegacion='A')+1,'01/04/2015 12:47:30',0,0,'GESTASER','Seg. Social','Altas RETA','','PTE. CLIENTE',0,'01/04/2015 12:47:30','','0.00','21','0.00','','01/04/2015 12:47:30','0','','','','','0.00','C','0','','0','','0','','','','',10);
+2015-04-01 12:51:19 CEST ERROR:  el valor null para la columna Â«n_regÂ» viola la restricciÃ³n not null
+2015-04-01 12:51:19 CEST DETALLE:  La fila que falla contiene (A, null, 2015-04-01, 0, 0, GESTASER  , Seg. Social                   , Altas RETA                    ,           , PTE. CLIENTE        , 0, 2015-04-01,                                                                 ..., 0.00, 21, 0.00,                     , 2015-04-01, 0,      ,                     ,           ,             , 0.00, C, 0,      , 0,      , 0,      ,                                                                 ...,                                                                 ...,                                                   , 10).
+2015-04-01 12:51:19 CEST SENTENCIA:  insert into registros values('A',(select max(n_reg)+1 from registros where delegacion='A'),'01/04/2015 12:47:30',0,0,'GESTASER','Seg. Social','Altas RETA','','PTE. CLIENTE',0,'01/04/2015 12:47:30','','0.00','21','0.00','','01/04/2015 12:47:30','0','','','','','0.00','C','0','','0','','0','','','','',10);
+2015-04-01 12:53:33 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:53:52 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:54:46 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:54:46 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:54:46 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:54:46 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:56:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 12:56:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 13:02:25 CEST ERROR:  una subconsulta utilizada como expresiÃ³n retornÃ³ mÃ¡s de un registro
+2015-04-01 13:02:25 CEST SENTENCIA:  select * from registros where registros.id_colabora = (select id_cliente from clientes where tipo_cte ='B' and nombre ~* 'cola')
+2015-04-01 13:14:29 CEST ERROR:  una subconsulta utilizada como expresiÃ³n retornÃ³ mÃ¡s de un registro
+2015-04-01 13:14:29 CEST SENTENCIA:  select * from registros where registros.id_colabora = (select id_cliente from clientes where tipo_cte ='B' and nombre ~* 'colab')
+2015-04-01 13:16:00 CEST ERROR:  una subconsulta utilizada como expresiÃ³n retornÃ³ mÃ¡s de un registro
+2015-04-01 13:16:00 CEST SENTENCIA:  select * from registros where registros.id_colabora = (select id_cliente from clientes where tipo_cte ='B' and nombre ~* 'col');
+	
+2015-04-01 13:16:41 CEST ERROR:  una subconsulta utilizada como expresiÃ³n retornÃ³ mÃ¡s de un registro
+2015-04-01 13:16:41 CEST SENTENCIA:  select * from registros where registros.id_colabora = (select id_cliente from clientes where tipo_cte ='B' and nombre like '%Col%');
+	
+2015-04-01 13:18:18 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-01 13:55:49 CEST LOG:  se recibió petición de apagado rápido
+2015-04-01 13:55:49 CEST LOG:  abortando transacciones activas
+2015-04-01 13:55:49 CEST LOG:  apagando lanzador de autovacuum
+2015-04-01 13:55:49 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-01 13:55:50 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-01 13:55:51 CEST LOG:  apagando lanzador de autovacuum
+2015-04-01 13:55:52 CEST LOG:  proceso escritor de WAL (PID 3752) fue terminado por una excepción 0xC0000142
+2015-04-01 13:55:52 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-01 13:55:52 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-01 13:55:57 CEST LOG:  apagado anormal del sistema de bases de datos

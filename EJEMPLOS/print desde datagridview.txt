@@ -1,0 +1,117 @@
+Imprimir el contenido de un DataGridView con PrintDocument
+Igual alguna vez os habéis encontrado en la situación de querer imprimir el contenido de un DataGridView y poder presentárselos a alguien o tenerlos a mano sin necesidad de tener la aplicación en pantalla.
+
+Está claro que hay formas muy sencillas de hacerlo, por ejemplo ese botón “Imprimir pantalla” que hay en el teclado y que mucha gente no sabe para qué sirve, crear informes con Crystal Reports u otro creador de informes, apuntarlos a mano en un papel, memorizarlos ...
+
+Algunas de estas opciones nos mostrarán datos de más, otras de menos y otras dependerán de la cantidad de neuronas que nos queden disponibles en ese momento (bueno, y de las que cada uno traiga de fábrica :P) pero hay una opción bastante sencilla que nos puede sacar de más de un apuro: usar PrintDocument con el contenido del DataGridView.
+
+Supongamos que tenemos un formulario con un DataGridView que se llama dataGridView1 (original, ¿a qué sí?) que tiene como origen de datos ... lo que sea, nos da igual porque lo que nos interesa es el contenido no si el origen de datos es un DataSet, un fichero XML o hemos metido los datos por código.
+
+Bien, añadimos al formulario un objeto de tipo PrintDocument (está en el Cuadro de Herramientas en el apartado Impresión) con el nombre printDocument1 (para ser coherentes con la nomenclatura :P).
+
+Ahora añadimos un botón (¿a qué no adivináis como se llama?) pues sí, button1 y en su evento click escribimos lo siguiente:
+
+
+printDocument1.Print();
+
+
+
+En el evento PrintPage de printDocument1 vamos a recorrer el contenido de dataGridView1 e imprimir una línea por cada fila del grid. Es muy importante saber que el evento se dispara por cada página que se vaya a imprimir, esto quiere decir que si tenemos 5 páginas el evento se disparará 5 veces y por tanto hay que saber en qué punto nos hemos quedado para continuar desde ahí y no volver a empezar.
+
+// Variable a nivel de clase para recordar en qué punto nos hemos quedado
+// la inicializamos a -1 para imprimir también las cabeceras de las columnas
+private int i = -1;
+
+private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+{
+// La fuente que vamos a usar para imprimir.
+Font printFont = new Font("Arial", 10);
+ float topMargin = e.MarginBounds.Top;
+ float yPos = 0;
+ float linesPerPage = 0;
+ int count = 0;
+ string texto = "" ;  
+ DataGridViewRow row;
+
+// Calculamos el número de líneas que caben en cada página.
+ linesPerPage = e.MarginBounds.Height / printFont.GetHeight(e.Graphics);
+
+   
+// Recorremos las filas del DataGridView hasta que llegemos
+// a las líneas que nos caben en cada página o al final del grid.
+ while (count < linesPerPage && i < this.dataGridView1.Rows.Count)
+ {
+  row = dataGridView1.Rows[i];
+  texto = "";
+
+  foreach (DataGridViewCell celda in row.Cells)
+  {
+   texto += "\t" + celda.Value.ToString();
+  }
+
+  // Calculamos la posición en la que se escribe la línea
+  yPos = topMargin + (count * printFont.GetHeight(e.Graphics));
+
+  // Escribimos la línea con el objeto Graphics
+  e.Graphics.DrawString(texto, printFont, Brushes.Black, 10, yPos);
+
+  count++;
+  i++;
+ }
+
+// Una vez fuera del bucle comprobamos si nos quedan más filas 
+// por imprimir, si quedan saldrán en la siguente página
+ if (i < this.dataGridView1.Rows.Count)
+  e.HasMorePages = true;
+ else
+ {
+// si llegamos al final, se establece HasMorePages a 
+// false para que se acabe la impresión
+  e.HasMorePages = false;
+
+  // Es necesario poner el contador a 0 porque, por ejemplo si se hace 
+// una impresión desde PrintPreviewDialog, se vuelve disparar este 
+// evento como si fuese la primera vez, y si i está con el valor de la
+// última fila del grid no se imprime nada
+  i = 0;
+ }
+
+}
+
+
+
+
+Con esto conseguimos imprimir todos los datos que hay en un grid, incluidas las cabeceras de las columnas, pero ¿habría forma de imprimir únicamente lo que seleccionemos en el grid?
+
+La respuesta es sí y es bastante sencillo, simplemente hay que cambiar:
+
+
+texto += "\t" + celda.Value.ToString();
+
+
+
+por este otro:
+
+
+if (celda.Selected)
+{
+texto += "\t" + celda.Value.ToString();
+}
+if (String.IsNullOrEmpty(seleccion) == false)
+{ 
+yPos = topMargin + (count * printFont.GetHeight(e.Graphics));
+ e.Graphics.DrawString(texto, printFont, Brushes.Black, 10, yPos);
+ count++;
+}
+
+
+
+Con esto sólo imprimimos las celdas que se hayan seleccionado, que pueden ser, varias filas, varias columnas o celdas sueltas, y además evitamos que se impriman filas en blanco.
+
+Advertencia: que nadie piense que con esto vamos a sacar unos informes espectaculares con las columnas perfectamente alineadas y todo precioso, NO NO NO, esto es únicamente para hacer una impresión rápida de los valores que aparecen en un DataGridView, sin muchas florituras pero también sin muchas complicaciones.
+
+
+Happy codding ;)
+
+
+Bola extra: PrintDocument imprime directamente por la impresora predeterminada, para cambiar la impresiona, su configuración y la configuración del papel echarle un vistazo a PrintDialog y PageSetudDialog. Y para sacar la vista previa: PrintPreviewDialog.

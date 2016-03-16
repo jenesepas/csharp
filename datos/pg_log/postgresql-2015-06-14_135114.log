@@ -1,0 +1,32 @@
+2015-06-14 13:51:15 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-05-28 10:02:27 CEST
+2015-06-14 13:51:16 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-06-14 13:51:16 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-06-14 13:51:16 CEST LOG:  record with zero length at 0/27A13A0
+2015-06-14 13:51:16 CEST LOG:  no se requiere redo
+2015-06-14 13:51:17 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-06-14 13:51:17 CEST LOG:  lanzador de autovacuum iniciado
+2015-06-14 13:51:17 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-06-14 20:31:41 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:31:40 CEST WARNING:  pgstat wait timeout
+2015-06-14 20:31:51 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:32:01 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:32:11 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:32:21 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:32:31 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:32:41 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:32:51 CEST WARNING:  pgstat wait timeout
+2015-06-14 20:32:52 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:33:02 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:33:13 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 20:33:23 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-06-14 23:04:14 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-14 23:04:19 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-14 23:04:20 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-14 23:04:20 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-14 23:04:20 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-14 23:04:20 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-14 23:04:23 CEST LOG:  se recibió petición de apagado rápido
+2015-06-14 23:04:23 CEST LOG:  abortando transacciones activas
+2015-06-14 23:04:23 CEST LOG:  apagando lanzador de autovacuum
+2015-06-14 23:04:36 CEST LOG:  apagando
+2015-06-14 23:04:43 CEST LOG:  el sistema de bases de datos está apagado

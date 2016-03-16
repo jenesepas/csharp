@@ -1,0 +1,28 @@
+2014-12-26 13:20:24 CET LOG:  el sistema de bases de datos fue apagado en 2014-12-26 13:20:06 CET
+2014-12-26 13:20:24 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2014-12-26 13:20:25 CET LOG:  lanzador de autovacuum iniciado
+2014-12-26 13:59:26 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 14:06:23 CET ERROR:  INSERT tiene mÃ¡s columnas de destino que expresiones en carÃ¡cter 60
+2014-12-26 14:06:23 CET SENTENCIA:  insert into clientes (id_cliente,tipo_docu,documento,letra,tipo_cte) values(0,'DNI',' ','C');
+2014-12-26 14:07:46 CET ERROR:  error de sintaxis en o cerca de Â«clientesÂ» en carÃ¡cter 10
+2014-12-26 14:07:46 CET SENTENCIA:  select * clientes;
+2014-12-26 14:08:56 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 15:48:58 CET ERROR:  update o delete en Â«clientesÂ» viola la llave forÃ¡nea Â«reg_cte_fkÂ» en la tabla Â«registrosÂ»
+2014-12-26 15:48:58 CET DETALLE:  La llave (id_cliente)=(0) todavÃ­a es referida desde la tabla Â«registrosÂ».
+2014-12-26 15:48:58 CET SENTENCIA:  delete from clientes;
+2014-12-26 15:55:02 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 15:56:18 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 15:56:18 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 16:00:51 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 16:00:51 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-26 20:28:01 CET LOG:  se recibió petición de apagado rápido
+2014-12-26 20:28:01 CET LOG:  abortando transacciones activas
+2014-12-26 20:28:01 CET LOG:  apagando lanzador de autovacuum
+2014-12-26 20:28:01 CET LOG:  proceso escritor de WAL (PID 4524) fue terminado por una excepción 0xC0000142
+2014-12-26 20:28:01 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2014-12-26 20:28:01 CET LOG:  terminando todos los otros procesos de servidor activos
+2014-12-26 20:28:01 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-26 20:28:01 CET WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2014-12-26 20:28:01 CET DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2014-12-26 20:28:01 CET HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2014-12-26 20:28:02 CET LOG:  apagado anormal del sistema de bases de datos

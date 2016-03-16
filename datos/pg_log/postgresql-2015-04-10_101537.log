@@ -1,0 +1,70 @@
+2015-04-10 10:15:37 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-09 11:41:31 CEST
+2015-04-10 10:15:37 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-10 10:15:37 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-10 10:15:38 CEST LOG:  record with zero length at 0/1B5C3B8
+2015-04-10 10:15:38 CEST LOG:  no se requiere redo
+2015-04-10 10:15:38 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-10 10:15:38 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-10 10:15:39 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-10 11:12:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:18:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:38:57 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:41:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:41:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:42:14 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:42:43 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:43:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:43:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 11:44:00 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:12:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:12:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:13:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:13:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:13:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:13:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:13:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:14:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:19:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:19:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:24:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:34:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:55:25 CEST ERROR:  el operador no existe: date >= integer en carÃ¡cter 89
+2015-04-10 12:55:25 CEST HINT:  NingÃºn operador coincide con el nombre y el tipo de los argumentos. Puede ser necesario agregar conversiones explÃ­citas de tipos.
+2015-04-10 12:55:25 CEST SENTENCIA:  select * from registros where factura <> 0 and factura between 0 and 999999 and fec_fra between 01/01/2015 and 31/12/2015 and delegacion='Y' order by delegacion, factura
+2015-04-10 12:55:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:55:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:56:31 CEST ERROR:  el operador no existe: date >= integer en carÃ¡cter 89
+2015-04-10 12:56:31 CEST HINT:  NingÃºn operador coincide con el nombre y el tipo de los argumentos. Puede ser necesario agregar conversiones explÃ­citas de tipos.
+2015-04-10 12:56:31 CEST SENTENCIA:  select * from registros where factura <> 0 and factura between 0 and 999999 and fec_fra between 01/01/2015 and 31/12/2015 order by delegacion, factura
+2015-04-10 12:56:34 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:56:34 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:57:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:57:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:57:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:58:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 12:59:45 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 13:03:05 CEST ERROR:  el operador no existe: date >= integer en carÃ¡cter 94
+2015-04-10 13:03:05 CEST HINT:  NingÃºn operador coincide con el nombre y el tipo de los argumentos. Puede ser necesario agregar conversiones explÃ­citas de tipos.
+2015-04-10 13:03:05 CEST SENTENCIA:  select * from registros where factura <> 0 and factura between '0' and '9999999' and fec_fra between 01/01/2015 and 31/12/2015 and delegacion='Y' order by delegacion, factura
+2015-04-10 13:03:59 CEST ERROR:  la sintaxis de entrada no es vÃ¡lida para integer: Â«9999999 and fec_fra between 01/01/2015 and 31/12/2015Â» en carÃ¡cter 72
+2015-04-10 13:03:59 CEST SENTENCIA:  select * from registros where factura <> 0 and factura between '0' and '9999999 and fec_fra between 01/01/2015 and 31/12/2015' and delegacion='Y' order by delegacion, factura
+2015-04-10 13:04:08 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 13:04:08 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 13:10:15 CEST ERROR:  no existe la columna Â«id_observaÂ» en carÃ¡cter 40
+2015-04-10 13:10:15 CEST SENTENCIA:  select delegacion, id_cte, id_titular, id_observa,t_cte_fra from registros order by delegacion;
+2015-04-10 13:12:19 CEST ERROR:  error de sintaxis en o cerca de Â«upadeteÂ» en carÃ¡cter 1
+2015-04-10 13:12:19 CEST SENTENCIA:  upadete registros set t_cte_fra='B' where n_reg=5;
+2015-04-10 13:13:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 13:14:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 13:39:31 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-10 13:56:35 CEST LOG:  se recibió petición de apagado rápido
+2015-04-10 13:56:35 CEST LOG:  abortando transacciones activas
+2015-04-10 13:56:35 CEST LOG:  apagando lanzador de autovacuum
+2015-04-10 13:56:36 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-10 13:56:38 CEST LOG:  proceso escritor de WAL (PID 4848) fue terminado por una excepción 0xC0000142
+2015-04-10 13:56:38 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-10 13:56:38 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-10 13:56:39 CEST WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-04-10 13:56:39 CEST DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-04-10 13:56:39 CEST HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-04-10 13:56:39 CEST LOG:  apagado anormal del sistema de bases de datos

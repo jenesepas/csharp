@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieChartSamp", "http://localhost/GdiPlusGuide/PieChartSamp/PieChartSamp.csproj", "{E5F5BBDB-3BDB-40B9-BF5B-89392F6A7D26}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E5F5BBDB-3BDB-40B9-BF5B-89392F6A7D26}.Debug.ActiveCfg = Debug|.NET
+		{E5F5BBDB-3BDB-40B9-BF5B-89392F6A7D26}.Debug.Build.0 = Debug|.NET
+		{E5F5BBDB-3BDB-40B9-BF5B-89392F6A7D26}.Release.ActiveCfg = Release|.NET
+		{E5F5BBDB-3BDB-40B9-BF5B-89392F6A7D26}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

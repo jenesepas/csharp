@@ -1,0 +1,8 @@
+dataSet11.ReadXml("E:\\PI\\ArchEstudiantes.xml");
+
+DataRow[] vector = dataSet11.tbl_Estud.Select("cod_Estudiante='" + txtCodigo.Text + "'");
+
+foreach(DataRow row in vector)
+	row.Delete();   
+
+dataSet11.WriteXml("E:\\PI\\ArchEstudiantes.xml");

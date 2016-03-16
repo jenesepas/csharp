@@ -1,0 +1,4 @@
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Release\ResolveAssemblyReference.cache
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Release\Cab_Lin.Principal.resources
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Release\GenerateResource.read.1.tlog
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Release\GenerateResource.write.1.tlog

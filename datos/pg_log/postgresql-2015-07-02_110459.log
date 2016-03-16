@@ -1,0 +1,22 @@
+2015-07-02 11:05:01 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-07-02 11:05:01 CEST LOG:  el sistema de bases de datos fue apagado en 2015-06-19 17:03:03 CEST
+2015-07-02 11:05:01 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-07-02 11:05:02 CEST LOG:  lanzador de autovacuum iniciado
+2015-07-02 11:05:03 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-07-02 11:38:14 CEST WARNING:  pgstat wait timeout
+2015-07-02 11:38:16 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-07-02 11:38:26 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-07-02 11:38:38 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-07-02 11:38:48 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-07-02 11:38:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/global.tmp» a «pg_stat_tmp/global.stat»: Permission denied
+2015-07-02 12:08:36 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-07-02 12:08:38 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-07-02 12:08:38 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-07-02 12:08:38 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-07-02 12:08:38 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-07-02 12:08:38 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-07-02 12:08:39 CEST LOG:  se recibió petición de apagado rápido
+2015-07-02 12:08:39 CEST LOG:  abortando transacciones activas
+2015-07-02 12:08:39 CEST LOG:  apagando lanzador de autovacuum
+2015-07-02 12:08:43 CEST LOG:  apagando
+2015-07-02 12:08:52 CEST LOG:  el sistema de bases de datos está apagado

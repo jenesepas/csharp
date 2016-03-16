@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawPieSample", "DrawPieSample.csproj", "{4E9EC4FC-D568-4D4B-90DC-0317F58F3B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4E9EC4FC-D568-4D4B-90DC-0317F58F3B7F}.Debug.ActiveCfg = Debug|.NET
+		{4E9EC4FC-D568-4D4B-90DC-0317F58F3B7F}.Debug.Build.0 = Debug|.NET
+		{4E9EC4FC-D568-4D4B-90DC-0317F58F3B7F}.Release.ActiveCfg = Release|.NET
+		{4E9EC4FC-D568-4D4B-90DC-0317F58F3B7F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

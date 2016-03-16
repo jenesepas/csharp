@@ -1,0 +1,42 @@
+2015-03-27 21:11:23 CET FATAL:  el sistema de base de datos está iniciándose
+2015-03-27 21:11:23 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-03-27 21:04:05 CET
+2015-03-27 21:11:23 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-03-27 21:11:23 CET LOG:  record with zero length at 0/19E60C8
+2015-03-27 21:11:23 CET LOG:  no se requiere redo
+2015-03-27 21:11:23 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-27 21:11:23 CET LOG:  lanzador de autovacuum iniciado
+2015-03-27 21:11:24 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-03-27 21:49:55 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-27 21:49:55 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-27 22:12:48 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-27 22:12:48 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-27 22:12:48 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-27 22:15:16 CET ERROR:  la columna Â«iva_snÂ» es de tipo boolean pero la expresiÃ³n default es de tipo integer
+2015-03-27 22:15:16 CET HINT:  NecesitarÃ¡ reescribir la expresiÃ³n o aplicarle una conversiÃ³n de tipo.
+2015-03-27 22:15:16 CET SENTENCIA:  ALTER TABLE linfac
+	   ALTER COLUMN iva_sn SET DEFAULT 0;
+	ALTER TABLE linfac
+	   ALTER COLUMN iva_sn SET NOT NULL;
+	
+2015-03-27 22:15:31 CET ERROR:  la columna Â«iva_snÂ» contiene valores nulos
+2015-03-27 22:15:31 CET SENTENCIA:  ALTER TABLE linfac
+	   ALTER COLUMN iva_sn SET DEFAULT false;
+	ALTER TABLE linfac
+	   ALTER COLUMN iva_sn SET NOT NULL;
+	
+2015-03-27 22:15:36 CET ERROR:  la columna Â«iva_snÂ» contiene valores nulos
+2015-03-27 22:15:36 CET SENTENCIA:  ALTER TABLE linfac
+	   ALTER COLUMN iva_sn SET DEFAULT false;
+	ALTER TABLE linfac
+	   ALTER COLUMN iva_sn SET NOT NULL;
+	
+2015-03-27 22:19:12 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-27 22:20:29 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-27 22:20:30 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-27 22:20:30 CET LOG:  se recibió petición de apagado rápido
+2015-03-27 22:20:30 CET LOG:  abortando transacciones activas
+2015-03-27 22:20:30 CET LOG:  apagando lanzador de autovacuum
+2015-03-27 22:20:33 CET LOG:  proceso escritor de WAL (PID 4676) fue terminado por una excepción 0xC0000142
+2015-03-27 22:20:33 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-03-27 22:20:33 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-03-27 22:20:37 CET LOG:  apagado anormal del sistema de bases de datos

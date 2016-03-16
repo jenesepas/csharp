@@ -1,0 +1,29 @@
+2015-03-21 11:24:49 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-03-20 11:09:13 CET
+2015-03-21 11:24:50 CET FATAL:  el sistema de base de datos está iniciándose
+2015-03-21 11:24:50 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-03-21 11:24:51 CET FATAL:  el sistema de base de datos está iniciándose
+2015-03-21 11:24:51 CET LOG:  record with zero length at 0/198E158
+2015-03-21 11:24:51 CET LOG:  no se requiere redo
+2015-03-21 11:24:52 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-21 11:24:52 CET LOG:  lanzador de autovacuum iniciado
+2015-03-21 11:24:52 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-03-21 12:13:52 CET ERROR:  error de sintaxis en o cerca de Â«1Â» en carÃ¡cter 20
+2015-03-21 12:13:52 CET SENTENCIA:  insert into values(1,'Cliente 1','12345678A',NULL);
+2015-03-21 12:14:38 CET ERROR:  error de sintaxis en o cerca de Â«1Â» en carÃ¡cter 20
+2015-03-21 12:14:38 CET SENTENCIA:  insert into values(1,"Cliente 1","12345678A",NULL);
+2015-03-21 12:14:55 CET ERROR:  no existe la columna Â«Cliente 1Â» en carÃ¡cter 31
+2015-03-21 12:14:55 CET SENTENCIA:  insert into clientes values(1,"Cliente 1","12345678A",NULL);
+2015-03-21 12:53:45 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-21 12:53:45 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-21 13:32:49 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-21 13:42:11 CET LOG:  se recibió petición de apagado rápido
+2015-03-21 13:42:11 CET LOG:  abortando transacciones activas
+2015-03-21 13:42:12 CET LOG:  apagando lanzador de autovacuum
+2015-03-21 13:42:12 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-21 13:42:14 CET LOG:  proceso escritor de WAL (PID 5820) fue terminado por una excepción 0xC0000142
+2015-03-21 13:42:14 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-03-21 13:42:14 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-03-21 13:42:14 CET WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-03-21 13:42:14 CET DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-03-21 13:42:14 CET HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-03-21 13:42:17 CET LOG:  apagado anormal del sistema de bases de datos

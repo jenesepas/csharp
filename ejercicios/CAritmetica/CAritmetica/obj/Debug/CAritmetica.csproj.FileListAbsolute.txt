@@ -1,0 +1,11 @@
+C:\Users\juanan\AppData\Local\Temporary Projects\CAritmetica\bin\Debug\CAritmetica.exe
+C:\Users\juanan\AppData\Local\Temporary Projects\CAritmetica\bin\Debug\CAritmetica.pdb
+C:\Users\juanan\AppData\Local\Temporary Projects\CAritmetica\obj\Debug\CAritmetica.exe
+C:\Users\juanan\AppData\Local\Temporary Projects\CAritmetica\obj\Debug\CAritmetica.pdb
+C:\temp\c#\ejercicios\CAritmetica\CAritmetica\obj\Debug\CAritmetica.exe
+C:\temp\c#\ejercicios\CAritmetica\CAritmetica\obj\Debug\CAritmetica.pdb
+C:\temp\c#\ejercicios\CAritmetica\CAritmetica\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\c#\ejercicios\CAritmetica\CAritmetica\bin\Debug\CAritmetica.exe
+C:\temp\c#\ejercicios\CAritmetica\CAritmetica\bin\Debug\CAritmetica.pdb
+C:\temp\csharp\ejercicios\CAritmetica\CAritmetica\obj\Debug\CAritmetica.exe
+C:\temp\csharp\ejercicios\CAritmetica\CAritmetica\obj\Debug\ResolveAssemblyReference.cache

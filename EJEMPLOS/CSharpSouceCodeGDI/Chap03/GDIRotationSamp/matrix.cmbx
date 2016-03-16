@@ -1,0 +1,18 @@
+<Combine name="matrix" fileversion="1.0" description="">
+  <StartMode startupentry="matrix" single="True">
+    <Execute entry="matrix" type="None" />
+  </StartMode>
+  <Entries>
+    <Entry filename=".\matrix.prjx" />
+  </Entries>
+  <Configurations active="Debug">
+    <Configuration name="Release" description="">
+      <Entry name="matrix" configurationname="Debug" build="False" />
+      <Entry name="matrix" configurationname="Debug" build="False" />
+    </Configuration>
+    <Configuration name="Debug" description="">
+      <Entry name="matrix" configurationname="Debug" build="False" />
+      <Entry name="matrix" configurationname="Debug" build="False" />
+    </Configuration>
+  </Configurations>
+</Combine>

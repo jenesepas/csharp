@@ -1,0 +1,35 @@
+private BindingSource bsMaestro;
+private BindingSource bsDetalle;
+
+
+private void Formulario_Load(object sender, EventArgs e)
+{
+DataSet dataSet;
+// Cargo DataSet con 2 tablas
+daMaestro = new SqlCeDataAdapter("SELECT * FROM TABLA1", conexion);
+daMaestro.Fill(dataSet, "TABLA1");
+dtMaestro = dataSet.Tables["TABLA1"];
+daDetalle = new SqlCeDataAdapter("SELECT * FROM TABLA2", conexion);
+daDetalle.Fill(dataSet, "TABLA2");
+dtDetalle = dataSet.Tables["TABLA2"];
+// Creo relación por 2 columnas COL1 y COL2 (Primary Key de TABLA1), existentes en ambas tablas
+DataRelation drRelacion;
+DataColumn[] dcMaestro = new DataColumn[2] {dtMaestro.Columns["COL1"], dtMaestro.Columns["COL2"]};
+DataColumn[] dcDetalle = new DataColumn[2] {dtDetalle.Columns["COL1"], dtDetalle.Columns["COL2"]};
+drRelacion = new DataR DataRelation("MaestroDetalle", dcMaestro, dcDetalle);
+// Añadimos relación al DataSet
+dataSet.Relations.Add(drRelacion);
+
+// Enlazamos datos con controles bindingSource
+this.bsMaestro = new BindingSource();
+this.bsMaestro.DataSource = this.dataSet; //Establecemos el origen de los Datos
+this.bsMaestro.DataMember = "TABLA1"; //Especificamos la tabla con la que trabajara
+
+this.bsDetalle = new BindingSource();
+this.bsDetalle.DataSource = bsMaestro;
+this.bsDetalle.DataMember = "MaestroDetalle"; 
+
+
+this.DataGridViewDetalle.DataSource = bsDetalle;
+
+}

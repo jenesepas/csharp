@@ -1,0 +1,45 @@
+2015-01-08 09:14:38 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-07 15:45:18 CET
+2015-01-08 09:14:38 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-08 09:14:38 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-08 09:14:38 CET LOG:  record with zero length at 0/17D63B0
+2015-01-08 09:14:38 CET LOG:  no se requiere redo
+2015-01-08 09:14:38 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-08 09:14:38 CET LOG:  lanzador de autovacuum iniciado
+2015-01-08 09:14:39 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-01-08 09:37:21 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 09:38:21 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 09:39:13 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 09:47:18 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 09:48:06 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para integer: Â«0.00Â» en carÃ¡cter 202
+2015-01-08 09:48:06 CET SENTENCIA:  insert into registros values('Y',2,'08/01/2015 0:00:00',2,1,'GESTASER','Conductores','RenovaciÃ³n Permiso','A-1234-CG','PTE. CLIENTE',0,'08/01/2015 0:00:00','','0.00','0','0.00','','08/01/2015 0:00:00','0.00','','','','','0','C')
+2015-01-08 09:49:51 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para integer: Â«0.00Â» en carÃ¡cter 202
+2015-01-08 09:49:51 CET SENTENCIA:  insert into registros values('Y',2,'08/01/2015 0:00:00',2,1,'GESTASER','Conductores','RenovaciÃ³n Permiso','A-1234-CG','PTE. CLIENTE',0,'08/01/2015 0:00:00','','0.00','0','0.00','','08/01/2015 0:00:00','0.00','','','','','0','C')
+2015-01-08 09:50:53 CET ERROR:  llave duplicada viola restricciÃ³n de unicidad Â«rg_fra_ukÂ»
+2015-01-08 09:50:53 CET DETALLE:  Ya existe la llave (factura)=(0).
+2015-01-08 09:50:53 CET SENTENCIA:  insert into registros values('Y',2,'08/01/2015 0:00:00',2,1,'GESTASER','Conductores','RenovaciÃ³n Permiso','A-1234-CB','PTE. CLIENTE',0,'08/01/2015 0:00:00','','0.00','0','0.00','','08/01/2015 0:00:00','0','','','','','0','C')
+2015-01-08 09:52:16 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 09:52:46 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «postgres», base de datos «postgres», SSL inactivo
+2015-01-08 09:52:58 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «postgres», base de datos «postgres», SSL inactivo
+2015-01-08 09:55:12 CET ERROR:  llave duplicada viola restricciÃ³n de unicidad Â«rg_fra_ukÂ»
+2015-01-08 09:55:12 CET DETALLE:  Ya existe la llave (factura)=(0).
+2015-01-08 09:55:12 CET SENTENCIA:  insert into registros values('Y',2,'08/01/2015 0:00:00',2,1,'GESTASER','Conductores','RenovaciÃ³n Permiso','A-1234-CB','PTE. CLIENTE',0,'08/01/2015 0:00:00','','0.00','0','0.00','','08/01/2015 0:00:00','0','','','','','0','C')
+2015-01-08 10:04:34 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:08:01 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:08:01 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:08:01 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:18:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:18:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:34:43 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:38:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:38:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 10:59:49 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 11:02:39 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 11:17:15 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-08 11:22:35 CET LOG:  se recibió petición de apagado rápido
+2015-01-08 11:22:35 CET LOG:  abortando transacciones activas
+2015-01-08 11:22:35 CET LOG:  apagando lanzador de autovacuum
+2015-01-08 11:22:36 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-08 11:22:36 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-08 11:22:37 CET LOG:  apagando lanzador de autovacuum
+2015-01-08 11:22:43 CET LOG:  apagando
+2015-01-08 11:22:43 CET LOG:  el sistema de bases de datos está apagado

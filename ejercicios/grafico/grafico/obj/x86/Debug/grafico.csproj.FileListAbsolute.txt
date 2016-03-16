@@ -1,0 +1,10 @@
+C:\temp\csharp\ejercicios\grafico\grafico\bin\Debug\grafico.exe
+C:\temp\csharp\ejercicios\grafico\grafico\bin\Debug\grafico.pdb
+C:\temp\csharp\ejercicios\grafico\grafico\bin\Debug\OpenTK.dll
+C:\temp\csharp\ejercicios\grafico\grafico\bin\Debug\OpenTK.pdb
+C:\temp\csharp\ejercicios\grafico\grafico\bin\Debug\OpenTK.xml
+C:\temp\csharp\ejercicios\grafico\grafico\obj\x86\Debug\grafico.Properties.Resources.resources
+C:\temp\csharp\ejercicios\grafico\grafico\obj\x86\Debug\grafico.exe
+C:\temp\csharp\ejercicios\grafico\grafico\obj\x86\Debug\grafico.pdb
+C:\temp\csharp\ejercicios\grafico\grafico\obj\x86\Debug\grafico.csprojResolveAssemblyReference.cache
+C:\temp\csharp\ejercicios\grafico\grafico\obj\x86\Debug\grafico.csproj.GenerateResource.Cache

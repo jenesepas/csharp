@@ -1,0 +1,10 @@
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\bin\Debug\ConexionCSharpconMySQL.exe.config
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\bin\Debug\ConexionCSharpconMySQL.exe
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\bin\Debug\ConexionCSharpconMySQL.pdb
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.csprojResolveAssemblyReference.cache
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.Properties.Resources.resources
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.csproj.GenerateResource.Cache
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.exe
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.pdb
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.FormClientes.resources
+C:\Users\Anoninyus\Desktop\ConexionCSharpconMySQL\ConexionCSharpconMySQL\obj\Debug\ConexionCSharpconMySQL.BuscarCliente.resources

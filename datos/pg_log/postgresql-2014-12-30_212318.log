@@ -1,0 +1,16 @@
+2014-12-30 21:23:24 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2014-12-29 15:59:04 CET
+2014-12-30 21:23:24 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2014-12-30 21:23:24 CET LOG:  record with zero length at 0/17AE888
+2014-12-30 21:23:24 CET LOG:  no se requiere redo
+2014-12-30 21:23:24 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2014-12-30 21:23:24 CET LOG:  lanzador de autovacuum iniciado
+2014-12-30 21:35:55 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-30 21:35:55 CET LOG:  se recibió petición de apagado rápido
+2014-12-30 21:35:55 CET LOG:  abortando transacciones activas
+2014-12-30 21:35:55 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-30 21:35:55 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-30 21:35:55 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-30 21:35:55 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-30 21:35:56 CET LOG:  apagando lanzador de autovacuum
+2014-12-30 21:35:56 CET LOG:  apagando
+2014-12-30 21:35:58 CET LOG:  el sistema de bases de datos está apagado

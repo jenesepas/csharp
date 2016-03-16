@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LineChartSamp", "http://localhost/GDIPlusGuide/LineChartSamp/LineChartSamp.csproj", "{96A5EA92-DF92-4AB1-9FD0-A81E0AC3A012}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{96A5EA92-DF92-4AB1-9FD0-A81E0AC3A012}.Debug.ActiveCfg = Debug|.NET
+		{96A5EA92-DF92-4AB1-9FD0-A81E0AC3A012}.Debug.Build.0 = Debug|.NET
+		{96A5EA92-DF92-4AB1-9FD0-A81E0AC3A012}.Release.ActiveCfg = Release|.NET
+		{96A5EA92-DF92-4AB1-9FD0-A81E0AC3A012}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

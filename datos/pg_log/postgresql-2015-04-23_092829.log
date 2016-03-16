@@ -1,0 +1,102 @@
+2015-04-23 09:28:30 CEST LOG:  el sistema de bases de datos fue apagado en 2015-04-22 10:20:56 CEST
+2015-04-23 09:28:30 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-23 09:28:31 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-23 09:28:31 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-23 09:28:31 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-23 09:37:43 CEST WARNING:  pgstat wait timeout
+2015-04-23 09:37:44 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:37:54 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:37:58 CEST WARNING:  pgstat wait timeout
+2015-04-23 09:38:05 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:38:15 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:43:49 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:43:59 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:44:09 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:44:20 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:44:28 CEST WARNING:  pgstat wait timeout
+2015-04-23 09:44:31 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:44:42 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:44:53 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:45:04 CEST WARNING:  pgstat wait timeout
+2015-04-23 09:45:06 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:45:19 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:45:30 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-23 09:45:36 CEST WARNING:  pgstat wait timeout
+2015-04-23 10:11:47 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:23:37 CEST LOG:  no se pudo enviar datos al cliente: unrecognized winsock error 10061
+2015-04-23 10:23:37 CEST SENTENCIA:  select * from registros where delegacion='M' order by delegacion, n_reg
+2015-04-23 10:23:37 CEST FATAL:  se ha perdido la conexiÃ³n al cliente
+2015-04-23 10:23:37 CEST SENTENCIA:  select * from registros where delegacion='M' order by delegacion, n_reg
+2015-04-23 10:25:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:28:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:33:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:46:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:47:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:47:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:50:14 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:51:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:51:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:51:41 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:51:41 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:51:53 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 10:52:01 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:02:09 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:03:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:06:45 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:08:59 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:10:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:10:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:11:41 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:09 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:25 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:27 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:31 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:12:38 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:17:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:19:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:22:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:22:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:22:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:24:17 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:25:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:26:28 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:29:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:30:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:31:18 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:32:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:32:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:51:04 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:54:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:54:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:54:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:56:01 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:56:01 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:56:01 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:56:47 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:56:47 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:56:47 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:59:17 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:59:46 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 11:59:46 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 12:10:27 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 12:27:26 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 12:29:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 12:30:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-23 12:37:34 CEST LOG:  proceso escritor de WAL (PID 3016) fue terminado por una excepción 0xC0000142
+2015-04-23 12:37:34 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-23 12:37:34 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-23 12:37:34 CEST LOG:  se recibió petición de apagado rápido
+2015-04-23 12:37:34 CEST WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-04-23 12:37:34 CEST DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-04-23 12:37:34 CEST HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-04-23 12:37:36 CEST LOG:  abortando transacciones activas
+2015-04-23 12:37:36 CEST LOG:  apagado anormal del sistema de bases de datos

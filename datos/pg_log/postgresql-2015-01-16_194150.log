@@ -1,0 +1,18 @@
+2015-01-16 19:41:50 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-16 16:29:26 CET
+2015-01-16 19:41:50 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-16 19:41:50 CET LOG:  record with zero length at 0/1918538
+2015-01-16 19:41:50 CET LOG:  no se requiere redo
+2015-01-16 19:41:51 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-16 19:41:52 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-16 19:41:52 CET LOG:  lanzador de autovacuum iniciado
+2015-01-16 20:10:32 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-16 21:31:12 CET LOG:  se recibió petición de apagado rápido
+2015-01-16 21:31:12 CET LOG:  abortando transacciones activas
+2015-01-16 21:31:12 CET LOG:  apagando lanzador de autovacuum
+2015-01-16 21:31:12 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-16 21:31:13 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-16 21:31:14 CET LOG:  apagando lanzador de autovacuum
+2015-01-16 21:31:17 CET LOG:  proceso escritor de WAL (PID 4876) fue terminado por una excepción 0xC0000142
+2015-01-16 21:31:17 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-16 21:31:17 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-16 21:31:17 CET LOG:  apagado anormal del sistema de bases de datos

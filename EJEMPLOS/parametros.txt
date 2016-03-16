@@ -1,0 +1,7 @@
+SqlCommand sql  =  new SqlCommand("SELECT * FROM" + string  + "WHERE Nombre = " + string , miConexion);
+
+
+mejor forma:
+
+SqlCommand sql = new SqlCommand("SELECT * FROM Persona WHERE Nombre = @Nombre", miConexion);
+sql.Parameters.Add("Nombre", SqlDbType.Varchar).Value = UNSTRING;

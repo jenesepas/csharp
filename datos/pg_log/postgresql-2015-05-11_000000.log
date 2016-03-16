@@ -1,0 +1,11 @@
+2015-05-11 08:25:17 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-05-11 08:25:19 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-05-11 08:25:19 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-05-11 08:25:19 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-05-11 08:25:19 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-05-11 08:25:19 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-05-11 08:25:34 CEST LOG:  se recibió petición de apagado rápido
+2015-05-11 08:25:34 CEST LOG:  abortando transacciones activas
+2015-05-11 08:25:34 CEST LOG:  apagando lanzador de autovacuum
+2015-05-11 08:25:35 CEST LOG:  apagando
+2015-05-11 08:25:36 CEST LOG:  el sistema de bases de datos está apagado

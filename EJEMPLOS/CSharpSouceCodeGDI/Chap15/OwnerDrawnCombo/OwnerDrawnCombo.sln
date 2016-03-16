@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwnerDrawnCombo", "OwnerDrawnCombo.csproj", "{47DD1B5F-4D94-458A-8322-725D37CF029C}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{47DD1B5F-4D94-458A-8322-725D37CF029C}.Debug.ActiveCfg = Debug|.NET
+		{47DD1B5F-4D94-458A-8322-725D37CF029C}.Debug.Build.0 = Debug|.NET
+		{47DD1B5F-4D94-458A-8322-725D37CF029C}.Release.ActiveCfg = Release|.NET
+		{47DD1B5F-4D94-458A-8322-725D37CF029C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

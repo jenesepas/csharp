@@ -1,0 +1,45 @@
+2015-04-24 09:36:29 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-23 12:13:31 CEST
+2015-04-24 09:36:29 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-24 09:36:30 CEST LOG:  record with zero length at 0/2563CD0
+2015-04-24 09:36:30 CEST LOG:  no se requiere redo
+2015-04-24 09:36:30 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-24 09:36:30 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-24 09:36:30 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-24 09:36:31 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-24 09:48:53 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:48:53 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:49:02 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:49:04 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:49:14 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:49:15 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:49:23 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:49:25 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:49:35 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:49:37 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:49:42 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:49:47 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:49:53 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:49:57 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:50:02 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:50:07 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 09:50:16 CEST WARNING:  pgstat wait timeout
+2015-04-24 09:50:17 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_122880.tmp» a «pg_stat_tmp/db_122880.stat»: Permission denied
+2015-04-24 10:01:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-24 10:19:20 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-24 10:19:20 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-24 10:21:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-24 10:21:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-24 10:24:28 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-24 11:22:38 CEST LOG:  se recibió petición de apagado rápido
+2015-04-24 11:22:39 CEST LOG:  abortando transacciones activas
+2015-04-24 11:22:39 CEST LOG:  apagando lanzador de autovacuum
+2015-04-24 11:22:39 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-24 11:22:39 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-24 11:22:39 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-24 11:22:39 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-24 11:22:39 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-24 11:22:40 CEST LOG:  apagando lanzador de autovacuum
+2015-04-24 11:22:41 CEST LOG:  proceso escritor de WAL (PID 940) fue terminado por una excepción 0xC0000142
+2015-04-24 11:22:41 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-24 11:22:41 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-24 11:22:41 CEST LOG:  apagado anormal del sistema de bases de datos

@@ -1,0 +1,29 @@
+private void btConsultar_Click(object sender, EventArgs e)
+        {
+            string cadenaConexionTabla = "Server=127.0.0.1;Port=5432;User id=postgres;Password=admin;Database=prueba";
+
+            string sql = "select * from clientes";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(cadenaConexionTabla))
+            {
+                NpgsqlCommand command = new NpgsqlCommand(sql, connection);
+                // Incrementamos hasta un minuto para evitar que de error cualquier ejecución común.
+                command.CommandTimeout = 5 * 60;
+                command.Connection.Open();
+                NpgsqlDataReader datos = command.ExecuteReader();
+                           
+               
+                while (datos.Read())
+                {
+                    tbCodigo.Text = Convert.ToString(datos[0]);
+                    tbNombre.Text = Convert.ToString(datos[1]);
+                    tbNif.Text = Convert.ToString(datos[2]);
+                    tbDocumento.Text = Convert.ToString(datos[3]);
+                }
+               
+                textBox1.Text = "Registro leido satisfactariamente.";
+                command.Connection.Close();
+                //MessageBox.Show("Registro insertado satisfactariamente","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+
+        }

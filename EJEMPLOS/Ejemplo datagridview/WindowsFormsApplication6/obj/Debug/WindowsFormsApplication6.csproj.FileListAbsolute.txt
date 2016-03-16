@@ -1,0 +1,6 @@
+c:\users\montoya\documents\visual studio 2012\Projects\WindowsFormsApplication6\WindowsFormsApplication6\bin\Debug\WindowsFormsApplication6.exe.config
+C:\temp\csharp\EJEMPLOS\Ejemplo datagridview\WindowsFormsApplication6\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\csharp\EJEMPLOS\Ejemplo datagridview\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Form1.resources
+C:\temp\csharp\EJEMPLOS\Ejemplo datagridview\WindowsFormsApplication6\obj\Debug\WindowsFormsApplication6.Properties.Resources.resources
+C:\temp\csharp\EJEMPLOS\Ejemplo datagridview\WindowsFormsApplication6\obj\Debug\GenerateResource.read.1.tlog
+C:\temp\csharp\EJEMPLOS\Ejemplo datagridview\WindowsFormsApplication6\obj\Debug\GenerateResource.write.1.tlog

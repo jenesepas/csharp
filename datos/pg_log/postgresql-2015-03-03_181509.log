@@ -1,0 +1,6 @@
+2015-03-03 18:15:10 CET FATAL:  el sistema de base de datos está iniciándose
+2015-03-03 18:15:10 CET LOG:  el sistema de bases de datos fue apagado en 2015-03-03 16:32:12 CET
+2015-03-03 18:15:10 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-03 18:15:10 CET LOG:  lanzador de autovacuum iniciado
+2015-03-03 18:15:11 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-03-03 19:58:03 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061

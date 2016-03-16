@@ -1,0 +1,82 @@
+2015-03-31 16:03:48 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-03-31 13:31:25 CEST
+2015-03-31 16:03:48 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-03-31 16:03:48 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-03-31 16:03:48 CEST LOG:  record with zero length at 0/1A1CF98
+2015-03-31 16:03:48 CEST LOG:  no se requiere redo
+2015-03-31 16:03:48 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-31 16:03:48 CEST LOG:  lanzador de autovacuum iniciado
+2015-03-31 16:03:51 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-03-31 16:13:31 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_32768.tmp» a «pg_stat_tmp/db_32768.stat»: Permission denied
+2015-03-31 16:31:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 16:31:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 16:41:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 16:41:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 16:53:59 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 16:53:59 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 16:53:59 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:01:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:01:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:01:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:05:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:13:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:13:54 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:17:59 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:18:34 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:18:34 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:18:34 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 17:18:34 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:23:55 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:23:55 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:25:36 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:25:36 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:25:36 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:25:36 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:25:36 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:25:36 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:28:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:28:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:28:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:30:38 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:33:54 CEST ERROR:  la sintaxis de entrada no es vÃ¡lida para el tipo numeric: Â«2.022.00Â» en carÃ¡cter 51
+2015-03-31 18:33:54 CEST SENTENCIA:  insert into linfac values(150004,2,'descri 2','0','2.022.00','12')
+2015-03-31 18:52:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:52:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:52:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:52:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:52:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 18:52:50 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:20:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:20:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:24:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:24:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:24:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:25:06 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:25:06 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 19:38:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:26:17 CEST ERROR:  error de sintaxis en o cerca de Â«p_ivaÂ» en carÃ¡cter 1
+2015-03-31 20:26:17 CEST SENTENCIA:  p_iva,sum(importe) from linfac where numfac='150004' group by p_iva
+2015-03-31 20:43:23 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:46:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:46:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:46:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:46:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:52:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:52:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:52:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:52:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:52:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-31 20:54:17 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-31 20:54:18 CEST LOG:  se recibió petición de apagado rápido
+2015-03-31 20:54:18 CEST LOG:  abortando transacciones activas
+2015-03-31 20:54:18 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-31 20:54:18 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-31 20:54:18 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-31 20:54:18 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-31 20:54:18 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-31 20:54:19 CEST LOG:  proceso escritor de WAL (PID 5868) fue terminado por una excepción 0xC0000142
+2015-03-31 20:54:19 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-03-31 20:54:19 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-03-31 20:54:19 CEST WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-03-31 20:54:19 CEST DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-03-31 20:54:19 CEST HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-03-31 20:54:21 CEST LOG:  apagado anormal del sistema de bases de datos

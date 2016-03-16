@@ -1,0 +1,41 @@
+2015-01-21 10:59:41 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-21 09:23:56 CET
+2015-01-21 10:59:42 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 10:59:42 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-21 10:59:42 CET LOG:  record with zero length at 0/1961E10
+2015-01-21 10:59:42 CET LOG:  no se requiere redo
+2015-01-21 10:59:43 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-21 10:59:44 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-21 10:59:49 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-21 10:59:51 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 10:59:51 CET LOG:  lanzador de autovacuum iniciado
+2015-01-21 11:26:55 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 11:30:12 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:06:03 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:15:44 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:17:32 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:26:56 CET ERROR:  llave duplicada viola restricciÃ³n de unicidad Â«cte_id_pkÂ»
+2015-01-21 12:26:56 CET DETALLE:  Ya existe la llave (id_cliente)=(6).
+2015-01-21 12:26:56 CET SENTENCIA:  insert into clientes values(6,'Era el 6','DNI','98765432','A','','','','','','','','','C')
+2015-01-21 12:30:22 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:44:07 CET ERROR:  error de sintaxis en o cerca de Â«selectÂ» en carÃ¡cter 49
+2015-01-21 12:44:07 CET SENTENCIA:  insert into clientes (id_cliente,nombre) values(select max(id_cliente)+1 from clientes, 'nombre cliente');
+2015-01-21 12:50:04 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:50:04 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 12:51:22 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 13:01:38 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 13:01:40 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 13:07:01 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 13:15:35 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 13:15:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-21 13:55:20 CET LOG:  se recibió petición de apagado rápido
+2015-01-21 13:55:20 CET LOG:  abortando transacciones activas
+2015-01-21 13:55:20 CET LOG:  apagando lanzador de autovacuum
+2015-01-21 13:55:20 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-21 13:55:21 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-21 13:55:22 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-21 13:55:22 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-21 13:55:23 CET LOG:  apagando lanzador de autovacuum
+2015-01-21 13:55:24 CET LOG:  proceso escritor de WAL (PID 5264) fue terminado por una excepción 0xC0000142
+2015-01-21 13:55:24 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-21 13:55:24 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-21 13:55:25 CET LOG:  apagado anormal del sistema de bases de datos

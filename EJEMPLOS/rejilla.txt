@@ -1,0 +1,140 @@
+sing System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Npgsql;
+
+namespace Asesoria
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btGuardar_Click(object sender, EventArgs e)
+        {
+            // Estos parametros los tendrás que sustituir por los que hayas puesto al crear la bd.
+            string cadenaConexionTabla = "Server=127.0.0.1;Port=5432;User id=postgres;Password=pwd;Database=db";
+            
+            // En esta instrucción sql debes poner los valores de los campos a insertar en la tabla.
+            // para recuperar los valores de dichos campos (en este ejemplo) usará tbCodigo.Text etc...
+            // por ejemplo "insert into nombreTabla values(tbCodigo.Text,...)"
+            string sql = "insert into nombreTabla values(...)";
+
+            // Aquí lanzas el proceso de guardado a la bd etc...
+            using (NpgsqlConnection connection = new NpgsqlConnection(cadenaConexionTabla))
+            {
+                NpgsqlCommand command = new NpgsqlCommand(sql, connection);
+                // Incrementamos hasta un minuto para evitar que de error cualquier ejecución común.
+                command.CommandTimeout = 5 * 60;
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+            }
+
+        }
+
+        
+		#region "Clientes"
+
+		public class Clientes
+		{
+			public static DataTable TablaADO()
+			{
+				DataColumn columna;
+				DataColumn[] clavePrimaria = new DataColumn[1];
+				DataTable tabla = new DataTable("Clientes");
+
+				columna = new DataColumn("Id");
+				columna.DataType = Type.GetType("System.Decimal");
+				tabla.Columns.Add(columna);
+
+				clavePrimaria[0] = columna;
+				tabla.PrimaryKey = clavePrimaria;
+
+				columna = new DataColumn("Codigo");
+				columna.DataType = Type.GetType("System.String");
+				tabla.Columns.Add(columna);
+
+				columna = new DataColumn("DniCif");
+				columna.DataType = Type.GetType("System.String");
+				tabla.Columns.Add(columna);
+
+				columna = new DataColumn("RazonSocial");
+				columna.DataType = Type.GetType("System.String");
+				tabla.Columns.Add(columna);
+
+				columna = new DataColumn("NombreComercial");
+				columna.DataType = Type.GetType("System.String");
+				tabla.Columns.Add(columna);
+
+				columna = new DataColumn("Observaciones");
+				columna.DataType = Type.GetType("System.String");
+				tabla.Columns.Add(columna);
+
+				return tabla;
+			}
+
+		}
+
+		#endregion
+
+        #region "Rejilla"
+
+        public void diseñaRejilla()
+        {
+            // Así creamos una tabla con la estructura de la clase clientes
+            DataTable tabla = Clientes.TablaADO();
+
+            tabla.Clear();
+
+            // Ejemplo de consulta a la BD
+            string sql = "select * from clientes order by codigo";
+
+            // Creas una función de consulta a la bd o metes el código aquí
+            // Yo te aconsejo que crees una función de consulta
+            ConsultarSQL(sql, tabla);
+
+            this.dataGridView1.Columns.Clear();
+
+            DataGridViewColumn columna = new DataGridViewTextBoxColumn();
+            columna.Name = "Id";
+            columna.Visible = false;
+            this.dataGridView1.Columns.Add(columna);
+
+            columna = new DataGridViewTextBoxColumn();
+            columna.Name = "Codigo";
+            columna.Visible = false;
+            this.dataGridView1.Columns.Add(columna);
+
+            columna = new DataGridViewTextBoxColumn();
+            columna.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            columna.HeaderText = "Lin.";
+            columna.Name = "Linea";
+            columna.ReadOnly = true;
+            columna.Width = 30;
+            this.dataGridView1.Columns.Add(columna);
+
+            //................... etc hasta crear todos los campos necesarios
+
+
+            for (int a = 0; a != tabla.Rows.Count; a++)
+            {
+                string campo1 = Convert.ToString(tabla.Rows[a].ItemArray[0]);
+                string campo2 = Convert.ToString(tabla.Rows[a].ItemArray[1]);
+                string campo3 = Convert.ToString(tabla.Rows[a].ItemArray[2]);
+                //................ etc hasta rellenar todos los campos.
+
+                // Insertamos la línea.
+                this.dataGridView1.Rows.Add(campo1, campo2, campo3);
+
+            }
+        }
+        #endregion
+    }
+}

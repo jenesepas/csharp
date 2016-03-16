@@ -1,0 +1,29 @@
+2015-04-28 10:31:28 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-28 10:31:28 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-28 10:18:39 CEST
+2015-04-28 10:31:28 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-28 10:31:28 CEST LOG:  record with zero length at 0/275EEC0
+2015-04-28 10:31:28 CEST LOG:  no se requiere redo
+2015-04-28 10:31:29 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-28 10:31:29 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-28 10:31:29 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-28 10:42:35 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:42:58 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:43:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 10:43:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 11:27:17 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 11:31:03 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-28 12:28:34 CEST LOG:  se recibió petición de apagado rápido
+2015-04-28 12:28:34 CEST LOG:  abortando transacciones activas
+2015-04-28 12:28:34 CEST LOG:  apagando lanzador de autovacuum
+2015-04-28 12:28:34 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-28 12:28:35 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-28 12:28:36 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-28 12:28:36 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-28 12:28:36 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-28 12:28:37 CEST LOG:  proceso escritor de WAL (PID 3132) fue terminado por una excepción 0xC0000142
+2015-04-28 12:28:37 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-28 12:28:37 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-28 12:28:37 CEST WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-04-28 12:28:37 CEST DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-04-28 12:28:37 CEST HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-04-28 12:28:38 CEST LOG:  apagado anormal del sistema de bases de datos

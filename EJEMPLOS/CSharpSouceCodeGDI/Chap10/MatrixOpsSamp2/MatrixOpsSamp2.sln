@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixOpsSamp2", "MatrixOpsSamp2.csproj", "{89B21E1E-61AF-11D6-BC8F-0060B0EE7607}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{89B21E1E-61AF-11D6-BC8F-0060B0EE7607}.Debug.ActiveCfg = Debug|.NET
+		{89B21E1E-61AF-11D6-BC8F-0060B0EE7607}.Debug.Build.0 = Debug|.NET
+		{89B21E1E-61AF-11D6-BC8F-0060B0EE7607}.Release.ActiveCfg = Release|.NET
+		{89B21E1E-61AF-11D6-BC8F-0060B0EE7607}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

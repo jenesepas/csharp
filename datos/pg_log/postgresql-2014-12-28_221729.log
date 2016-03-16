@@ -1,0 +1,32 @@
+2014-12-28 22:17:31 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2014-12-26 15:58:24 CET
+2014-12-28 22:17:31 CET FATAL:  el sistema de base de datos está iniciándose
+2014-12-28 22:17:31 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2014-12-28 22:17:31 CET LOG:  record with zero length at 0/17ACFB0
+2014-12-28 22:17:31 CET LOG:  no se requiere redo
+2014-12-28 22:17:31 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2014-12-28 22:17:32 CET LOG:  lanzador de autovacuum iniciado
+2014-12-28 22:47:43 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-28 23:04:05 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para tipo date: Â« Â» en carÃ¡cter 36
+2014-12-28 23:04:05 CET SENTENCIA:  insert into registros values('Y',0,' ',0,0,' ',' ',' ',' ',' ',0,' ',' ',0,0,0,' ',' ',0,' ',' ',' ',' ',0,' ');
+2014-12-28 23:04:29 CET ERROR:  un identificador delimitado tiene largo cero en o cerca de Â«""Â» en carÃ¡cter 36
+2014-12-28 23:04:29 CET SENTENCIA:  insert into registros values('Y',0,"",0,0,' ',' ',' ',' ',' ',0,' ',' ',0,0,0,' ',' ',0,' ',' ',' ',' ',0,' ');
+2014-12-28 23:04:41 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para tipo date: Â«Â» en carÃ¡cter 36
+2014-12-28 23:04:41 CET SENTENCIA:  insert into registros values('Y',0,'',0,0,' ',' ',' ',' ',' ',0,' ',' ',0,0,0,' ',' ',0,' ',' ',' ',' ',0,' ');
+2014-12-28 23:05:11 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para tipo date: Â« Â» en carÃ¡cter 75
+2014-12-28 23:05:11 CET SENTENCIA:  insert into registros values('Y',0,'29/12/2014',0,0,' ',' ',' ',' ',' ',0,' ',' ',0,0,0,' ',' ',0,' ',' ',' ',' ',0,' ');
+2014-12-28 23:05:48 CET ERROR:  la sintaxis de entrada no es vÃ¡lida para tipo date: Â« Â» en carÃ¡cter 102
+2014-12-28 23:05:48 CET SENTENCIA:  insert into registros values('Y',0,'29/12/2014',0,0,' ',' ',' ',' ',' ',0,'29/12/2014',' ',0,0,0,' ',' ',0,' ',' ',' ',' ',0,' ');
+2014-12-28 23:14:56 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-28 23:14:56 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-28 23:14:56 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2014-12-28 23:17:46 CET LOG:  se recibió petición de apagado rápido
+2014-12-28 23:17:46 CET LOG:  abortando transacciones activas
+2014-12-28 23:17:46 CET LOG:  proceso escritor de WAL (PID 5520) fue terminado por una excepción 0xC0000142
+2014-12-28 23:17:46 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2014-12-28 23:17:46 CET LOG:  terminando todos los otros procesos de servidor activos
+2014-12-28 23:17:46 CET LOG:  apagando lanzador de autovacuum
+2014-12-28 23:17:46 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2014-12-28 23:17:46 CET WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2014-12-28 23:17:46 CET DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2014-12-28 23:17:46 CET HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2014-12-28 23:17:46 CET LOG:  apagado anormal del sistema de bases de datos

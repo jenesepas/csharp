@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Npgsql;
+
+namespace Puche
+{
+    public class BDConexion
+    {
+        public static NpgsqlConnection ObtenerConexion()
+        {
+            //192.168.0.100-127.0.0.1
+            string cadenaConexionTabla = "Server=172.26.0.223;Port=5432;User id=postgres;Password=admin;Database=asesoria";
+            NpgsqlConnection conectar = new NpgsqlConnection(cadenaConexionTabla);
+
+            conectar.Open();
+            return conectar;
+        }
+    }
+}

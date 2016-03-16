@@ -1,0 +1,17 @@
+http://www.opentk.com/doc/chapter/2/opengl/geometry/primitives
+
+http://sabia.tic.udc.es/gc/Tutorial%20OpenGL/index.htm
+
+https://www.giawa.com/
+
+http://www4.tecnun.es/asignaturas/grafcomp/OpenGL/practica/capitulo1.pdf
+
+http://www.morrowland.com/apron/tut_gl.php
+
+http://nehe.gamedev.net/
+
+http://www.dcases.com/category/curso-de-c/
+
+http://alumnos-cominf.blogspot.com.es/2011/10/instalar-opengl-en-c.html
+
+http://www.c-sharpcorner.com/uploadfile/517b0b/basic-drawings-with-opengl-using-C-Sharp/

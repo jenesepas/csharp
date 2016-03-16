@@ -1,0 +1,11 @@
+2015-01-05 00:44:07 CET LOG:  se recibió petición de apagado rápido
+2015-01-05 00:44:08 CET LOG:  abortando transacciones activas
+2015-01-05 00:44:08 CET LOG:  proceso escritor de WAL (PID 5520) fue terminado por una excepción 0xC0000142
+2015-01-05 00:44:08 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-05 00:44:08 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-05 00:44:08 CET LOG:  apagando lanzador de autovacuum
+2015-01-05 00:44:08 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-05 00:44:08 CET WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-01-05 00:44:08 CET DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-01-05 00:44:08 CET HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-01-05 00:44:08 CET LOG:  apagado anormal del sistema de bases de datos

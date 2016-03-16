@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?>
+<UpgradeLog>
+<Properties><Property Name="Solution" Value="FirstPrintingApp">
+</Property><Property Name="Solution File" Value="C:\Code\GDI+\Souce Code\Chap11\FirstPrintingApp\FirstPrintingApp.sln">
+</Property><Property Name="Date" Value="Tuesday, June 22, 2004">
+</Property><Property Name="Time" Value="9:05 AM">
+</Property></Properties><Event ErrorLevel="0" Project="FirstPrintingApp" Source="FirstPrintingApp.csproj" Description="Project upgraded successfully">
+</Event><Event ErrorLevel="3" Project="FirstPrintingApp" Source="FirstPrintingApp.csproj" Description="Upgraded">
+</Event><Event ErrorLevel="0" Project="" Source="FirstPrintingApp.sln" Description="Solution upgraded successfully">
+</Event><Event ErrorLevel="3" Project="" Source="FirstPrintingApp.sln" Description="Upgraded">
+</Event></UpgradeLog>

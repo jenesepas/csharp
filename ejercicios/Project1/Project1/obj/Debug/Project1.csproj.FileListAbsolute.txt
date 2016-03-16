@@ -1,0 +1,8 @@
+C:\Users\juanan\AppData\Local\Temporary Projects\Project1\bin\Debug\Project1.exe
+C:\Users\juanan\AppData\Local\Temporary Projects\Project1\bin\Debug\Project1.pdb
+C:\Users\juanan\AppData\Local\Temporary Projects\Project1\obj\Debug\Project1.exe
+C:\Users\juanan\AppData\Local\Temporary Projects\Project1\obj\Debug\Project1.pdb
+C:\temp\csharp\ejercicios\Project1\Project1\obj\Debug\Project1.exe
+C:\temp\csharp\ejercicios\Project1\Project1\obj\Debug\Project1.pdb
+C:\temp\csharp\ejercicios\Project1\Project1\bin\Debug\Project1.exe
+C:\temp\csharp\ejercicios\Project1\Project1\bin\Debug\Project1.pdb

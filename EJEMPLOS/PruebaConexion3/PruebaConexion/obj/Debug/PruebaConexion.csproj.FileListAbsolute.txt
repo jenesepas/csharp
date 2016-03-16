@@ -1,0 +1,30 @@
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\bin\Debug\PruebaConexion.exe.config
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\bin\Debug\PruebaConexion.exe
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\bin\Debug\PruebaConexion.pdb
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\obj\Debug\PruebaConexion.csprojResolveAssemblyReference.cache
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\obj\Debug\PruebaConexion.Form1.resources
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\obj\Debug\PruebaConexion.Properties.Resources.resources
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\obj\Debug\PruebaConexion.csproj.GenerateResource.Cache
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\obj\Debug\PruebaConexion.exe
+C:\Users\Yenier\AppData\Local\Temporary Projects\PruebaConexion\obj\Debug\PruebaConexion.pdb
+D:\Escritorio\PruebaConexion\PruebaConexion\bin\Debug\PruebaConexion.exe.config
+D:\Escritorio\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.exe
+D:\Escritorio\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.pdb
+D:\Escritorio\PruebaConexion\PruebaConexion\bin\Debug\PruebaConexion.exe
+D:\Escritorio\PruebaConexion\PruebaConexion\bin\Debug\PruebaConexion.pdb
+D:\Escritorio\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.csprojResolveAssemblyReference.cache
+D:\Escritorio\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.Form1.resources
+D:\Escritorio\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.Properties.Resources.resources
+D:\Escritorio\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.csproj.GenerateResource.Cache
+D:\Documentos\Visual Studio 2012\TUTORIALES\PruebaConexion\PruebaConexion\bin\Debug\PruebaConexion.exe.config
+D:\Documentos\Visual Studio 2012\TUTORIALES\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.exe
+D:\Documentos\Visual Studio 2012\TUTORIALES\PruebaConexion\PruebaConexion\obj\Debug\PruebaConexion.pdb
+D:\Escritorio\PruebaConexion2\PruebaConexion\bin\Debug\PruebaConexion.exe.config
+D:\Escritorio\PruebaConexion2\PruebaConexion\obj\Debug\PruebaConexion.exe
+D:\Escritorio\PruebaConexion2\PruebaConexion\obj\Debug\PruebaConexion.pdb
+D:\Escritorio\PruebaConexion2\PruebaConexion\bin\Debug\PruebaConexion.exe
+D:\Escritorio\PruebaConexion2\PruebaConexion\bin\Debug\PruebaConexion.pdb
+D:\Escritorio\PruebaConexion2\PruebaConexion\obj\Debug\PruebaConexion.csprojResolveAssemblyReference.cache
+D:\Escritorio\PruebaConexion2\PruebaConexion\obj\Debug\PruebaConexion.Form1.resources
+D:\Escritorio\PruebaConexion2\PruebaConexion\obj\Debug\PruebaConexion.Properties.Resources.resources
+D:\Escritorio\PruebaConexion2\PruebaConexion\obj\Debug\PruebaConexion.csproj.GenerateResource.Cache

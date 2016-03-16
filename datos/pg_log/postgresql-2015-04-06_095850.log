@@ -1,0 +1,26 @@
+2015-04-06 09:58:54 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-02 16:20:14 CEST
+2015-04-06 09:58:54 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:58:54 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-06 09:58:55 CEST LOG:  redo comienza en 0/1A8C210
+2015-04-06 09:58:55 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:58:56 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:58:57 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:58:59 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:59:00 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:59:01 CEST LOG:  record with zero length at 0/1AC9CE8
+2015-04-06 09:59:01 CEST LOG:  redo listo en 0/1AC9CA8
+2015-04-06 09:59:01 CEST LOG:  última transacción completada al tiempo de registro 2015-04-02 16:21:23.153+02
+2015-04-06 09:59:01 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:59:02 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:59:03 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:59:04 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 09:59:05 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-06 09:59:05 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-06 09:59:06 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-06 10:15:39 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 10:15:39 CEST LOG:  se recibió petición de apagado rápido
+2015-04-06 10:15:39 CEST LOG:  abortando transacciones activas
+2015-04-06 10:15:40 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 10:15:41 CEST LOG:  apagando lanzador de autovacuum
+2015-04-06 10:15:43 CEST LOG:  apagando
+2015-04-06 10:15:45 CEST LOG:  el sistema de bases de datos está apagado

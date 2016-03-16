@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="lesson04">
+</Property><Property Name="Archivo de la solución" Value="C:\temp\csharp\EJEMPLOS\lesson04\lesson04.sln">
+</Property><Property Name="Archivo de opciones de usuario" Value="C:\temp\csharp\EJEMPLOS\lesson04\lesson04.suo">
+</Property><Property Name="Date" Value="viernes, 09 de octubre de 2015">
+</Property><Property Name="Time" Value="18:14">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="lesson04.sln" Description="La copia C:\temp\csharp\EJEMPLOS\lesson04\Backup\lesson04.sln del archivo se ha realizado correctamente">
+</Event><Event ErrorLevel="0" Project="" Source="lesson04.suo" Description="La copia C:\temp\csharp\EJEMPLOS\lesson04\Backup\lesson04.suo del archivo se ha realizado correctamente">
+</Event><Event ErrorLevel="0" Project="lesson04" Source="lesson04.csproj" Description="Se realizó correctamente la copia de seguridad del archivo de proyecto C:\temp\csharp\EJEMPLOS\lesson04\Backup\lesson04.csproj">
+</Event><Event ErrorLevel="0" Project="lesson04" Source="lesson04.csproj.user" Description="La copia de seguridad C:\temp\csharp\EJEMPLOS\lesson04\Backup\lesson04.csproj.user del archivo se ha creado correctamente">
+</Event><Event ErrorLevel="0" Project="lesson04" Source="lesson04.cs" Description="Se realizó correctamente la copia de seguridad del archivo C:\temp\csharp\EJEMPLOS\lesson04\Backup\lesson04.cs">
+</Event><Event ErrorLevel="0" Project="lesson04" Source="lesson04.resx" Description="Se realizó correctamente la copia de seguridad del archivo C:\temp\csharp\EJEMPLOS\lesson04\Backup\lesson04.resx">
+</Event><Event ErrorLevel="0" Project="lesson04" Source="lesson04.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="lesson04" Source="lesson04.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="lesson04.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="lesson04.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="lesson04" Source="lesson04.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

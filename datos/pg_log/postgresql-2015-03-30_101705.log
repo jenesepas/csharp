@@ -1,0 +1,31 @@
+2015-03-30 10:17:07 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-03-30 10:17:07 CEST LOG:  el sistema de bases de datos fue apagado en 2015-03-29 20:03:45 CEST
+2015-03-30 10:17:08 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-30 10:17:08 CEST LOG:  lanzador de autovacuum iniciado
+2015-03-30 10:17:09 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-03-30 12:08:43 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:23:17 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:23:17 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:28:37 CEST ERROR:  no existe la columna Â«precioÂ» en carÃ¡cter 42
+2015-03-30 13:28:37 CEST SENTENCIA:  select numfac,linea,descripcion,cantidad,precio, (cantidad * precio) as Total, p_iva from linfac where numfac='150004'
+2015-03-30 13:29:13 CEST ERROR:  no existe la columna Â«precioÂ» en carÃ¡cter 42
+2015-03-30 13:29:13 CEST SENTENCIA:  select numfac,linea,descripcion,cantidad,precio, (cantidad * precio) as Total, p_iva from linfac where numfac='150004'
+2015-03-30 13:30:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:30:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:32:58 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:35:56 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:35:56 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:35:56 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:43:26 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:51:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:52:53 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-30 13:55:05 CEST LOG:  se recibió petición de apagado rápido
+2015-03-30 13:55:05 CEST LOG:  abortando transacciones activas
+2015-03-30 13:55:06 CEST LOG:  apagando lanzador de autovacuum
+2015-03-30 13:55:06 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-30 13:55:06 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-03-30 13:55:07 CEST LOG:  apagando lanzador de autovacuum
+2015-03-30 13:55:08 CEST LOG:  proceso escritor de WAL (PID 5132) fue terminado por una excepción 0xC0000142
+2015-03-30 13:55:08 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-03-30 13:55:08 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-03-30 13:55:15 CEST LOG:  apagado anormal del sistema de bases de datos

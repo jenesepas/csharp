@@ -1,0 +1,8 @@
+C:\temp\csharp\EJEMPLOS\lesson04\obj\Debug\lesson04.exe
+C:\temp\csharp\EJEMPLOS\lesson04\obj\Debug\lesson04.pdb
+C:\temp\csharp\EJEMPLOS\lesson04\bin\Debug\lesson04.exe
+C:\temp\csharp\EJEMPLOS\lesson04\bin\Debug\lesson04.pdb
+C:\temp\csharp\EJEMPLOS\lesson04\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\csharp\EJEMPLOS\lesson04\obj\Debug\lesson04.OurView.resources
+C:\temp\csharp\EJEMPLOS\lesson04\obj\Debug\GenerateResource.read.1.tlog
+C:\temp\csharp\EJEMPLOS\lesson04\obj\Debug\GenerateResource.write.1.tlog

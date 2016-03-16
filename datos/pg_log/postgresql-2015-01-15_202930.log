@@ -1,0 +1,15 @@
+2015-01-15 20:29:32 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-15 20:29:32 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-15 13:20:53 CET
+2015-01-15 20:29:33 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-15 20:29:33 CET LOG:  record with zero length at 0/19073E0
+2015-01-15 20:29:33 CET LOG:  no se requiere redo
+2015-01-15 20:29:33 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-15 20:29:34 CET LOG:  lanzador de autovacuum iniciado
+2015-01-15 21:16:36 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-15 21:18:41 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-15 21:20:06 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-15 21:25:35 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-15 21:28:38 CET LOG:  se recibió petición de apagado rápido
+2015-01-15 21:28:39 CET LOG:  abortando transacciones activas
+2015-01-15 21:28:39 CET LOG:  apagando lanzador de autovacuum
+2015-01-15 21:28:39 CET ERROR:  cancelando la sentencia debido a una petición del usuario

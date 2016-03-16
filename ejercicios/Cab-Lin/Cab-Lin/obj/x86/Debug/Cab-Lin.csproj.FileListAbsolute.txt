@@ -1,0 +1,12 @@
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\Cab_Lin.Principal.resources
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\bin\Debug\Cab-Lin.exe
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\bin\Debug\Cab-Lin.pdb
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\bin\Debug\Mono.Security.dll
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\bin\Debug\Npgsql.dll
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\bin\Debug\Npgsql.resources.dll
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\Cab-Lin.exe
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\Cab-Lin.pdb
+C:\temp\csharp\ejercicios\Cab-Lin\Cab-Lin\obj\x86\Debug\Cab_Lin.Properties.Resources.resources

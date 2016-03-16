@@ -1,0 +1,52 @@
+2015-04-06 10:48:11 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 10:48:12 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-06 10:33:30 CEST
+2015-04-06 10:48:12 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-06 10:48:12 CEST LOG:  record with zero length at 0/1AC9DB8
+2015-04-06 10:48:12 CEST LOG:  no se requiere redo
+2015-04-06 10:48:13 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-06 10:48:13 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-06 10:48:13 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 10:48:14 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-06 12:53:43 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 12:53:43 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 12:53:43 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 12:53:43 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 12:55:47 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 12:56:29 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:05:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:08:10 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:08:10 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:10:53 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:10:53 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:12:09 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:12:09 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:14:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:14:19 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:19:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:19:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:21:37 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:23:35 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:23:35 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:24:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:24:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:37:10 CEST ERROR:  no existe la columna Â«elegacionÂ» en carÃ¡cter 34
+2015-04-06 13:37:10 CEST SENTENCIA:  select * from registros order by elegacion, n_reg;
+2015-04-06 13:46:56 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:46:56 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:49:20 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:49:20 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 13:53:48 CEST LOG:  se recibió petición de apagado rápido
+2015-04-06 13:53:48 CEST LOG:  abortando transacciones activas
+2015-04-06 13:53:49 CEST LOG:  apagando lanzador de autovacuum
+2015-04-06 13:53:49 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 13:53:49 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 13:53:50 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 13:53:50 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 13:53:50 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-06 13:53:50 CEST LOG:  proceso escritor de WAL (PID 5480) fue terminado por una excepción 0xC0000142
+2015-04-06 13:53:50 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-06 13:53:50 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-06 13:53:50 CEST WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-04-06 13:53:50 CEST DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-04-06 13:53:50 CEST HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-04-06 13:53:51 CEST LOG:  apagado anormal del sistema de bases de datos

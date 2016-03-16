@@ -1,0 +1,24 @@
+*****************************************************************
+*	APRON TUTORIALS PRESENTED BY MORROWLAND			*
+*****************************************************************
+*	Project Name		: Frames Per Secound		*
+*	Project Description	: Calculate Frames Per Secound	*
+*	Project Type		: OpenGL			*
+*	Author			: Ronny André Reierstad		*
+*	Web Page		: www.morrowland.com		*
+*	E-Mail			: apron@morrowland.com		*
+*	Version			: English (UK)			*
+*	Date			: 30.06.2002			*
+*****************************************************************
+
+By Calculateing the FPS in your application you will know how fast
+your application is running. A normal mpeg2 movie is often in 30 FPS
+And if you are making a game it shuld probably be in about 25 FPS for good animation.
+
+By looking at your FPS  before and after you add new code,
+you will be able to see if the new code slowed down your app..
+-----------------------------------------------------------------
+Regards
+Ronny André Reierstad
+www.morrowland.com
+apron@morrowland.com

@@ -1,0 +1,168 @@
+CREATE DATABASE asesoria
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Spanish_Spain.1252'
+       LC_CTYPE = 'Spanish_Spain.1252'
+       CONNECTION LIMIT = -1;
+
+CREATE TABLE clientes
+(
+  
+id_cliente integer NOT NULL,
+  
+nombre character(60),
+  
+tipo_docu character(4),
+  
+documento character(60),
+  
+letra character(1),
+  
+direccion character(60),
+  
+pers_cont character(60),
+  
+email character(60),
+  
+telf1 character(20),
+  
+telf2 character(20),
+  
+cpostal character(10),
+  
+ciudad character(50),
+  
+provin character(60),
+  
+tipo_cte character(1) NOT NULL DEFAULT 'C'::bpchar,
+  
+CONSTRAINT cte_id_pk PRIMARY KEY (id_cliente)
+)
+WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE clientes
+  OWNER TO postgres;
+
+
+CREATE TABLE registros
+(
+  delegacion character(1) NOT NULL,
+  
+n_reg integer NOT NULL,
+  
+fec_ent date,
+  
+id_cte integer NOT NULL DEFAULT 0,
+  
+id_titular integer NOT NULL DEFAULT 0,
+  
+seccion_int character(10),
+  
+seccion character(30),
+  
+t_tramite character(30),
+  
+matricula character(10),
+  
+estado character(20),
+  
+factura integer NOT NULL DEFAULT 0,
+  
+fec_fra date,
+  
+observacion character(180),
+  
+honorarios numeric(10,2) NOT NULL DEFAULT 0,
+  
+p_iva smallint NOT NULL DEFAULT 0,
+  
+tasa numeric(10,2) NOT NULL DEFAULT 0,
+  
+exp_tl character(20),
+  
+fec_pre_exp date,
+  
+et_tasa bigint NOT NULL DEFAULT 0,
+  
+t_tasa character(5),
+  
+cambio_serv character(20),
+  
+bate_ant character(10),
+  
+nif character(12),
+  
+dcho_col numeric(10,2) NOT NULL DEFAULT 0,
+  
+t_cte_fra character(1),
+  
+et_tasa2 bigint NOT NULL DEFAULT 0,
+  
+t_tasa2 character(5),
+  
+et_tasa3 bigint NOT NULL DEFAULT 0,
+  
+t_tasa3 character(5),
+  
+et_tasa4 bigint NOT NULL DEFAULT 0,
+  
+t_tasa4 character(5),
+  
+descripcion character(150),
+  
+ruta_pdf character(100),
+
+vehiculo character(50),
+descrip1 character(100),
+  
+impor1 numeric(10,2) NOT NULL DEFAULT 0,
+  
+iva1_sn boolean NOT NULL DEFAULT true,
+  
+descrip2 character(100),
+  
+impor2 numeric(10,2) NOT NULL DEFAULT 0,
+  
+iva2_sn boolean NOT NULL DEFAULT true,  
+CONSTRAINT reg_id_pk PRIMARY KEY (delegacion, n_reg),
+  
+CONSTRAINT reg_cte_fk FOREIGN KEY (id_cte)
+      REFERENCES clientes (id_cliente) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  
+CONSTRAINT reg_tit_fk FOREIGN KEY (id_titular)
+      REFERENCES clientes (id_cliente) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION)
+WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE registros
+  OWNER TO postgres;
+
+CREATE TABLE tasas
+(
+  
+ejercicio smallint NOT NULL,
+  
+codigo character(5) NOT NULL,
+  
+descripcion character(100),
+  
+importe numeric(10,2) NOT NULL DEFAULT 0,
+  
+CONSTRAINT ta_ej_pk PRIMARY KEY (ejercicio, codigo)
+);
+ALTER TABLE tasas
+  OWNER TO postgres;
+
+
+
+insert into clientes values(0,' ','DNI',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','C');
+
+insert into registros values('Y',0,'29/12/2014',0,0,' ',' ',' ',' ',' ',0,'29/12/2014',' ',0,0,0,' ','29/12/2014',0,' ',' ',' ',' ',0,' ',0,' ',0,' ',0,' ',' ',' ',' ',' ',0,true,' ',0,true);
+
+insert into tasas values(2015,'0',' ',0);

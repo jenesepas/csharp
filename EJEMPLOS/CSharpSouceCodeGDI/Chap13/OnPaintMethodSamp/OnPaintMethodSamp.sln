@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnPaintMethodSamp", "OnPaintMethodSamp.csproj", "{4F2F806E-ACAE-4960-B165-B0B6851CE075}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4F2F806E-ACAE-4960-B165-B0B6851CE075}.Debug.ActiveCfg = Debug|.NET
+		{4F2F806E-ACAE-4960-B165-B0B6851CE075}.Debug.Build.0 = Debug|.NET
+		{4F2F806E-ACAE-4960-B165-B0B6851CE075}.Release.ActiveCfg = Release|.NET
+		{4F2F806E-ACAE-4960-B165-B0B6851CE075}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

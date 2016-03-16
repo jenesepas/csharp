@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClippingRgnSamp2", "ClippingRgnSamp2.csproj", "{EA806403-A3E0-11D6-BCD5-0060B0EE7607}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EA806403-A3E0-11D6-BCD5-0060B0EE7607}.Debug.ActiveCfg = Debug|.NET
+		{EA806403-A3E0-11D6-BCD5-0060B0EE7607}.Debug.Build.0 = Debug|.NET
+		{EA806403-A3E0-11D6-BCD5-0060B0EE7607}.Release.ActiveCfg = Release|.NET
+		{EA806403-A3E0-11D6-BCD5-0060B0EE7607}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

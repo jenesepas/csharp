@@ -1,0 +1,74 @@
+2015-04-06 17:11:43 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-06 13:48:14 CEST
+2015-04-06 17:11:43 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 17:11:43 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-06 17:11:43 CEST LOG:  record with zero length at 0/1ACDC70
+2015-04-06 17:11:43 CEST LOG:  no se requiere redo
+2015-04-06 17:11:44 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-06 17:11:45 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-06 17:11:45 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-06 17:11:46 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-06 17:24:26 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:28:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:29:56 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:32:07 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:32:07 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:34:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:34:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:34:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:36:09 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:36:28 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:36:28 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:36:28 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:36:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:37:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:38:51 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:43:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:43:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:43:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:43:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:43:49 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:43:49 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-06 17:44:58 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:44:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:45:08 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:45:08 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:45:18 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:45:28 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:45:38 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:45:48 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:45:58 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:45:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:46:08 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:46:08 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:46:18 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:46:28 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:46:38 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:46:48 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:46:58 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:46:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:47:08 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:47:08 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:47:18 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:47:28 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:47:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:48:08 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:48:08 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:48:18 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:48:28 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:48:38 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:48:48 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:48:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:49:08 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:49:08 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:49:18 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:49:28 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:49:38 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:49:48 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:49:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:50:08 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:50:08 CEST WARNING:  pgstat wait timeout
+2015-04-06 17:50:18 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:50:28 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:50:38 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:50:48 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied
+2015-04-06 17:50:58 CEST LOG:  no se pudo cambiar el nombre al archivo temporal de estadísticas de «pg_stat_tmp/db_0.tmp» a «pg_stat_tmp/db_0.stat»: Permission denied

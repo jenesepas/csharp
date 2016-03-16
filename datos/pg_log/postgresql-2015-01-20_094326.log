@@ -1,0 +1,43 @@
+2015-01-20 09:43:45 CET LOG:  el sistema de bases de datos fue apagado en 2015-01-20 09:35:00 CET
+2015-01-20 09:43:45 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 09:43:45 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 09:43:45 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-20 09:43:46 CET FATAL:  el sistema de base de datos está iniciándose
+2015-01-20 09:43:47 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-20 09:43:47 CET LOG:  lanzador de autovacuum iniciado
+2015-01-20 10:04:06 CET ERROR:  error de sintaxis en o cerca de Â«insetÂ» en carÃ¡cter 1
+2015-01-20 10:04:06 CET SENTENCIA:  inset into cabfac values(2,'03/01/2015',1,10,11.11,18);
+2015-01-20 10:14:29 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 11:05:49 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 11:28:09 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 11:28:09 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 11:54:44 CET ERROR:  la columna Â«impor1Â» contiene valores nulos
+2015-01-20 11:54:44 CET SENTENCIA:  ALTER TABLE registros
+	   ALTER COLUMN impor1 SET DEFAULT 0;
+	ALTER TABLE registros
+	   ALTER COLUMN impor1 SET NOT NULL;
+	
+2015-01-20 11:57:14 CET ERROR:  no existe la columna Â«tÂ»
+2015-01-20 11:57:14 CET SENTENCIA:  ALTER TABLE registros
+	   ALTER COLUMN iva1_sn SET DEFAULT t;
+	ALTER TABLE registros
+	   ALTER COLUMN iva1_sn SET NOT NULL;
+	
+2015-01-20 12:44:29 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 12:45:48 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 12:49:27 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 12:49:27 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 13:18:24 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-01-20 13:54:44 CET LOG:  se recibió petición de apagado rápido
+2015-01-20 13:54:44 CET LOG:  abortando transacciones activas
+2015-01-20 13:54:44 CET LOG:  apagando lanzador de autovacuum
+2015-01-20 13:54:44 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-20 13:54:45 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-20 13:54:45 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-20 13:54:45 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-20 13:54:45 CET ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-01-20 13:54:46 CET LOG:  apagando lanzador de autovacuum
+2015-01-20 13:54:48 CET LOG:  proceso escritor de WAL (PID 5876) fue terminado por una excepción 0xC0000142
+2015-01-20 13:54:48 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-20 13:54:48 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-20 13:54:50 CET LOG:  apagado anormal del sistema de bases de datos

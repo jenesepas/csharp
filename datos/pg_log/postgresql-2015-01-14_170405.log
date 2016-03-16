@@ -1,0 +1,15 @@
+2015-01-14 17:04:05 CET LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-01-13 09:44:21 CET
+2015-01-14 17:04:05 CET LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-01-14 17:04:05 CET LOG:  record with zero length at 0/185CAF8
+2015-01-14 17:04:05 CET LOG:  no se requiere redo
+2015-01-14 17:04:05 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-01-14 17:04:06 CET LOG:  lanzador de autovacuum iniciado
+2015-01-14 17:40:25 CET LOG:  proceso escritor de WAL (PID 5784) fue terminado por una excepción 0xC0000142
+2015-01-14 17:40:25 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-01-14 17:40:25 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-01-14 17:40:26 CET WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-01-14 17:40:26 CET DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-01-14 17:40:26 CET HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-01-14 17:40:26 CET LOG:  se recibió petición de apagado rápido
+2015-01-14 17:40:26 CET LOG:  abortando transacciones activas
+2015-01-14 17:40:27 CET LOG:  apagado anormal del sistema de bases de datos

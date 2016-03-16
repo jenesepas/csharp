@@ -1,0 +1,17 @@
+2015-06-15 09:17:31 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-06-15 09:17:31 CEST LOG:  el sistema de bases de datos fue apagado en 2015-06-14 23:04:43 CEST
+2015-06-15 09:17:32 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-06-15 09:17:32 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-06-15 09:17:33 CEST LOG:  lanzador de autovacuum iniciado
+2015-06-15 09:17:34 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-06-15 13:05:03 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-15 13:05:05 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-15 13:05:05 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-15 13:05:05 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-15 13:05:05 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-15 13:05:05 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-06-15 13:05:06 CEST LOG:  se recibió petición de apagado rápido
+2015-06-15 13:05:07 CEST LOG:  abortando transacciones activas
+2015-06-15 13:05:07 CEST LOG:  apagando lanzador de autovacuum
+2015-06-15 13:05:13 CEST LOG:  apagando
+2015-06-15 13:05:18 CEST LOG:  el sistema de bases de datos está apagado

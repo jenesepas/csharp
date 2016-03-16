@@ -1,0 +1,13 @@
+E:\tmp\csharp\ejercicios\Puche\Puche\bin\Release\Puche.exe
+E:\tmp\csharp\ejercicios\Puche\Puche\bin\Release\Puche.pdb
+E:\tmp\csharp\ejercicios\Puche\Puche\bin\Release\Mono.Security.dll
+E:\tmp\csharp\ejercicios\Puche\Puche\bin\Release\Npgsql.dll
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.Frm_busca_reg.resources
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.Frm_busca_cte.resources
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.MClientes.resources
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.Menu.resources
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.MRegistros.resources
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.Properties.Resources.resources
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.csproj.GenerateResource.Cache
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.exe
+E:\tmp\csharp\ejercicios\Puche\Puche\obj\x86\Release\Puche.pdb

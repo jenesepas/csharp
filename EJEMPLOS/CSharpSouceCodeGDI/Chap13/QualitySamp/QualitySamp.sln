@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualitySamp", "QualitySamp.csproj", "{3CCA4340-D44A-452A-99A6-99CF45CEFCDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3CCA4340-D44A-452A-99A6-99CF45CEFCDD}.Debug.ActiveCfg = Debug|.NET
+		{3CCA4340-D44A-452A-99A6-99CF45CEFCDD}.Debug.Build.0 = Debug|.NET
+		{3CCA4340-D44A-452A-99A6-99CF45CEFCDD}.Release.ActiveCfg = Release|.NET
+		{3CCA4340-D44A-452A-99A6-99CF45CEFCDD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

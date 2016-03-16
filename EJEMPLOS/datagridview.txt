@@ -1,0 +1,85 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Npgsql;
+
+namespace Puche
+{
+    public partial class MTasas : Form
+    {
+        NpgsqlCommand comando;
+        NpgsqlDataAdapter adaptador;
+        NpgsqlCommandBuilder constructor;
+        DataSet conjunto;
+        DataTable tabla;
+        
+        public MTasas()
+        {
+            InitializeComponent();
+        }
+
+        private void btt_consultar_Click(object sender, EventArgs e)
+        {
+            string sql = "select * from tasas order by ejercicio,codigo";
+            using (BDConexion.ObtenerConexion())
+            {
+                comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());
+                comando.CommandTimeout = 5 * 60;
+                adaptador = new NpgsqlDataAdapter(comando);
+                constructor = new NpgsqlCommandBuilder(adaptador);
+
+                conjunto = new DataSet();
+                adaptador.Fill(conjunto, "Tasas");
+                tabla = conjunto.Tables["Tasas"];
+
+                comando.Connection.Close();
+            }
+            dgv_tasas.DataSource = conjunto.Tables["Tasas"];
+            dgv_tasas.ReadOnly = true;
+            dgv_tasas.AutoResizeColumns();
+
+            
+
+            btt_new_tas.Enabled = true;
+            btt_save_tas.Enabled = true;
+
+            //dgv_tasas.SelectionMode = DataGridViewSelectionMode.FullColumnSelect;
+            //dgv_tasas.DataSource = Buscar(0,"");
+            
+            
+            
+        }
+
+        private void btt_save_tas_Click(object sender, EventArgs e)
+        {
+            adaptador.Update(tabla);
+            dgv_tasas.ReadOnly = true;
+            btt_save_tas.Enabled = false;
+            btt_new_tas.Enabled = false;
+            
+        }
+
+        private void btt_new_tas_Click(object sender, EventArgs e)
+        {
+            dgv_tasas.ReadOnly = false;
+            btt_save_tas.Enabled = true;
+            btt_new_tas.Enabled = false;
+
+        }
+
+        private void btt_del_tas_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿ Estás seguro de borrar esta tasa ?", "Borrar", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                dgv_tasas.Rows.RemoveAt(dgv_tasas.SelectedRows[0].Index);
+                adaptador.Update(tabla);
+            }
+        }
+    }
+}

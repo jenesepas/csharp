@@ -1,0 +1,77 @@
+2015-04-15 09:25:58 CEST LOG:  el sistema de bases de datos fue apagado en 2015-04-14 21:16:12 CEST
+2015-04-15 09:25:58 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-15 09:25:59 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-15 09:25:59 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-15 09:49:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 09:52:03 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 10:00:15 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 10:05:26 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 10:19:33 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 10:56:07 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:11:45 CEST ERROR:  no existe la columna Â«id_cteÂ» en carÃ¡cter 30
+2015-04-15 11:11:45 CEST SENTENCIA:  select * from clientes where id_cte between 0 and 999999 order by id_cliente
+2015-04-15 11:12:23 CEST ERROR:  no existe la columna Â«id_cteÂ» en carÃ¡cter 30
+2015-04-15 11:12:23 CEST SENTENCIA:  select * from clientes where id_cte between 0 and 999999 order by id_cliente
+2015-04-15 11:12:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:13:12 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:15:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:16:10 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:19:26 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:19:26 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:21:07 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:21:07 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:21:07 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:24:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:27:04 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:27:04 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:28:04 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:29:55 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:31:30 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:32:49 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:34:03 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:34:03 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:34:03 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:34:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:34:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:35:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:46:49 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:48:42 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 11:55:55 CEST ERROR:  la columna Â«cta_cbleÂ» es de tipo "char" pero la expresiÃ³n default es de tipo integer
+2015-04-15 11:55:55 CEST HINT:  NecesitarÃ¡ reescribir la expresiÃ³n o aplicarle una conversiÃ³n de tipo.
+2015-04-15 11:55:55 CEST SENTENCIA:  ALTER TABLE clientes
+	   ALTER COLUMN cta_cble SET DEFAULT 43000000;
+	
+2015-04-15 11:56:11 CEST ERROR:  no existe la columna Â«43000000Â»
+2015-04-15 11:56:11 CEST SENTENCIA:  ALTER TABLE clientes
+	   ALTER COLUMN cta_cble SET DEFAULT "43000000";
+	
+2015-04-15 12:23:00 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:25:22 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:26:09 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:27:30 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:27:30 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:27:30 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:30:18 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:30:18 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:35:20 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:38:08 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:43:16 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:44:53 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:48:40 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:49:39 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:54:44 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:55:41 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:56:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 12:59:52 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 13:00:32 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-15 13:01:53 CEST LOG:  se recibió petición de apagado rápido
+2015-04-15 13:01:53 CEST LOG:  abortando transacciones activas
+2015-04-15 13:01:54 CEST LOG:  apagando lanzador de autovacuum
+2015-04-15 13:01:54 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-15 13:01:57 CEST LOG:  proceso escritor de WAL (PID 4864) fue terminado por una excepción 0xC0000142
+2015-04-15 13:01:57 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-15 13:01:57 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-15 13:01:57 CEST WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-04-15 13:01:57 CEST DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-04-15 13:01:57 CEST HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-04-15 13:01:58 CEST LOG:  apagado anormal del sistema de bases de datos

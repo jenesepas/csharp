@@ -1,0 +1,36 @@
+F:\pendrive\develop\Utilidades\cartera\cartera\bin\Debug\cartera.exe
+F:\pendrive\develop\Utilidades\cartera\cartera\bin\Debug\cartera.pdb
+F:\pendrive\develop\Utilidades\cartera\cartera\bin\Debug\Npgsql.dll
+F:\pendrive\develop\Utilidades\cartera\cartera\bin\Debug\Mono.Security.dll
+F:\pendrive\develop\Utilidades\cartera\cartera\bin\Debug\Npgsql.pdb
+F:\pendrive\develop\Utilidades\cartera\cartera\bin\Debug\Npgsql.xml
+F:\pendrive\develop\Utilidades\cartera\cartera\obj\x86\Debug\cartera.Properties.Resources.resources
+F:\pendrive\develop\Utilidades\cartera\cartera\obj\x86\Debug\cartera.csproj.GenerateResource.Cache
+F:\pendrive\develop\Utilidades\cartera\cartera\obj\x86\Debug\cartera.exe
+F:\pendrive\develop\Utilidades\cartera\cartera\obj\x86\Debug\cartera.pdb
+F:\pendrive\develop\Utilidades\cartera\cartera\obj\x86\Debug\cartera.frmCartera.resources
+C:\Users\Incidencias\Desktop\cartera\obj\x86\Debug\cartera.exe
+C:\Users\Incidencias\Desktop\cartera\obj\x86\Debug\cartera.pdb
+C:\Users\Incidencias\Desktop\cartera\bin\Debug\cartera.exe
+C:\Users\Incidencias\Desktop\cartera\bin\Debug\cartera.pdb
+C:\Users\Incidencias\Desktop\cartera\bin\Debug\Npgsql.dll
+C:\Users\Incidencias\Desktop\cartera\bin\Debug\Mono.Security.dll
+C:\Users\Incidencias\Desktop\cartera\bin\Debug\Npgsql.pdb
+C:\Users\Incidencias\Desktop\cartera\bin\Debug\Npgsql.xml
+C:\Users\Incidencias\Desktop\cartera\obj\x86\Debug\cartera.csprojResolveAssemblyReference.cache
+C:\Users\Incidencias\Desktop\cartera\obj\x86\Debug\cartera.frmCartera.resources
+C:\Users\Incidencias\Desktop\cartera\obj\x86\Debug\cartera.Properties.Resources.resources
+C:\Users\Incidencias\Desktop\cartera\obj\x86\Debug\cartera.csproj.GenerateResource.Cache
+F:\pendrive\develop\Proyectos dwinma\cartera\obj\x86\Debug\cartera.exe
+F:\pendrive\develop\Proyectos dwinma\cartera\obj\x86\Debug\cartera.pdb
+E:\tmp\csharp\ejercicios\Escandallo\obj\x86\Debug\cartera.exe
+E:\tmp\csharp\ejercicios\Escandallo\obj\x86\Debug\cartera.pdb
+E:\tmp\csharp\ejercicios\Escandallo\bin\Debug\cartera.exe
+E:\tmp\csharp\ejercicios\Escandallo\bin\Debug\cartera.pdb
+E:\tmp\csharp\ejercicios\Escandallo\bin\Debug\Mono.Security.dll
+E:\tmp\csharp\ejercicios\Escandallo\bin\Debug\Npgsql.pdb
+E:\tmp\csharp\ejercicios\Escandallo\bin\Debug\Npgsql.xml
+E:\tmp\csharp\ejercicios\Escandallo\obj\x86\Debug\cartera.csprojResolveAssemblyReference.cache
+E:\tmp\csharp\ejercicios\Escandallo\obj\x86\Debug\cartera.frmCartera.resources
+E:\tmp\csharp\ejercicios\Escandallo\obj\x86\Debug\cartera.Properties.Resources.resources
+E:\tmp\csharp\ejercicios\Escandallo\obj\x86\Debug\cartera.csproj.GenerateResource.Cache

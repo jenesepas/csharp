@@ -1,0 +1,42 @@
+CREATE TABLE cabfac
+(
+  numfac integer,
+  fec_fra date,
+  cliente integer,
+  base numeric(5,2),
+  tasas numeric(5,2),
+  p_iva smallint
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE cabfac
+  OWNER TO postgres;
+
+CREATE TABLE clientes
+(
+  cod_cte smallint NOT NULL,
+  nombre character(50),
+  nif character(12),
+  documento character(30),
+  CONSTRAINT cte_cod_pk PRIMARY KEY (cod_cte)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE clientes
+  OWNER TO postgres;
+
+CREATE TABLE linfac
+(
+  numfac integer,
+  linea smallint,
+  descripcion character(50),
+  cantidad numeric(5,2),
+  precio numeric(5,2)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE linfac
+  OWNER TO postgres;

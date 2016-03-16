@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainsMethod", "ContainsMethod.csproj", "{CD8E6822-348E-4780-9193-ED690A620E58}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CD8E6822-348E-4780-9193-ED690A620E58}.Debug.ActiveCfg = Debug|.NET
+		{CD8E6822-348E-4780-9193-ED690A620E58}.Debug.Build.0 = Debug|.NET
+		{CD8E6822-348E-4780-9193-ED690A620E58}.Release.ActiveCfg = Release|.NET
+		{CD8E6822-348E-4780-9193-ED690A620E58}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

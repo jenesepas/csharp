@@ -1,0 +1,13 @@
+2015-04-20 10:38:48 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2015-04-18 10:23:03 CEST
+2015-04-20 10:38:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-20 10:38:48 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+2015-04-20 10:38:49 CEST LOG:  record with zero length at 0/21D2DA0
+2015-04-20 10:38:49 CEST LOG:  no se requiere redo
+2015-04-20 10:38:49 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-20 10:38:50 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-20 10:38:50 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-20 10:59:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-20 11:04:38 CEST LOG:  se recibió petición de apagado rápido
+2015-04-20 11:04:38 CEST LOG:  abortando transacciones activas
+2015-04-20 11:04:38 CEST LOG:  apagando lanzador de autovacuum
+2015-04-20 11:04:38 CEST ERROR:  cancelando la sentencia debido a una petición del usuario

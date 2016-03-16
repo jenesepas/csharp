@@ -1,0 +1,18 @@
+2015-03-24 09:32:32 CET LOG:  el sistema de bases de datos fue apagado en 2015-03-23 13:51:09 CET
+2015-03-24 09:32:32 CET FATAL:  el sistema de base de datos está iniciándose
+2015-03-24 09:32:33 CET LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-03-24 09:32:33 CET LOG:  lanzador de autovacuum iniciado
+2015-03-24 09:32:34 CET FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-03-24 10:57:58 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-24 12:08:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-24 12:08:47 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-24 13:52:59 CET LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-03-24 13:59:10 CET LOG:  proceso escritor de WAL (PID 2636) fue terminado por una excepción 0xC0000142
+2015-03-24 13:59:10 CET HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-03-24 13:59:10 CET LOG:  terminando todos los otros procesos de servidor activos
+2015-03-24 13:59:10 CET WARNING:  terminando la conexión debido a una falla en otro proceso servidor
+2015-03-24 13:59:11 CET DETALLE:  Postmaster ha ordenado que este proceso servidor cancele la transacción en curso y finalice la conexión, porque otro proceso servidor ha terminado anormalmente y podría haber corrompido la memoria compartida.
+2015-03-24 13:59:11 CET HINT:  Dentro de un momento debería poder reconectarse y repetir la consulta.
+2015-03-24 13:59:11 CET LOG:  se recibió petición de apagado rápido
+2015-03-24 13:59:12 CET LOG:  abortando transacciones activas
+2015-03-24 13:59:13 CET LOG:  apagado anormal del sistema de bases de datos

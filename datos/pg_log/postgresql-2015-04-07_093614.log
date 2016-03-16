@@ -1,0 +1,41 @@
+2015-04-07 09:36:19 CEST LOG:  el sistema de bases de datos fue apagado en 2015-04-07 08:11:48 CEST
+2015-04-07 09:36:20 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-07 09:36:21 CEST FATAL:  el sistema de base de datos está iniciándose
+2015-04-07 09:36:22 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+2015-04-07 09:36:23 CEST FATAL:  no hay una línea en pg_hba.conf para «::1», usuario «PORTATIL_JA$», base de datos «postgres», SSL inactivo
+2015-04-07 09:36:23 CEST LOG:  lanzador de autovacuum iniciado
+2015-04-07 09:49:11 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 09:52:30 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 09:53:13 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 10:32:02 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 10:34:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 10:34:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 10:34:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 10:34:48 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 10:39:33 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:00:35 CEST ERROR:  la base de datos Â«asesoria0Â» estÃ¡ siendo utilizada por otros usuarios
+2015-04-07 13:00:35 CEST DETALLE:  Hay 1 otra sesiÃ³n usando la base de datos.
+2015-04-07 13:00:35 CEST SENTENCIA:  ALTER DATABASE asesoria0
+	  RENAME TO asesoria;
+	
+2015-04-07 13:03:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:06:45 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:09:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:09:24 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:12:05 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:13:06 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:13:21 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:13:47 CEST LOG:  no se pudo recibir datos del cliente: unrecognized winsock error 10061
+2015-04-07 13:18:31 CEST LOG:  se recibió petición de apagado rápido
+2015-04-07 13:18:31 CEST LOG:  abortando transacciones activas
+2015-04-07 13:18:31 CEST LOG:  apagando lanzador de autovacuum
+2015-04-07 13:18:31 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-07 13:18:32 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-07 13:18:33 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-07 13:18:33 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-07 13:18:33 CEST ERROR:  cancelando la sentencia debido a una petición del usuario
+2015-04-07 13:18:34 CEST LOG:  apagando lanzador de autovacuum
+2015-04-07 13:18:34 CEST LOG:  proceso escritor de WAL (PID 3300) fue terminado por una excepción 0xC0000142
+2015-04-07 13:18:34 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+2015-04-07 13:18:34 CEST LOG:  terminando todos los otros procesos de servidor activos
+2015-04-07 13:18:35 CEST LOG:  apagado anormal del sistema de bases de datos
