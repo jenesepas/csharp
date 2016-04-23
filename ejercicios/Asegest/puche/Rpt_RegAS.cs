@@ -29,6 +29,7 @@ namespace Asegest
         List<Rg_mes_secc> _registros = new List<Rg_mes_secc>();
              
         string seccion;
+        string estado;
         int[] impor_meses = new int[12];
         int[] timpor_meses = new int[12];
         int tacum=0;
@@ -61,6 +62,7 @@ namespace Asegest
                         deleg = 'A';
                 }
                 seccion = cb_secc.Text.Trim();
+                estado = cb_estado_lrg.Text.Trim();
                 year = Convert.ToInt16(tb_year.Text);
 
                 //vacio lista de registros
@@ -69,7 +71,7 @@ namespace Asegest
                 //si seccion no vacia = elegimos 1 seccion
                 if (!string.IsNullOrWhiteSpace(seccion))
                 {
-                    impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, seccion,0));
+                    impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, seccion, estado, 0));
                     _registros.Add(Asigna_rg_acum(seccion, impor_meses));
                     //for (i = 0; i <= 11; i++)
                     //{
@@ -82,7 +84,7 @@ namespace Asegest
                     //sacamos los acumulados(12) x cada seccion(10)
                     for (i = 0; i <= 9; i++)
                     {
-                        impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, secciones[i],0));                                                
+                        impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, secciones[i], estado, 0));                                                
                         _registros.Add(Asigna_rg_acum(secciones[i], impor_meses));
                     }
                 }
@@ -151,24 +153,27 @@ namespace Asegest
             ev.Graphics.DrawLine(new Pen(Color.Black, 1), xPos, yPos + 70, xPos + 1080, yPos + 70);
 
             string titulo = "REGISTROS ACUMULADOS POR MESES Y SECCION DEL AÑO: "+ tb_year.Text;
+            
 
             switch (deleg)
             {
                 case 'Y':
-                    ndeleg=" - ( Deleg.: Yecla )";
+                    ndeleg=" - (Deleg.: Yecla)";
                     break;
                 case 'M':
-                    ndeleg=" - ( Deleg.: Murcia )";
+                    ndeleg=" - (Deleg.: Murcia)";
                     break;
                 case 'A':
-                    ndeleg=" - ( Deleg.: Albacete )";
+                    ndeleg=" - (Deleg.: Albacete)";
                     break;
             }
+            if (estado != "")
+                ndeleg = ndeleg + " - (" + estado + ")";
 
             printFont = new Font("Arial", 14, FontStyle.Bold | FontStyle.Underline);
-            ev.Graphics.DrawString(titulo, printFont, Brushes.Black, xPos + 120, yPos + 130);
+            ev.Graphics.DrawString(titulo, printFont, Brushes.Black, xPos + 100, yPos + 130);
             printFont = new Font("Arial", 12, FontStyle.Bold | FontStyle.Regular);
-            ev.Graphics.DrawString(ndeleg, printFont, Brushes.Black, xPos + 800, yPos + 130);
+            ev.Graphics.DrawString(ndeleg, printFont, Brushes.Black, xPos + 780, yPos + 130);
 
             n_lineas = n_lineas + 2;
             yPos = yPos + 150;
@@ -321,6 +326,7 @@ namespace Asegest
             }
 
             cb_secc.ResetText();
+            cb_estado_lrg.ResetText();
             //dtp_d_ffra.Value = Convert.ToDateTime("01/01/" + DateTime.Today.Year.ToString());
             tb_year.Text = DateTime.Today.Year.ToString();
             

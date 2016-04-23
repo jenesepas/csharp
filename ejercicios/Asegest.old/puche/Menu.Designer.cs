@@ -44,6 +44,7 @@
             this.regAcumFrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.acRegsXSecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acRegsXSeccIntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enlaceAContabilidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
@@ -74,7 +75,6 @@
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.acRegsXSeccIntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -204,10 +204,19 @@
             // 
             // acRegsXSecciónToolStripMenuItem
             // 
+            this.acRegsXSecciónToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("acRegsXSecciónToolStripMenuItem.Image")));
             this.acRegsXSecciónToolStripMenuItem.Name = "acRegsXSecciónToolStripMenuItem";
             this.acRegsXSecciónToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.acRegsXSecciónToolStripMenuItem.Text = "Ac. Regs. x Sección";
             this.acRegsXSecciónToolStripMenuItem.Click += new System.EventHandler(this.acRegsXSecciónToolStripMenuItem_Click);
+            // 
+            // acRegsXSeccIntToolStripMenuItem
+            // 
+            this.acRegsXSeccIntToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("acRegsXSeccIntToolStripMenuItem.Image")));
+            this.acRegsXSeccIntToolStripMenuItem.Name = "acRegsXSeccIntToolStripMenuItem";
+            this.acRegsXSeccIntToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.acRegsXSeccIntToolStripMenuItem.Text = "Ac. Regs x Secc. Int.";
+            this.acRegsXSeccIntToolStripMenuItem.Click += new System.EventHandler(this.acRegsXSeccIntToolStripMenuItem_Click);
             // 
             // utilidadesToolStripMenuItem
             // 
@@ -462,13 +471,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(792, 513);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // acRegsXSeccIntToolStripMenuItem
-            // 
-            this.acRegsXSeccIntToolStripMenuItem.Name = "acRegsXSeccIntToolStripMenuItem";
-            this.acRegsXSeccIntToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.acRegsXSeccIntToolStripMenuItem.Text = "Ac. Regs x Secc. Int.";
-            this.acRegsXSeccIntToolStripMenuItem.Click += new System.EventHandler(this.acRegsXSeccIntToolStripMenuItem_Click);
             // 
             // Menu
             // 

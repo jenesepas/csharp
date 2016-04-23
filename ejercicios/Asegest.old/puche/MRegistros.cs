@@ -39,6 +39,8 @@ namespace Asegest
         */
         private void MRegistros_Load(object sender, EventArgs e)
         {
+            this.Text = this.Text.Trim() + General.Saca_titulo_win();
+
             Deshabilitar_rg();
             Deshabilitar_cursores_rg();
             Deshabilitar_lf();

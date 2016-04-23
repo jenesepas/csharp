@@ -544,7 +544,7 @@ namespace Asegest
                                                 char pt_cte, int pd_cte, int ph_cte) 
         {
             string sql = "";
-            string ordenado = "";
+            //string ordenado = "";
             List<Fras_Ctes> _lista = new List<Fras_Ctes>();
 
             
@@ -783,14 +783,22 @@ namespace Asegest
 
         
         //public static List<Rg_mes_secc> Reg_Acum_Mes_Seccion(char pdeleg, short panyo, string pseccion)
-        public static int[] Reg_Acum_Mes_Seccion(char pdeleg, short panyo, string pseccion)
+        public static int[] Reg_Acum_Mes_Seccion(char pdeleg, short panyo, string pseccion, short popcion)
         {         
             int[] pimpor_meses = new int[12];
             //List<Rg_mes_secc> _lista = new List<Rg_mes_secc>();
-            short index = 0;            
+            //short index = 0;
+            string sql = "";
 
-            string sql = "select (Extract(Month from fec_ent)) mes, count(*) from registros where delegacion='" + pdeleg + "' and (Extract(Year from fec_ent))="+ panyo +
+            //opcion=0 --> seccion
+            if (popcion == 0)
+                sql = "select (Extract(Month from fec_ent)) mes, count(*) from registros where delegacion='" + pdeleg + "' and (Extract(Year from fec_ent))="+ panyo +
                          " and seccion='"+ pseccion +"' group by mes order by mes";
+            //opcion=1 --> seccion_int
+            else
+                sql = "select (Extract(Month from fec_ent)) mes, count(*) from registros where delegacion='" + pdeleg + "' and (Extract(Year from fec_ent))="+ panyo +
+                         " and seccion_int='"+ pseccion +"' group by mes order by mes";
+
             using (BDConexion.ObtenerConexion())
             {
                 NpgsqlCommand comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());

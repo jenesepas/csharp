@@ -31,10 +31,12 @@ namespace Asegest
         string seccion;
         int[] impor_meses = new int[12];
         int[] timpor_meses = new int[12];
+        int tacum=0;
         short i;
-        short y;
+        //short y;
         short year;
         char deleg = ' ';
+        string ndeleg = "";
         string[] secciones = { "Hacienda", "Seg. Social", "Extranjería", "Conductores", "Vehículos", "Transporte", "Sanciones Tráfico", "Escrituras", "Herencias", "Varios" };
         
         public Rpt_RegAS()
@@ -67,7 +69,7 @@ namespace Asegest
                 //si seccion no vacia = elegimos 1 seccion
                 if (!string.IsNullOrWhiteSpace(seccion))
                 {
-                    impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, seccion));
+                    impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, seccion,0));
                     _registros.Add(Asigna_rg_acum(seccion, impor_meses));
                     //for (i = 0; i <= 11; i++)
                     //{
@@ -80,7 +82,7 @@ namespace Asegest
                     //sacamos los acumulados(12) x cada seccion(10)
                     for (i = 0; i <= 9; i++)
                     {
-                        impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, secciones[i]));                                                
+                        impor_meses = (Reg_Opera.Reg_Acum_Mes_Seccion(deleg, year, secciones[i],0));                                                
                         _registros.Add(Asigna_rg_acum(secciones[i], impor_meses));
                     }
                 }
@@ -148,10 +150,25 @@ namespace Asegest
             ev.Graphics.DrawString("YECMUR", printFont, Brushes.Black, xPos, yPos + 40);
             ev.Graphics.DrawLine(new Pen(Color.Black, 1), xPos, yPos + 70, xPos + 1080, yPos + 70);
 
-            string titulo = "REGISTROS ACUMULADOS POR MESES DEL AÑO: "+ tb_year.Text;
-            
+            string titulo = "REGISTROS ACUMULADOS POR MESES Y SECCION DEL AÑO: "+ tb_year.Text;
+
+            switch (deleg)
+            {
+                case 'Y':
+                    ndeleg=" - ( Deleg.: Yecla )";
+                    break;
+                case 'M':
+                    ndeleg=" - ( Deleg.: Murcia )";
+                    break;
+                case 'A':
+                    ndeleg=" - ( Deleg.: Albacete )";
+                    break;
+            }
+
             printFont = new Font("Arial", 14, FontStyle.Bold | FontStyle.Underline);
-            ev.Graphics.DrawString(titulo, printFont, Brushes.Black, xPos + 250, yPos + 130);
+            ev.Graphics.DrawString(titulo, printFont, Brushes.Black, xPos + 120, yPos + 130);
+            printFont = new Font("Arial", 12, FontStyle.Bold | FontStyle.Regular);
+            ev.Graphics.DrawString(ndeleg, printFont, Brushes.Black, xPos + 800, yPos + 130);
 
             n_lineas = n_lineas + 2;
             yPos = yPos + 150;
@@ -171,7 +188,7 @@ namespace Asegest
             ev.Graphics.DrawString("OCT.", printFont, Brushes.Black, xPos + 870, yPos + 50);
             ev.Graphics.DrawString("NOV.", printFont, Brushes.Black, xPos + 950, yPos + 50);
             ev.Graphics.DrawString("DIC.", printFont, Brushes.Black, xPos + 1030, yPos + 50);
-            ev.Graphics.DrawLine(new Pen(Color.Black, 2), xPos, yPos + 70, xPos + 1080, yPos + 70);
+            ev.Graphics.DrawLine(new Pen(Color.Black, 1), xPos, yPos + 70, xPos + 1080, yPos + 70);
 
             n_lineas = n_lineas + 2;
             yPos = yPos + 70;
@@ -232,9 +249,19 @@ namespace Asegest
                     ev.Graphics.DrawString(string.Format("{0:##,##0}", timpor_meses[9]), printFont, Brushes.Black, xPos + 920, yPos + 10, drawFormat);
                     ev.Graphics.DrawString(string.Format("{0:##,##0}", timpor_meses[10]), printFont, Brushes.Black, xPos + 1000, yPos + 10, drawFormat);
                     ev.Graphics.DrawString(string.Format("{0:##,##0}", timpor_meses[11]), printFont, Brushes.Black, xPos + 1080, yPos + 10, drawFormat);
+
+                    for (i = 0; i <= 11; i++)
+                    {
+                        tacum = tacum + timpor_meses[i];
+                        
+                    }
+
+                    printFont = new Font("Arial", 12, FontStyle.Bold);
+                    ev.Graphics.DrawString("Acumulado Total: ", printFont, Brushes.Black, xPos + 10, yPos + 50);
+                    ev.Graphics.DrawString(string.Format("{0:##,##0}", tacum), printFont, Brushes.Black, xPos + 250, yPos + 50, drawFormat);
                     
-                    yPos = yPos + 30;
-                    n_lineas = n_lineas + 3;
+                    yPos = yPos + 40;
+                    n_lineas = n_lineas + 4;
                 }                
 
                 //sig. linea de registro.
@@ -246,6 +273,7 @@ namespace Asegest
             ev.Graphics.DrawLine(new Pen(Color.Black, 1), xPos, 800, xPos + 1080, 800);
             line = "Pag. " + Convert.ToString(n_pag);
             ev.Graphics.DrawString(line, printFont, Brushes.Black, xPos + 500, 805);
+
 
             // If more lines exist, print another page.
             if (pos_reg < _registros.Count)//(line != null)
@@ -302,7 +330,7 @@ namespace Asegest
                 impor_meses[i] = 0;
                 timpor_meses[i] = 0;
             }
-
+            tacum = 0;
             
         }
 

@@ -44,7 +44,8 @@ namespace Asegest
 
         private void MHRegistros_Load_1(object sender, EventArgs e)
         {
-            
+            this.Text = this.Text.Trim() + General.Saca_titulo_win();
+
             btt_cancel_hreg.Enabled = false;
             //Limpiar_hrg();
             //Deshabilitar_hrg();

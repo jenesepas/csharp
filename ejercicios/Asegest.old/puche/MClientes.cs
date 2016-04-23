@@ -25,6 +25,9 @@ namespace Asegest
 
         private void MClientes_Load(object sender, EventArgs e)
         {
+
+            this.Text = this.Text.Trim() + General.Saca_titulo_win();
+            
             Deshabilitar();
             Deshabilitar_cursores();
             btt_modificar.Enabled = false;
@@ -591,7 +594,9 @@ namespace Asegest
             {                
                     tb_cta.Text = "4300" + tb_documento.Text.Substring(tb_documento.Text.Trim().Length - 5);
             }
-        }        
+        }
+
+              
 
 
 

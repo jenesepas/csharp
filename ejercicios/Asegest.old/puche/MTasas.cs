@@ -30,6 +30,8 @@ namespace Asegest
 
         private void MTasas_Load(object sender, EventArgs e)
         {
+            this.Text = this.Text.Trim() + General.Saca_titulo_win();
+
             tb_ejercicio.Enabled = false;
             tb_codigo.Enabled = false;
             tb_descri.Enabled = false;

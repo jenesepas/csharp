@@ -31,18 +31,20 @@ namespace Asegest
                     this.Close();
                 else
                 {
-                    switch (General.delegacion)
-                    {
-                        case 'Y':
-                            this.Text = this.Text.TrimEnd() + " *** YECLA *** - USUARIO: " + General.usuario;
-                            break;
-                        case 'M':
-                            this.Text = this.Text.TrimEnd() + " *** MURCIA *** - USUARIO: " + General.usuario;
-                            break;
-                        case 'A':
-                            this.Text = this.Text.TrimEnd() + " *** ALBACETE *** - USUARIO: " + General.usuario;
-                            break;
-                    }
+                    //switch (General.delegacion)
+                    //{
+                    //    case 'Y':
+                    //        this.Text = this.Text.TrimEnd() + " *** YECLA *** - USUARIO: " + General.usuario;
+                    //        break;
+                    //    case 'M':
+                    //        this.Text = this.Text.TrimEnd() + " *** MURCIA *** - USUARIO: " + General.usuario;
+                    //        break;
+                    //    case 'A':
+                    //        this.Text = this.Text.TrimEnd() + " *** ALBACETE *** - USUARIO: " + General.usuario;
+                    //        break;
+                    //}
+
+                    this.Text = this.Text.Trim() + General.Saca_titulo_win();
                 }
             }
         }

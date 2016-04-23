@@ -400,6 +400,7 @@
             this.groupBox2.Size = new System.Drawing.Size(642, 387);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
+            
             // 
             // lb_cta
             // 
@@ -667,7 +668,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 573);
+            this.ClientSize = new System.Drawing.Size(784, 564);
             this.Controls.Add(this.btt_imp_cte);
             this.Controls.Add(this.lb_num_rg);
             this.Controls.Add(this.btt_cancelar);

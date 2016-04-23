@@ -20,7 +20,7 @@ namespace Asegest
         
         String line = null;
         short pos_reg = 0;
-        short n_pag = 0;
+        //short n_pag = 0;
         //string secc_int;
         //string estado;
         public List<Registro> _registros = new List<Registro>();        
@@ -33,12 +33,12 @@ namespace Asegest
         StreamWriter fichero_asi;
         StreamWriter fichero_fra;
         StreamWriter fichero_cte;
-        string cta_cte;
+        //string cta_cte;
         string concepto;
         string nom_cte;
-        string dnicif;
+        //string dnicif;
         public char deleg;
-        string filePath;
+        //string filePath;
         public Cliente Cte_a_enlazar = new Cliente();
         /* registro
         struct Cuentas
@@ -256,11 +256,13 @@ namespace Asegest
 
         private void Rpt_Enlace_Load_1(object sender, EventArgs e)
         {
+            this.Text = this.Text.Trim() + General.Saca_titulo_win();
             Iniciar_lreg();
         }
 
         void Iniciar_lreg()
-        {           
+        {
+            
             rb_cte_lrg.Checked = false;
             rb_titular_lrg.Checked = false;
             rb_colab_lrg.Checked = false;

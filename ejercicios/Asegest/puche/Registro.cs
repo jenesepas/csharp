@@ -46,6 +46,13 @@ namespace Asegest
         public char estado_fac { get; set; }
         public string exp_ntl { get; set; }
         public string usuario { get; set; }
+        public string enviado { get; set; }
+        public string fec_anul { get; set; }
+        public string entidad { get; set; }
+        public string n_operacion { get; set; }
+        public string notario { get; set; }
+        public decimal impor_liq { get; set; }
+        public string firmado_por { get; set; }
 
         public Registro() { }
 
@@ -54,7 +61,7 @@ namespace Asegest
                         decimal phonorarios, int pp_iva, decimal ptasa, string pexp_tl, DateTime pfec_pre_exp, long pet_tasa, string pt_tasa, string pcambio_serv,
                         string pbate_ant, string pnif, decimal pdcho_col, char pt_cte_fra, long pet_tasa2, string pt_tasa2, long pet_tasa3, string pt_tasa3,
                         long pet_tasa4, string pt_tasa4, string pdescripcion, string pruta_pdf, string pvehiculo, int pid_colabora, char pestado_fac, string pexp_ntl,
-                        string pusuario)
+                        string pusuario, string penviado, string pfec_anul, string pentidad, string pn_operacion, string pnotario, decimal pimpor_liq, string pfirmado_por)
         {
             this.delegacion = pdelegacion;
             this.n_reg = pn_reg;
@@ -94,6 +101,13 @@ namespace Asegest
             this.estado_fac = pestado_fac;
             this.exp_ntl = pexp_ntl;
             this.usuario = pusuario;
+            this.enviado = penviado;
+            this.fec_anul = pfec_anul;
+            this.entidad = pentidad;
+            this.n_operacion = pn_operacion;
+            this.notario = pnotario;
+            this.impor_liq = pimpor_liq;
+            this.firmado_por = pfirmado_por;
         }
     }
 }

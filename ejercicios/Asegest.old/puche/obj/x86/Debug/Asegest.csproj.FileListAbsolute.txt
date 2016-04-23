@@ -51,3 +51,4 @@ C:\temp\csharp\ejercicios\Asegest\Puche\obj\x86\Debug\Asegest.MHRegistros.resour
 E:\tmp\csharp\ejercicios\Asegest\Puche\obj\x86\Debug\Asegest.Rpt_RegAS.resources
 C:\temp\csharp\ejercicios\Asegest\Puche\obj\x86\Debug\Asegest.Rpt_RegAS.resources
 C:\temp\csharp\ejercicios\Asegest\Puche\obj\x86\Debug\Asegest.Rpt_RegASI.resources
+E:\tmp\csharp\ejercicios\Asegest\Puche\obj\x86\Debug\Asegest.Rpt_RegASI.resources

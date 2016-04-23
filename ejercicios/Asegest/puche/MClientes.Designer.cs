@@ -88,31 +88,14 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.tb_cta);
             this.panel1.Controls.Add(this.tb_direccion);
-            this.panel1.Controls.Add(this.lb_direccion);
             this.panel1.Controls.Add(this.tb_provin);
-            this.panel1.Controls.Add(this.lb_provin);
-            this.panel1.Controls.Add(this.tb_ciudad);
-            this.panel1.Controls.Add(this.lb_ciudad);
             this.panel1.Controls.Add(this.tb_cp);
-            this.panel1.Controls.Add(this.lb_cp);
-            this.panel1.Controls.Add(this.tb_tf2);
             this.panel1.Controls.Add(this.tb_tf1);
-            this.panel1.Controls.Add(this.lb_tf2);
-            this.panel1.Controls.Add(this.lb_tf1);
             this.panel1.Controls.Add(this.tb_email);
-            this.panel1.Controls.Add(this.lb_email);
             this.panel1.Controls.Add(this.tb_p_cont);
-            this.panel1.Controls.Add(this.lb_p_cont);
-            this.panel1.Controls.Add(this.tb_letra);
-            this.panel1.Controls.Add(this.tb_documento);
-            this.panel1.Controls.Add(this.lb_docu);
-            this.panel1.Controls.Add(this.lb_letra);
-            this.panel1.Controls.Add(this.lb_t_docu);
             this.panel1.Controls.Add(this.cb_t_docu);
             this.panel1.Controls.Add(this.tb_nombre);
-            this.panel1.Controls.Add(this.lb_nombre);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,7 +108,7 @@
             // tb_cta
             // 
             this.tb_cta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cta.Location = new System.Drawing.Point(524, 421);
+            this.tb_cta.Location = new System.Drawing.Point(516, 338);
             this.tb_cta.Margin = new System.Windows.Forms.Padding(4);
             this.tb_cta.Name = "tb_cta";
             this.tb_cta.Size = new System.Drawing.Size(104, 24);
@@ -135,7 +118,7 @@
             // tb_direccion
             // 
             this.tb_direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_direccion.Location = new System.Drawing.Point(109, 325);
+            this.tb_direccion.Location = new System.Drawing.Point(109, 328);
             this.tb_direccion.Margin = new System.Windows.Forms.Padding(4);
             this.tb_direccion.Name = "tb_direccion";
             this.tb_direccion.Size = new System.Drawing.Size(519, 24);
@@ -146,7 +129,7 @@
             // 
             this.lb_direccion.AutoSize = true;
             this.lb_direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_direccion.Location = new System.Drawing.Point(24, 325);
+            this.lb_direccion.Location = new System.Drawing.Point(16, 249);
             this.lb_direccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_direccion.Name = "lb_direccion";
             this.lb_direccion.Size = new System.Drawing.Size(71, 18);
@@ -156,7 +139,7 @@
             // tb_provin
             // 
             this.tb_provin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_provin.Location = new System.Drawing.Point(107, 421);
+            this.tb_provin.Location = new System.Drawing.Point(107, 420);
             this.tb_provin.Margin = new System.Windows.Forms.Padding(4);
             this.tb_provin.Name = "tb_provin";
             this.tb_provin.Size = new System.Drawing.Size(311, 24);
@@ -167,7 +150,7 @@
             // 
             this.lb_provin.AutoSize = true;
             this.lb_provin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_provin.Location = new System.Drawing.Point(26, 424);
+            this.lb_provin.Location = new System.Drawing.Point(18, 341);
             this.lb_provin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_provin.Name = "lb_provin";
             this.lb_provin.Size = new System.Drawing.Size(69, 18);
@@ -177,7 +160,7 @@
             // tb_ciudad
             // 
             this.tb_ciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_ciudad.Location = new System.Drawing.Point(292, 372);
+            this.tb_ciudad.Location = new System.Drawing.Point(284, 292);
             this.tb_ciudad.Margin = new System.Windows.Forms.Padding(4);
             this.tb_ciudad.Name = "tb_ciudad";
             this.tb_ciudad.Size = new System.Drawing.Size(336, 24);
@@ -188,7 +171,7 @@
             // 
             this.lb_ciudad.AutoSize = true;
             this.lb_ciudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ciudad.Location = new System.Drawing.Point(230, 371);
+            this.lb_ciudad.Location = new System.Drawing.Point(222, 295);
             this.lb_ciudad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ciudad.Name = "lb_ciudad";
             this.lb_ciudad.Size = new System.Drawing.Size(54, 18);
@@ -198,7 +181,7 @@
             // tb_cp
             // 
             this.tb_cp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cp.Location = new System.Drawing.Point(109, 372);
+            this.tb_cp.Location = new System.Drawing.Point(109, 374);
             this.tb_cp.Margin = new System.Windows.Forms.Padding(4);
             this.tb_cp.Name = "tb_cp";
             this.tb_cp.Size = new System.Drawing.Size(104, 24);
@@ -209,7 +192,7 @@
             // 
             this.lb_cp.AutoSize = true;
             this.lb_cp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cp.Location = new System.Drawing.Point(30, 372);
+            this.lb_cp.Location = new System.Drawing.Point(22, 295);
             this.lb_cp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_cp.Name = "lb_cp";
             this.lb_cp.Size = new System.Drawing.Size(65, 18);
@@ -219,7 +202,7 @@
             // tb_tf2
             // 
             this.tb_tf2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_tf2.Location = new System.Drawing.Point(451, 284);
+            this.tb_tf2.Location = new System.Drawing.Point(443, 197);
             this.tb_tf2.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tf2.Name = "tb_tf2";
             this.tb_tf2.Size = new System.Drawing.Size(177, 24);
@@ -229,7 +212,7 @@
             // tb_tf1
             // 
             this.tb_tf1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_tf1.Location = new System.Drawing.Point(109, 284);
+            this.tb_tf1.Location = new System.Drawing.Point(109, 282);
             this.tb_tf1.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tf1.Name = "tb_tf1";
             this.tb_tf1.Size = new System.Drawing.Size(177, 24);
@@ -240,7 +223,7 @@
             // 
             this.lb_tf2.AutoSize = true;
             this.lb_tf2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tf2.Location = new System.Drawing.Point(376, 287);
+            this.lb_tf2.Location = new System.Drawing.Point(371, 200);
             this.lb_tf2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_tf2.Name = "lb_tf2";
             this.lb_tf2.Size = new System.Drawing.Size(54, 18);
@@ -251,7 +234,7 @@
             // 
             this.lb_tf1.AutoSize = true;
             this.lb_tf1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tf1.Location = new System.Drawing.Point(37, 287);
+            this.lb_tf1.Location = new System.Drawing.Point(33, 203);
             this.lb_tf1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_tf1.Name = "lb_tf1";
             this.lb_tf1.Size = new System.Drawing.Size(54, 18);
@@ -261,7 +244,7 @@
             // tb_email
             // 
             this.tb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_email.Location = new System.Drawing.Point(109, 233);
+            this.tb_email.Location = new System.Drawing.Point(109, 236);
             this.tb_email.Margin = new System.Windows.Forms.Padding(4);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(321, 24);
@@ -272,7 +255,7 @@
             // 
             this.lb_email.AutoSize = true;
             this.lb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_email.Location = new System.Drawing.Point(50, 233);
+            this.lb_email.Location = new System.Drawing.Point(42, 157);
             this.lb_email.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_email.Name = "lb_email";
             this.lb_email.Size = new System.Drawing.Size(45, 18);
@@ -282,7 +265,7 @@
             // tb_p_cont
             // 
             this.tb_p_cont.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_p_cont.Location = new System.Drawing.Point(109, 187);
+            this.tb_p_cont.Location = new System.Drawing.Point(109, 190);
             this.tb_p_cont.Margin = new System.Windows.Forms.Padding(4);
             this.tb_p_cont.Name = "tb_p_cont";
             this.tb_p_cont.Size = new System.Drawing.Size(321, 24);
@@ -293,7 +276,7 @@
             // 
             this.lb_p_cont.AutoSize = true;
             this.lb_p_cont.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_p_cont.Location = new System.Drawing.Point(16, 187);
+            this.lb_p_cont.Location = new System.Drawing.Point(8, 111);
             this.lb_p_cont.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_p_cont.Name = "lb_p_cont";
             this.lb_p_cont.Size = new System.Drawing.Size(79, 18);
@@ -303,7 +286,7 @@
             // tb_letra
             // 
             this.tb_letra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_letra.Location = new System.Drawing.Point(603, 135);
+            this.tb_letra.Location = new System.Drawing.Point(595, 62);
             this.tb_letra.Margin = new System.Windows.Forms.Padding(4);
             this.tb_letra.MaxLength = 1;
             this.tb_letra.Name = "tb_letra";
@@ -313,7 +296,7 @@
             // tb_documento
             // 
             this.tb_documento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_documento.Location = new System.Drawing.Point(348, 135);
+            this.tb_documento.Location = new System.Drawing.Point(340, 63);
             this.tb_documento.Margin = new System.Windows.Forms.Padding(4);
             this.tb_documento.Name = "tb_documento";
             this.tb_documento.Size = new System.Drawing.Size(200, 24);
@@ -326,7 +309,7 @@
             // 
             this.lb_docu.AutoSize = true;
             this.lb_docu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_docu.Location = new System.Drawing.Point(254, 135);
+            this.lb_docu.Location = new System.Drawing.Point(246, 65);
             this.lb_docu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_docu.Name = "lb_docu";
             this.lb_docu.Size = new System.Drawing.Size(86, 18);
@@ -337,7 +320,7 @@
             // 
             this.lb_letra.AutoSize = true;
             this.lb_letra.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_letra.Location = new System.Drawing.Point(556, 135);
+            this.lb_letra.Location = new System.Drawing.Point(546, 65);
             this.lb_letra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_letra.Name = "lb_letra";
             this.lb_letra.Size = new System.Drawing.Size(41, 18);
@@ -348,7 +331,7 @@
             // 
             this.lb_t_docu.AutoSize = true;
             this.lb_t_docu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_t_docu.Location = new System.Drawing.Point(22, 135);
+            this.lb_t_docu.Location = new System.Drawing.Point(14, 63);
             this.lb_t_docu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_t_docu.Name = "lb_t_docu";
             this.lb_t_docu.Size = new System.Drawing.Size(73, 18);
@@ -365,7 +348,7 @@
             "NIF",
             "NIE",
             "OTRO"});
-            this.cb_t_docu.Location = new System.Drawing.Point(109, 135);
+            this.cb_t_docu.Location = new System.Drawing.Point(109, 142);
             this.cb_t_docu.Margin = new System.Windows.Forms.Padding(4);
             this.cb_t_docu.Name = "cb_t_docu";
             this.cb_t_docu.Size = new System.Drawing.Size(132, 26);
@@ -385,7 +368,7 @@
             // 
             this.lb_nombre.AutoSize = true;
             this.lb_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nombre.Location = new System.Drawing.Point(23, 96);
+            this.lb_nombre.Location = new System.Drawing.Point(25, 17);
             this.lb_nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_nombre.Name = "lb_nombre";
             this.lb_nombre.Size = new System.Drawing.Size(62, 18);
@@ -394,19 +377,35 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tb_cta);
             this.groupBox2.Controls.Add(this.lb_cta);
+            this.groupBox2.Controls.Add(this.lb_ciudad);
+            this.groupBox2.Controls.Add(this.tb_ciudad);
+            this.groupBox2.Controls.Add(this.lb_p_cont);
+            this.groupBox2.Controls.Add(this.lb_direccion);
+            this.groupBox2.Controls.Add(this.lb_provin);
+            this.groupBox2.Controls.Add(this.lb_nombre);
+            this.groupBox2.Controls.Add(this.lb_t_docu);
+            this.groupBox2.Controls.Add(this.tb_tf2);
+            this.groupBox2.Controls.Add(this.lb_email);
+            this.groupBox2.Controls.Add(this.lb_tf1);
+            this.groupBox2.Controls.Add(this.lb_tf2);
+            this.groupBox2.Controls.Add(this.lb_cp);
+            this.groupBox2.Controls.Add(this.tb_documento);
+            this.groupBox2.Controls.Add(this.tb_letra);
+            this.groupBox2.Controls.Add(this.lb_letra);
+            this.groupBox2.Controls.Add(this.lb_docu);
             this.groupBox2.Location = new System.Drawing.Point(8, 82);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(642, 387);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
-            
             // 
             // lb_cta
             // 
             this.lb_cta.AutoSize = true;
             this.lb_cta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cta.Location = new System.Drawing.Point(453, 342);
+            this.lb_cta.Location = new System.Drawing.Point(453, 341);
             this.lb_cta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_cta.Name = "lb_cta";
             this.lb_cta.Size = new System.Drawing.Size(55, 18);
@@ -668,7 +667,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 564);
+            this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.btt_imp_cte);
             this.Controls.Add(this.lb_num_rg);
             this.Controls.Add(this.btt_cancelar);

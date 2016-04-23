@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_estado = new System.Windows.Forms.Label();
+            this.cb_estado_lrg = new System.Windows.Forms.ComboBox();
             this.lb_secc = new System.Windows.Forms.Label();
             this.tb_year = new System.Windows.Forms.TextBox();
             this.cb_secc = new System.Windows.Forms.ComboBox();
@@ -46,6 +48,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lb_estado);
+            this.panel1.Controls.Add(this.cb_estado_lrg);
             this.panel1.Controls.Add(this.lb_secc);
             this.panel1.Controls.Add(this.tb_year);
             this.panel1.Controls.Add(this.cb_secc);
@@ -53,8 +57,33 @@
             this.panel1.Controls.Add(this.gb_del_lrg);
             this.panel1.Location = new System.Drawing.Point(21, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 137);
+            this.panel1.Size = new System.Drawing.Size(239, 166);
             this.panel1.TabIndex = 62;
+            // 
+            // lb_estado
+            // 
+            this.lb_estado.AutoSize = true;
+            this.lb_estado.Location = new System.Drawing.Point(19, 126);
+            this.lb_estado.Name = "lb_estado";
+            this.lb_estado.Size = new System.Drawing.Size(40, 13);
+            this.lb_estado.TabIndex = 69;
+            this.lb_estado.Text = "Estado";
+            // 
+            // cb_estado_lrg
+            // 
+            this.cb_estado_lrg.FormattingEnabled = true;
+            this.cb_estado_lrg.Items.AddRange(new object[] {
+            "",
+            "PTE. CLIENTE",
+            "PTE. GESTORÍA",
+            "EN TRÁMITE",
+            "TERMINADO",
+            "ANULADO",
+            "LIQUIDADO"});
+            this.cb_estado_lrg.Location = new System.Drawing.Point(74, 123);
+            this.cb_estado_lrg.Name = "cb_estado_lrg";
+            this.cb_estado_lrg.Size = new System.Drawing.Size(116, 21);
+            this.cb_estado_lrg.TabIndex = 68;
             // 
             // lb_secc
             // 
@@ -152,7 +181,7 @@
             // btt_imp_ac_rg_s
             // 
             this.btt_imp_ac_rg_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_imp_ac_rg_s.Location = new System.Drawing.Point(21, 147);
+            this.btt_imp_ac_rg_s.Location = new System.Drawing.Point(21, 174);
             this.btt_imp_ac_rg_s.Name = "btt_imp_ac_rg_s";
             this.btt_imp_ac_rg_s.Size = new System.Drawing.Size(89, 34);
             this.btt_imp_ac_rg_s.TabIndex = 63;
@@ -163,7 +192,7 @@
             // btt_cancelar_ac_rg_s
             // 
             this.btt_cancelar_ac_rg_s.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_cancelar_ac_rg_s.Location = new System.Drawing.Point(171, 147);
+            this.btt_cancelar_ac_rg_s.Location = new System.Drawing.Point(171, 174);
             this.btt_cancelar_ac_rg_s.Name = "btt_cancelar_ac_rg_s";
             this.btt_cancelar_ac_rg_s.Size = new System.Drawing.Size(89, 34);
             this.btt_cancelar_ac_rg_s.TabIndex = 64;
@@ -175,7 +204,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 191);
+            this.ClientSize = new System.Drawing.Size(283, 221);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btt_imp_ac_rg_s);
             this.Controls.Add(this.btt_cancelar_ac_rg_s);
@@ -203,5 +232,7 @@
         private System.Windows.Forms.Label lb_year;
         private System.Windows.Forms.Label lb_secc;
         private System.Windows.Forms.ComboBox cb_secc;
+        private System.Windows.Forms.ComboBox cb_estado_lrg;
+        private System.Windows.Forms.Label lb_estado;
     }
 }

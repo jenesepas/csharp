@@ -88,6 +88,29 @@ namespace Asegest
 
         }
 
+        public static string Saca_titulo_win()
+        {
+            string titulo = "";
+
+            switch (delegacion)
+            {
+                case 'Y':
+                    titulo = titulo.TrimEnd() + " *** YECLA *** - USUARIO: " + usuario;
+                    break;
+                case 'M':
+                    titulo = titulo.TrimEnd() + " *** MURCIA *** - USUARIO: " + usuario;
+                    break;
+                case 'A':
+                    titulo = titulo.TrimEnd() + " *** ALBACETE *** - USUARIO: " + usuario;
+                    break;
+            }
+
+            return titulo;
+
+        }
+
+
+
     }
 
 }

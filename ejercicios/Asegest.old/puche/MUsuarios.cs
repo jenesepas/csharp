@@ -30,6 +30,8 @@ namespace Asegest
 
         private void MUsuarios_Load_1(object sender, EventArgs e)
         {
+            this.Text = this.Text.Trim() + General.Saca_titulo_win();
+
             tb_codigo.Enabled = false;
             tb_clave.Enabled = false;
             tb_nombre.Enabled = false;

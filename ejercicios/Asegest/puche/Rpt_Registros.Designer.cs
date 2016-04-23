@@ -50,20 +50,20 @@
             this.btt_buscar_lrg = new System.Windows.Forms.Button();
             this.btt_buscar2_lrg = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_tram = new System.Windows.Forms.Label();
+            this.cb_tram = new System.Windows.Forms.ComboBox();
+            this.lb_secc = new System.Windows.Forms.Label();
+            this.cb_secc = new System.Windows.Forms.ComboBox();
+            this.dtp_h_freg = new System.Windows.Forms.DateTimePicker();
+            this.dtp_d_freg = new System.Windows.Forms.DateTimePicker();
+            this.lb_h_freg = new System.Windows.Forms.Label();
+            this.lb_d_freg = new System.Windows.Forms.Label();
             this.lb_treg = new System.Windows.Forms.Label();
             this.cb_treg = new System.Windows.Forms.ComboBox();
             this.lb_estado = new System.Windows.Forms.Label();
             this.cb_estado_lrg = new System.Windows.Forms.ComboBox();
             this.lb_s_int = new System.Windows.Forms.Label();
             this.cb_secc_lrg = new System.Windows.Forms.ComboBox();
-            this.dtp_h_freg = new System.Windows.Forms.DateTimePicker();
-            this.dtp_d_freg = new System.Windows.Forms.DateTimePicker();
-            this.lb_h_freg = new System.Windows.Forms.Label();
-            this.lb_d_freg = new System.Windows.Forms.Label();
-            this.lb_secc = new System.Windows.Forms.Label();
-            this.cb_secc = new System.Windows.Forms.ComboBox();
-            this.lb_tram = new System.Windows.Forms.Label();
-            this.cb_tram = new System.Windows.Forms.ComboBox();
             this.gb_del_lrg.SuspendLayout();
             this.gb_b_t_cte_lrg.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -295,6 +295,86 @@
             this.panel1.Size = new System.Drawing.Size(501, 245);
             this.panel1.TabIndex = 46;
             // 
+            // lb_tram
+            // 
+            this.lb_tram.AutoSize = true;
+            this.lb_tram.Location = new System.Drawing.Point(12, 192);
+            this.lb_tram.Name = "lb_tram";
+            this.lb_tram.Size = new System.Drawing.Size(42, 13);
+            this.lb_tram.TabIndex = 66;
+            this.lb_tram.Text = "Trámite";
+            // 
+            // cb_tram
+            // 
+            this.cb_tram.FormattingEnabled = true;
+            this.cb_tram.Location = new System.Drawing.Point(73, 192);
+            this.cb_tram.Name = "cb_tram";
+            this.cb_tram.Size = new System.Drawing.Size(175, 21);
+            this.cb_tram.TabIndex = 67;
+            // 
+            // lb_secc
+            // 
+            this.lb_secc.AutoSize = true;
+            this.lb_secc.Location = new System.Drawing.Point(12, 162);
+            this.lb_secc.Name = "lb_secc";
+            this.lb_secc.Size = new System.Drawing.Size(46, 13);
+            this.lb_secc.TabIndex = 64;
+            this.lb_secc.Text = "Sección";
+            // 
+            // cb_secc
+            // 
+            this.cb_secc.FormattingEnabled = true;
+            this.cb_secc.Items.AddRange(new object[] {
+            "Hacienda",
+            "Seg. Social",
+            "Extranjería",
+            "Conductores",
+            "Vehículos",
+            "Transporte",
+            "Sanciones Tráfico",
+            "Escrituras",
+            "Herencias",
+            "Varios"});
+            this.cb_secc.Location = new System.Drawing.Point(73, 162);
+            this.cb_secc.Name = "cb_secc";
+            this.cb_secc.Size = new System.Drawing.Size(116, 21);
+            this.cb_secc.TabIndex = 65;
+            this.cb_secc.SelectedIndexChanged += new System.EventHandler(this.cb_secc_SelectedIndexChanged);
+            // 
+            // dtp_h_freg
+            // 
+            this.dtp_h_freg.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_h_freg.Location = new System.Drawing.Point(348, 93);
+            this.dtp_h_freg.Name = "dtp_h_freg";
+            this.dtp_h_freg.Size = new System.Drawing.Size(90, 20);
+            this.dtp_h_freg.TabIndex = 63;
+            // 
+            // dtp_d_freg
+            // 
+            this.dtp_d_freg.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_d_freg.Location = new System.Drawing.Point(348, 67);
+            this.dtp_d_freg.Name = "dtp_d_freg";
+            this.dtp_d_freg.Size = new System.Drawing.Size(90, 20);
+            this.dtp_d_freg.TabIndex = 62;
+            // 
+            // lb_h_freg
+            // 
+            this.lb_h_freg.AutoSize = true;
+            this.lb_h_freg.Location = new System.Drawing.Point(277, 93);
+            this.lb_h_freg.Name = "lb_h_freg";
+            this.lb_h_freg.Size = new System.Drawing.Size(68, 13);
+            this.lb_h_freg.TabIndex = 61;
+            this.lb_h_freg.Text = "H. Fec. Reg.";
+            // 
+            // lb_d_freg
+            // 
+            this.lb_d_freg.AutoSize = true;
+            this.lb_d_freg.Location = new System.Drawing.Point(277, 67);
+            this.lb_d_freg.Name = "lb_d_freg";
+            this.lb_d_freg.Size = new System.Drawing.Size(68, 13);
+            this.lb_d_freg.TabIndex = 60;
+            this.lb_d_freg.Text = "D. Fec. Reg.";
+            // 
             // lb_treg
             // 
             this.lb_treg.AutoSize = true;
@@ -334,7 +414,8 @@
             "PTE. GESTORÍA",
             "EN TRÁMITE",
             "TERMINADO",
-            "ANULADO"});
+            "ANULADO",
+            "LIQUIDADO"});
             this.cb_estado_lrg.Location = new System.Drawing.Point(348, 211);
             this.cb_estado_lrg.Name = "cb_estado_lrg";
             this.cb_estado_lrg.Size = new System.Drawing.Size(116, 21);
@@ -362,86 +443,6 @@
             this.cb_secc_lrg.Name = "cb_secc_lrg";
             this.cb_secc_lrg.Size = new System.Drawing.Size(116, 21);
             this.cb_secc_lrg.TabIndex = 0;
-            // 
-            // dtp_h_freg
-            // 
-            this.dtp_h_freg.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_h_freg.Location = new System.Drawing.Point(348, 93);
-            this.dtp_h_freg.Name = "dtp_h_freg";
-            this.dtp_h_freg.Size = new System.Drawing.Size(90, 20);
-            this.dtp_h_freg.TabIndex = 63;
-            // 
-            // dtp_d_freg
-            // 
-            this.dtp_d_freg.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_d_freg.Location = new System.Drawing.Point(348, 67);
-            this.dtp_d_freg.Name = "dtp_d_freg";
-            this.dtp_d_freg.Size = new System.Drawing.Size(90, 20);
-            this.dtp_d_freg.TabIndex = 62;
-            // 
-            // lb_h_freg
-            // 
-            this.lb_h_freg.AutoSize = true;
-            this.lb_h_freg.Location = new System.Drawing.Point(277, 93);
-            this.lb_h_freg.Name = "lb_h_freg";
-            this.lb_h_freg.Size = new System.Drawing.Size(68, 13);
-            this.lb_h_freg.TabIndex = 61;
-            this.lb_h_freg.Text = "H. Fec. Reg.";
-            // 
-            // lb_d_freg
-            // 
-            this.lb_d_freg.AutoSize = true;
-            this.lb_d_freg.Location = new System.Drawing.Point(277, 67);
-            this.lb_d_freg.Name = "lb_d_freg";
-            this.lb_d_freg.Size = new System.Drawing.Size(68, 13);
-            this.lb_d_freg.TabIndex = 60;
-            this.lb_d_freg.Text = "D. Fec. Reg.";
-            // 
-            // lb_secc
-            // 
-            this.lb_secc.AutoSize = true;
-            this.lb_secc.Location = new System.Drawing.Point(12, 162);
-            this.lb_secc.Name = "lb_secc";
-            this.lb_secc.Size = new System.Drawing.Size(46, 13);
-            this.lb_secc.TabIndex = 64;
-            this.lb_secc.Text = "Sección";
-            // 
-            // cb_secc
-            // 
-            this.cb_secc.FormattingEnabled = true;
-            this.cb_secc.Items.AddRange(new object[] {
-            "Hacienda",
-            "Seg. Social",
-            "Extranjería",
-            "Conductores",
-            "Vehículos",
-            "Transporte",
-            "Sanciones Tráfico",
-            "Escrituras",
-            "Herencias",
-            "Varios"});
-            this.cb_secc.Location = new System.Drawing.Point(73, 162);
-            this.cb_secc.Name = "cb_secc";
-            this.cb_secc.Size = new System.Drawing.Size(116, 21);
-            this.cb_secc.TabIndex = 65;
-            this.cb_secc.SelectedIndexChanged += new System.EventHandler(this.cb_secc_SelectedIndexChanged);
-            // 
-            // lb_tram
-            // 
-            this.lb_tram.AutoSize = true;
-            this.lb_tram.Location = new System.Drawing.Point(12, 192);
-            this.lb_tram.Name = "lb_tram";
-            this.lb_tram.Size = new System.Drawing.Size(42, 13);
-            this.lb_tram.TabIndex = 66;
-            this.lb_tram.Text = "Trámite";
-            // 
-            // cb_tram
-            // 
-            this.cb_tram.FormattingEnabled = true;
-            this.cb_tram.Location = new System.Drawing.Point(73, 192);
-            this.cb_tram.Name = "cb_tram";
-            this.cb_tram.Size = new System.Drawing.Size(175, 21);
-            this.cb_tram.TabIndex = 67;
             // 
             // Rpt_Registros
             // 
