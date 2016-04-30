@@ -74,6 +74,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDConexion.cs" />
+    <Compile Include="Actualiza_Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualiza_Reg.Designer.cs">
+      <DependentUpon>Actualiza_Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_RegLiq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rpt_RegLiq.Designer.cs">
+      <DependentUpon>Rpt_RegLiq.cs</DependentUpon>
+    </Compile>
     <Compile Include="HReg_Opera.cs" />
     <Compile Include="HRegistro.cs" />
     <Compile Include="MHRegistros.cs">
@@ -209,6 +221,9 @@
     </Compile>
     <Compile Include="Tasa.cs" />
     <Compile Include="Tasas_Opera.cs" />
+    <EmbeddedResource Include="Actualiza_Reg.resx">
+      <DependentUpon>Actualiza_Reg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MHRegistros.resx">
       <DependentUpon>MHRegistros.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rpt_RegASI.resx">
       <DependentUpon>Rpt_RegASI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_RegLiq.resx">
+      <DependentUpon>Rpt_RegLiq.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rpt_RFacturas.resx">
       <DependentUpon>Rpt_RFacturas.cs</DependentUpon>

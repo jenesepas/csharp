@@ -45,6 +45,8 @@
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
             this.acRegsXSecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acRegsXSeccIntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.liqEscriturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.utilidadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.enlaceAContabilidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
@@ -52,6 +54,8 @@
             this.desfacturaFraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.históricoRegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+            this.actualizaNumRegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -147,7 +151,9 @@
             this.regAcumFrasToolStripMenuItem,
             this.toolStripSeparator12,
             this.acRegsXSecciónToolStripMenuItem,
-            this.acRegsXSeccIntToolStripMenuItem});
+            this.acRegsXSeccIntToolStripMenuItem,
+            this.toolStripSeparator15,
+            this.liqEscriturasToolStripMenuItem});
             this.impresosToolStripMenuItem.Name = "impresosToolStripMenuItem";
             this.impresosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.impresosToolStripMenuItem.Text = "Impresos";
@@ -156,7 +162,7 @@
             // 
             this.clientesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("clientesToolStripMenuItem1.Image")));
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
@@ -164,7 +170,7 @@
             // 
             this.registrosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("registrosToolStripMenuItem1.Image")));
             this.registrosToolStripMenuItem1.Name = "registrosToolStripMenuItem1";
-            this.registrosToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.registrosToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
             this.registrosToolStripMenuItem1.Text = "Registros";
             this.registrosToolStripMenuItem1.Click += new System.EventHandler(this.registrosToolStripMenuItem1_Click);
             // 
@@ -172,20 +178,20 @@
             // 
             this.tasasToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("tasasToolStripMenuItem1.Image")));
             this.tasasToolStripMenuItem1.Name = "tasasToolStripMenuItem1";
-            this.tasasToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
+            this.tasasToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
             this.tasasToolStripMenuItem1.Text = "Tasas";
             this.tasasToolStripMenuItem1.Click += new System.EventHandler(this.tasasToolStripMenuItem1_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(174, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(189, 6);
             // 
             // regFacturasToolStripMenuItem
             // 
             this.regFacturasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regFacturasToolStripMenuItem.Image")));
             this.regFacturasToolStripMenuItem.Name = "regFacturasToolStripMenuItem";
-            this.regFacturasToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.regFacturasToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.regFacturasToolStripMenuItem.Text = "Reg. Facturas";
             this.regFacturasToolStripMenuItem.Click += new System.EventHandler(this.regFacturasToolStripMenuItem_Click);
             // 
@@ -193,20 +199,20 @@
             // 
             this.regAcumFrasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("regAcumFrasToolStripMenuItem.Image")));
             this.regAcumFrasToolStripMenuItem.Name = "regAcumFrasToolStripMenuItem";
-            this.regAcumFrasToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.regAcumFrasToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.regAcumFrasToolStripMenuItem.Text = "Reg. Fras. x Ctes.";
             this.regAcumFrasToolStripMenuItem.Click += new System.EventHandler(this.regAcumFrasToolStripMenuItem_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(174, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(189, 6);
             // 
             // acRegsXSecciónToolStripMenuItem
             // 
             this.acRegsXSecciónToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("acRegsXSecciónToolStripMenuItem.Image")));
             this.acRegsXSecciónToolStripMenuItem.Name = "acRegsXSecciónToolStripMenuItem";
-            this.acRegsXSecciónToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.acRegsXSecciónToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.acRegsXSecciónToolStripMenuItem.Text = "Ac. Regs. x Sección";
             this.acRegsXSecciónToolStripMenuItem.Click += new System.EventHandler(this.acRegsXSecciónToolStripMenuItem_Click);
             // 
@@ -214,9 +220,22 @@
             // 
             this.acRegsXSeccIntToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("acRegsXSeccIntToolStripMenuItem.Image")));
             this.acRegsXSeccIntToolStripMenuItem.Name = "acRegsXSeccIntToolStripMenuItem";
-            this.acRegsXSeccIntToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.acRegsXSeccIntToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.acRegsXSeccIntToolStripMenuItem.Text = "Ac. Regs x Secc. Int.";
             this.acRegsXSeccIntToolStripMenuItem.Click += new System.EventHandler(this.acRegsXSeccIntToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator15
+            // 
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
+            this.toolStripSeparator15.Size = new System.Drawing.Size(189, 6);
+            // 
+            // liqEscriturasToolStripMenuItem
+            // 
+            this.liqEscriturasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("liqEscriturasToolStripMenuItem.Image")));
+            this.liqEscriturasToolStripMenuItem.Name = "liqEscriturasToolStripMenuItem";
+            this.liqEscriturasToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.liqEscriturasToolStripMenuItem.Text = "Liquidación  Escrituras";
+            this.liqEscriturasToolStripMenuItem.Click += new System.EventHandler(this.liqEscriturasToolStripMenuItem_Click_1);
             // 
             // utilidadesToolStripMenuItem
             // 
@@ -226,7 +245,9 @@
             this.desenlazaFrasToolStripMenuItem,
             this.desfacturaFraToolStripMenuItem,
             this.toolStripSeparator13,
-            this.históricoRegistrosToolStripMenuItem});
+            this.históricoRegistrosToolStripMenuItem,
+            this.toolStripSeparator14,
+            this.actualizaNumRegToolStripMenuItem});
             this.utilidadesToolStripMenuItem.Name = "utilidadesToolStripMenuItem";
             this.utilidadesToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.utilidadesToolStripMenuItem.Text = "Utilidades";
@@ -268,6 +289,18 @@
             this.históricoRegistrosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.históricoRegistrosToolStripMenuItem.Text = "Histórico Registros";
             this.históricoRegistrosToolStripMenuItem.Click += new System.EventHandler(this.históricoRegistrosToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator14
+            // 
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
+            this.toolStripSeparator14.Size = new System.Drawing.Size(185, 6);
+            // 
+            // actualizaNumRegToolStripMenuItem
+            // 
+            this.actualizaNumRegToolStripMenuItem.Name = "actualizaNumRegToolStripMenuItem";
+            this.actualizaNumRegToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.actualizaNumRegToolStripMenuItem.Text = "Actualiza Num. Reg.";
+            this.actualizaNumRegToolStripMenuItem.Click += new System.EventHandler(this.actualizaNumRegToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -476,7 +509,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 564);
+            this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -547,6 +580,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
         private System.Windows.Forms.ToolStripMenuItem acRegsXSecciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acRegsXSeccIntToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
+        private System.Windows.Forms.ToolStripMenuItem actualizaNumRegToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
+        private System.Windows.Forms.ToolStripMenuItem liqEscriturasToolStripMenuItem;
     }
 }
 

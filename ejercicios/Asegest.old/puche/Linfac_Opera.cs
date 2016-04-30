@@ -145,7 +145,7 @@ namespace Asegest
         {            
             int retorno = 0;
             string scantidad = "0";
-            string simporte = General.Convertir_a_real(pLinfac.importe.ToString("N2"));
+            string simporte = General.Convertir_a_real(pLinfac.importe.ToString("0.00")); //N2
             string sql = "";
 
             if (pguardando == 1) //new linea

@@ -170,8 +170,8 @@ namespace Asegest
                 ev.Graphics.DrawString(RegAct.t_tramite, printFont, Brushes.Black, xPos+120, yPos + 300);
                 count++;
                                 		
-                ev.Graphics.DrawString("Estado:", printFont, Brushes.Black, xPos, yPos + 360);
-                ev.Graphics.DrawString(RegAct.estado, printFont, Brushes.Black, xPos + 120, yPos + 360);
+                ev.Graphics.DrawString("Enviar por:", printFont, Brushes.Black, xPos, yPos + 360);
+                ev.Graphics.DrawString(RegAct.enviado, printFont, Brushes.Black, xPos + 120, yPos + 360);
                 count++;
                 
                 ev.Graphics.DrawLine(new Pen(Color.Black, 1), xPos, yPos + 410, xPos + 550, yPos + 410);				

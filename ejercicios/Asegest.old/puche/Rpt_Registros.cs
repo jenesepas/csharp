@@ -219,7 +219,11 @@ namespace Asegest
 
                 ev.Graphics.DrawString(_registros.ElementAt(pos_reg).seccion, printFont, Brushes.Black, xPos + 730, yPos + 10);
                 //ev.Graphics.DrawString(_registros.ElementAt(pos_reg).t_tramite.Substring(0,24), printFont, Brushes.Black, xPos + 780, yPos + 10);
-                ev.Graphics.DrawString(_registros.ElementAt(pos_reg).estado, printFont, Brushes.Black, xPos + 950, yPos + 10);
+                string anulado = _registros.ElementAt(pos_reg).estado.Trim();                
+                if (anulado.Equals("ANULADO"))
+                    ev.Graphics.DrawString("ANUL:"+_registros.ElementAt(pos_reg).fec_anul, printFont, Brushes.Black, xPos + 950, yPos + 10);
+                else
+                    ev.Graphics.DrawString(_registros.ElementAt(pos_reg).estado, printFont, Brushes.Black, xPos + 950, yPos + 10);
 
                 ev.Graphics.DrawString(_registros.ElementAt(pos_reg).exp_tl, printFont, Brushes.Black, xPos, yPos + 30);
                 string n_col = Reg_Opera.Calcular_nom_cte(Convert.ToString(_registros.ElementAt(pos_reg).id_colabora), 'B');
@@ -423,8 +427,7 @@ namespace Asegest
                     this.cb_tram.Items.Add("Baja Temporal");
                     this.cb_tram.Items.Add("Reserva Dominio");
                     break;
-                case 5:
-                case 6: // transporte
+                case 5: case 6: // transporte
                     this.cb_tram.Items.Clear();
                     this.cb_tram.Items.Add("Pendiente Cliente");
                     this.cb_tram.Text = " ";//"Pendiente Cliente";
@@ -442,8 +445,17 @@ namespace Asegest
                     break;
                 */
 
-                case 7:
-                case 8: // escritura
+                case 7: // escrituras                   
+                    this.cb_tram.Items.Clear();
+                    this.cb_tram.Items.Add("Herencias");
+                    this.cb_tram.Text = " "; //el text visible = 1er. item
+                    this.cb_tram.Items.Add("Firmas");
+                    this.cb_tram.Items.Add("Asistencia Firma");
+                    this.cb_tram.Items.Add("Cotejo");
+                    this.cb_tram.Items.Add("Liquidación Impuestos");
+                    break;
+
+                case 8: // herencias
                     this.cb_tram.Items.Clear();
                     break;
 

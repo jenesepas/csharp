@@ -109,9 +109,7 @@
             this.tb_n_reg = new System.Windows.Forms.TextBox();
             this.lb_n_reg = new System.Windows.Forms.Label();
             this.gb_del = new System.Windows.Forms.GroupBox();
-            this.rb_del_a = new System.Windows.Forms.RadioButton();
-            this.rb_del_m = new System.Windows.Forms.RadioButton();
-            this.rb_del_y = new System.Windows.Forms.RadioButton();
+            this.cb_deleg = new System.Windows.Forms.ComboBox();
             this.gb_estado = new System.Windows.Forms.GroupBox();
             this.gb_reg = new System.Windows.Forms.GroupBox();
             this.gb_usu = new System.Windows.Forms.GroupBox();
@@ -137,6 +135,10 @@
             this.lb_num_rg_rg = new System.Windows.Forms.Label();
             this.tab_reg = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.gn_f_anul = new System.Windows.Forms.GroupBox();
+            this.tb_f_anul = new System.Windows.Forms.TextBox();
+            this.gb_enviado = new System.Windows.Forms.GroupBox();
+            this.tb_enviado = new System.Windows.Forms.TextBox();
             this.btt_ir_col = new System.Windows.Forms.Button();
             this.btt_col_buscar = new System.Windows.Forms.Button();
             this.tb_vehic = new System.Windows.Forms.TextBox();
@@ -172,6 +174,18 @@
             this.btt_det_save = new System.Windows.Forms.Button();
             this.btt_det_new = new System.Windows.Forms.Button();
             this.dgv_linfac = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gb_escri = new System.Windows.Forms.GroupBox();
+            this.tb_entidad = new System.Windows.Forms.TextBox();
+            this.lb_ent_bc = new System.Windows.Forms.Label();
+            this.tb_n_operacion = new System.Windows.Forms.TextBox();
+            this.lb_n_opera = new System.Windows.Forms.Label();
+            this.tb_notario = new System.Windows.Forms.TextBox();
+            this.lb_notario = new System.Windows.Forms.Label();
+            this.tb_impor_liq = new System.Windows.Forms.TextBox();
+            this.lb_impor_liq = new System.Windows.Forms.Label();
+            this.tb_firmado_por = new System.Windows.Forms.TextBox();
+            this.lb_firmado_por = new System.Windows.Forms.Label();
             this.gb_fra.SuspendLayout();
             this.gb_est_fra.SuspendLayout();
             this.gb_fac_a.SuspendLayout();
@@ -182,12 +196,16 @@
             this.gb_usu.SuspendLayout();
             this.tab_reg.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.gn_f_anul.SuspendLayout();
+            this.gb_enviado.SuspendLayout();
             this.gp_exp_ntl.SuspendLayout();
             this.tab_fra.SuspendLayout();
             this.tab_lin.SuspendLayout();
             this.gb_det.SuspendLayout();
             this.gb_det3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_linfac)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.gb_escri.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_reg
@@ -227,11 +245,13 @@
             "PTE. GESTORÍA",
             "EN TRÁMITE",
             "TERMINADO",
-            "ANULADO"});
+            "ANULADO",
+            "LIQUIDADO"});
             this.cb_estado.Location = new System.Drawing.Point(6, 21);
             this.cb_estado.Name = "cb_estado";
             this.cb_estado.Size = new System.Drawing.Size(124, 24);
             this.cb_estado.TabIndex = 48;
+            this.cb_estado.SelectedIndexChanged += new System.EventHandler(this.cb_estado_SelectedIndexChanged);
             // 
             // gb_fra
             // 
@@ -848,7 +868,7 @@
             "EX",
             "AVPO",
             "A"});
-            this.cb_sec_int.Location = new System.Drawing.Point(311, 196);
+            this.cb_sec_int.Location = new System.Drawing.Point(301, 186);
             this.cb_sec_int.Name = "cb_sec_int";
             this.cb_sec_int.Size = new System.Drawing.Size(99, 24);
             this.cb_sec_int.TabIndex = 24;
@@ -857,7 +877,7 @@
             // 
             this.lb_sec_int.AutoSize = true;
             this.lb_sec_int.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sec_int.Location = new System.Drawing.Point(236, 198);
+            this.lb_sec_int.Location = new System.Drawing.Point(226, 189);
             this.lb_sec_int.Name = "lb_sec_int";
             this.lb_sec_int.Size = new System.Drawing.Size(69, 18);
             this.lb_sec_int.TabIndex = 32;
@@ -866,7 +886,7 @@
             // tb_matri
             // 
             this.tb_matri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_matri.Location = new System.Drawing.Point(86, 197);
+            this.tb_matri.Location = new System.Drawing.Point(86, 196);
             this.tb_matri.Name = "tb_matri";
             this.tb_matri.Size = new System.Drawing.Size(100, 24);
             this.tb_matri.TabIndex = 22;
@@ -886,7 +906,7 @@
             // 
             this.cb_tram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_tram.FormattingEnabled = true;
-            this.cb_tram.Location = new System.Drawing.Point(311, 162);
+            this.cb_tram.Location = new System.Drawing.Point(300, 153);
             this.cb_tram.Name = "cb_tram";
             this.cb_tram.Size = new System.Drawing.Size(195, 24);
             this.cb_tram.TabIndex = 20;
@@ -895,7 +915,7 @@
             // 
             this.lb_tram.AutoSize = true;
             this.lb_tram.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tram.Location = new System.Drawing.Point(247, 162);
+            this.lb_tram.Location = new System.Drawing.Point(237, 157);
             this.lb_tram.Name = "lb_tram";
             this.lb_tram.Size = new System.Drawing.Size(58, 18);
             this.lb_tram.TabIndex = 28;
@@ -938,7 +958,7 @@
             "Escrituras",
             "Herencias",
             "Varios"});
-            this.cb_sec.Location = new System.Drawing.Point(86, 161);
+            this.cb_sec.Location = new System.Drawing.Point(86, 163);
             this.cb_sec.Name = "cb_sec";
             this.cb_sec.Size = new System.Drawing.Size(129, 24);
             this.cb_sec.TabIndex = 18;
@@ -948,7 +968,7 @@
             // 
             this.lb_sec.AutoSize = true;
             this.lb_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_sec.Location = new System.Drawing.Point(9, 153);
+            this.lb_sec.Location = new System.Drawing.Point(9, 157);
             this.lb_sec.Name = "lb_sec";
             this.lb_sec.Size = new System.Drawing.Size(62, 18);
             this.lb_sec.TabIndex = 26;
@@ -992,7 +1012,7 @@
             // tb_tit_rg
             // 
             this.tb_tit_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_tit_rg.Location = new System.Drawing.Point(86, 96);
+            this.tb_tit_rg.Location = new System.Drawing.Point(86, 97);
             this.tb_tit_rg.Name = "tb_tit_rg";
             this.tb_tit_rg.Size = new System.Drawing.Size(100, 24);
             this.tb_tit_rg.TabIndex = 12;
@@ -1002,7 +1022,7 @@
             // 
             this.lb_tit_reg.AutoSize = true;
             this.lb_tit_reg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tit_reg.Location = new System.Drawing.Point(23, 89);
+            this.lb_tit_reg.Location = new System.Drawing.Point(23, 91);
             this.lb_tit_reg.Name = "lb_tit_reg";
             this.lb_tit_reg.Size = new System.Drawing.Size(48, 18);
             this.lb_tit_reg.TabIndex = 20;
@@ -1024,7 +1044,7 @@
             // tb_cte_rg
             // 
             this.tb_cte_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_cte_rg.Location = new System.Drawing.Point(86, 66);
+            this.tb_cte_rg.Location = new System.Drawing.Point(86, 64);
             this.tb_cte_rg.Name = "tb_cte_rg";
             this.tb_cte_rg.Size = new System.Drawing.Size(100, 24);
             this.tb_cte_rg.TabIndex = 6;
@@ -1034,7 +1054,7 @@
             // 
             this.lb_cte_rg.AutoSize = true;
             this.lb_cte_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cte_rg.Location = new System.Drawing.Point(18, 56);
+            this.lb_cte_rg.Location = new System.Drawing.Point(18, 58);
             this.lb_cte_rg.Name = "lb_cte_rg";
             this.lb_cte_rg.Size = new System.Drawing.Size(53, 18);
             this.lb_cte_rg.TabIndex = 15;
@@ -1069,7 +1089,7 @@
             // 
             this.lb_n_reg.AutoSize = true;
             this.lb_n_reg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_n_reg.Location = new System.Drawing.Point(9, 21);
+            this.lb_n_reg.Location = new System.Drawing.Point(9, 25);
             this.lb_n_reg.Name = "lb_n_reg";
             this.lb_n_reg.Size = new System.Drawing.Size(62, 18);
             this.lb_n_reg.TabIndex = 11;
@@ -1078,58 +1098,37 @@
             // gb_del
             // 
             this.gb_del.BackColor = System.Drawing.Color.LightBlue;
-            this.gb_del.Controls.Add(this.rb_del_a);
-            this.gb_del.Controls.Add(this.rb_del_m);
-            this.gb_del.Controls.Add(this.rb_del_y);
+            this.gb_del.Controls.Add(this.cb_deleg);
             this.gb_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_del.Location = new System.Drawing.Point(517, 10);
             this.gb_del.Name = "gb_del";
-            this.gb_del.Size = new System.Drawing.Size(134, 110);
+            this.gb_del.Size = new System.Drawing.Size(134, 45);
             this.gb_del.TabIndex = 0;
             this.gb_del.TabStop = false;
             this.gb_del.Text = "Delegación";
             // 
-            // rb_del_a
+            // cb_deleg
             // 
-            this.rb_del_a.AutoSize = true;
-            this.rb_del_a.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_del_a.Location = new System.Drawing.Point(22, 81);
-            this.rb_del_a.Name = "rb_del_a";
-            this.rb_del_a.Size = new System.Drawing.Size(88, 20);
-            this.rb_del_a.TabIndex = 2;
-            this.rb_del_a.Text = "Albacete";
-            this.rb_del_a.UseVisualStyleBackColor = true;
-            // 
-            // rb_del_m
-            // 
-            this.rb_del_m.AutoSize = true;
-            this.rb_del_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_del_m.Location = new System.Drawing.Point(22, 51);
-            this.rb_del_m.Name = "rb_del_m";
-            this.rb_del_m.Size = new System.Drawing.Size(72, 20);
-            this.rb_del_m.TabIndex = 1;
-            this.rb_del_m.Text = "Murcia";
-            this.rb_del_m.UseVisualStyleBackColor = true;
-            // 
-            // rb_del_y
-            // 
-            this.rb_del_y.AutoSize = true;
-            this.rb_del_y.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_del_y.Location = new System.Drawing.Point(22, 21);
-            this.rb_del_y.Name = "rb_del_y";
-            this.rb_del_y.Size = new System.Drawing.Size(66, 20);
-            this.rb_del_y.TabIndex = 0;
-            this.rb_del_y.Text = "Yecla";
-            this.rb_del_y.UseVisualStyleBackColor = true;
+            this.cb_deleg.Enabled = false;
+            this.cb_deleg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_deleg.FormattingEnabled = true;
+            this.cb_deleg.Items.AddRange(new object[] {
+            "YECLA",
+            "ALBACETE",
+            "MURCIA"});
+            this.cb_deleg.Location = new System.Drawing.Point(6, 17);
+            this.cb_deleg.Name = "cb_deleg";
+            this.cb_deleg.Size = new System.Drawing.Size(124, 24);
+            this.cb_deleg.TabIndex = 49;
             // 
             // gb_estado
             // 
             this.gb_estado.BackColor = System.Drawing.Color.LightBlue;
             this.gb_estado.Controls.Add(this.cb_estado);
             this.gb_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_estado.Location = new System.Drawing.Point(517, 131);
+            this.gb_estado.Location = new System.Drawing.Point(517, 58);
             this.gb_estado.Name = "gb_estado";
-            this.gb_estado.Size = new System.Drawing.Size(134, 63);
+            this.gb_estado.Size = new System.Drawing.Size(134, 55);
             this.gb_estado.TabIndex = 0;
             this.gb_estado.TabStop = false;
             this.gb_estado.Text = "Estado";
@@ -1146,6 +1145,10 @@
             this.gb_reg.Controls.Add(this.lb_tit_reg);
             this.gb_reg.Controls.Add(this.lb_cte_rg);
             this.gb_reg.Controls.Add(this.lb_n_reg);
+            this.gb_reg.Controls.Add(this.lb_tram);
+            this.gb_reg.Controls.Add(this.cb_tram);
+            this.gb_reg.Controls.Add(this.lb_sec_int);
+            this.gb_reg.Controls.Add(this.cb_sec_int);
             this.gb_reg.Location = new System.Drawing.Point(10, 10);
             this.gb_reg.Name = "gb_reg";
             this.gb_reg.Size = new System.Drawing.Size(501, 253);
@@ -1178,11 +1181,11 @@
             // 
             this.tb_usu.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tb_usu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_usu.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_usu.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_usu.Location = new System.Drawing.Point(3, 15);
             this.tb_usu.Name = "tb_usu";
             this.tb_usu.ReadOnly = true;
-            this.tb_usu.Size = new System.Drawing.Size(83, 18);
+            this.tb_usu.Size = new System.Drawing.Size(83, 15);
             this.tb_usu.TabIndex = 50;
             // 
             // tb_n_col_rg
@@ -1202,7 +1205,7 @@
             // 
             this.lb_col_rg.AutoSize = true;
             this.lb_col_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_col_rg.Location = new System.Drawing.Point(9, 118);
+            this.lb_col_rg.Location = new System.Drawing.Point(6, 124);
             this.lb_col_rg.Name = "lb_col_rg";
             this.lb_col_rg.Size = new System.Drawing.Size(65, 18);
             this.lb_col_rg.TabIndex = 72;
@@ -1212,7 +1215,7 @@
             // 
             this.lb_vehic.AutoSize = true;
             this.lb_vehic.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_vehic.Location = new System.Drawing.Point(7, 221);
+            this.lb_vehic.Location = new System.Drawing.Point(7, 223);
             this.lb_vehic.Name = "lb_vehic";
             this.lb_vehic.Size = new System.Drawing.Size(64, 18);
             this.lb_vehic.TabIndex = 70;
@@ -1387,6 +1390,7 @@
             // tab_reg
             // 
             this.tab_reg.Controls.Add(this.tabPage1);
+            this.tab_reg.Controls.Add(this.tabPage2);
             this.tab_reg.Controls.Add(this.tab_fra);
             this.tab_reg.Controls.Add(this.tab_lin);
             this.tab_reg.Location = new System.Drawing.Point(12, 25);
@@ -1398,6 +1402,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage1.Controls.Add(this.gn_f_anul);
+            this.tabPage1.Controls.Add(this.gb_enviado);
             this.tabPage1.Controls.Add(this.btt_ir_col);
             this.tabPage1.Controls.Add(this.btt_col_buscar);
             this.tabPage1.Controls.Add(this.tb_vehic);
@@ -1422,15 +1428,11 @@
             this.tabPage1.Controls.Add(this.btt_ir_cte);
             this.tabPage1.Controls.Add(this.btt_ir_tit);
             this.tabPage1.Controls.Add(this.tb_n_cte_rg);
-            this.tabPage1.Controls.Add(this.lb_tram);
             this.tabPage1.Controls.Add(this.tb_cte_rg);
-            this.tabPage1.Controls.Add(this.cb_tram);
             this.tabPage1.Controls.Add(this.lb_fec_ent);
             this.tabPage1.Controls.Add(this.tb_matri);
             this.tabPage1.Controls.Add(this.dtp_fec_rg);
-            this.tabPage1.Controls.Add(this.lb_sec_int);
             this.tabPage1.Controls.Add(this.tb_n_reg);
-            this.tabPage1.Controls.Add(this.cb_sec_int);
             this.tabPage1.Controls.Add(this.gb_reg);
             this.tabPage1.Controls.Add(this.gb_del);
             this.tabPage1.Controls.Add(this.gb_estado);
@@ -1447,6 +1449,45 @@
             this.tabPage1.Size = new System.Drawing.Size(659, 459);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registro";
+            // 
+            // gn_f_anul
+            // 
+            this.gn_f_anul.Controls.Add(this.tb_f_anul);
+            this.gn_f_anul.Location = new System.Drawing.Point(517, 209);
+            this.gn_f_anul.Name = "gn_f_anul";
+            this.gn_f_anul.Size = new System.Drawing.Size(134, 54);
+            this.gn_f_anul.TabIndex = 71;
+            this.gn_f_anul.TabStop = false;
+            this.gn_f_anul.Text = "Fecha anulación";
+            // 
+            // tb_f_anul
+            // 
+            this.tb_f_anul.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tb_f_anul.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tb_f_anul.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_f_anul.Location = new System.Drawing.Point(6, 19);
+            this.tb_f_anul.Name = "tb_f_anul";
+            this.tb_f_anul.ReadOnly = true;
+            this.tb_f_anul.Size = new System.Drawing.Size(119, 25);
+            this.tb_f_anul.TabIndex = 51;
+            // 
+            // gb_enviado
+            // 
+            this.gb_enviado.Controls.Add(this.tb_enviado);
+            this.gb_enviado.Location = new System.Drawing.Point(517, 163);
+            this.gb_enviado.Name = "gb_enviado";
+            this.gb_enviado.Size = new System.Drawing.Size(134, 46);
+            this.gb_enviado.TabIndex = 70;
+            this.gb_enviado.TabStop = false;
+            this.gb_enviado.Text = "Enviar por";
+            // 
+            // tb_enviado
+            // 
+            this.tb_enviado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_enviado.Location = new System.Drawing.Point(6, 16);
+            this.tb_enviado.Name = "tb_enviado";
+            this.tb_enviado.Size = new System.Drawing.Size(124, 24);
+            this.tb_enviado.TabIndex = 49;
             // 
             // btt_ir_col
             // 
@@ -1473,7 +1514,7 @@
             // tb_vehic
             // 
             this.tb_vehic.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_vehic.Location = new System.Drawing.Point(86, 231);
+            this.tb_vehic.Location = new System.Drawing.Point(86, 229);
             this.tb_vehic.MaxLength = 100;
             this.tb_vehic.Name = "tb_vehic";
             this.tb_vehic.Size = new System.Drawing.Size(324, 24);
@@ -1503,7 +1544,7 @@
             // tb_col_rg
             // 
             this.tb_col_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_col_rg.Location = new System.Drawing.Point(86, 126);
+            this.tb_col_rg.Location = new System.Drawing.Point(86, 130);
             this.tb_col_rg.Name = "tb_col_rg";
             this.tb_col_rg.Size = new System.Drawing.Size(100, 24);
             this.tb_col_rg.TabIndex = 15;
@@ -1570,9 +1611,9 @@
             // gp_exp_ntl
             // 
             this.gp_exp_ntl.Controls.Add(this.tb_exp_ntl);
-            this.gp_exp_ntl.Location = new System.Drawing.Point(517, 200);
+            this.gp_exp_ntl.Location = new System.Drawing.Point(517, 113);
             this.gp_exp_ntl.Name = "gp_exp_ntl";
-            this.gp_exp_ntl.Size = new System.Drawing.Size(134, 54);
+            this.gp_exp_ntl.Size = new System.Drawing.Size(134, 50);
             this.gp_exp_ntl.TabIndex = 69;
             this.gp_exp_ntl.TabStop = false;
             this.gp_exp_ntl.Text = "Exp. no tl.";
@@ -1580,7 +1621,7 @@
             // tb_exp_ntl
             // 
             this.tb_exp_ntl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_exp_ntl.Location = new System.Drawing.Point(16, 19);
+            this.tb_exp_ntl.Location = new System.Drawing.Point(16, 13);
             this.tb_exp_ntl.Name = "tb_exp_ntl";
             this.tb_exp_ntl.Size = new System.Drawing.Size(100, 24);
             this.tb_exp_ntl.TabIndex = 49;
@@ -1807,12 +1848,140 @@
             this.dgv_linfac.TabIndex = 79;
             this.dgv_linfac.SelectionChanged += new System.EventHandler(this.dgv_linfac_SelectionChanged);
             // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage2.Controls.Add(this.gb_escri);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(659, 459);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Escritura";
+            // 
+            // gb_escri
+            // 
+            this.gb_escri.Controls.Add(this.tb_firmado_por);
+            this.gb_escri.Controls.Add(this.lb_firmado_por);
+            this.gb_escri.Controls.Add(this.tb_impor_liq);
+            this.gb_escri.Controls.Add(this.lb_impor_liq);
+            this.gb_escri.Controls.Add(this.tb_notario);
+            this.gb_escri.Controls.Add(this.lb_notario);
+            this.gb_escri.Controls.Add(this.tb_n_operacion);
+            this.gb_escri.Controls.Add(this.lb_n_opera);
+            this.gb_escri.Controls.Add(this.tb_entidad);
+            this.gb_escri.Controls.Add(this.lb_ent_bc);
+            this.gb_escri.Location = new System.Drawing.Point(12, 9);
+            this.gb_escri.Name = "gb_escri";
+            this.gb_escri.Size = new System.Drawing.Size(633, 233);
+            this.gb_escri.TabIndex = 0;
+            this.gb_escri.TabStop = false;
+            // 
+            // tb_entidad
+            // 
+            this.tb_entidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_entidad.Location = new System.Drawing.Point(150, 33);
+            this.tb_entidad.MaxLength = 100;
+            this.tb_entidad.Name = "tb_entidad";
+            this.tb_entidad.Size = new System.Drawing.Size(448, 24);
+            this.tb_entidad.TabIndex = 71;
+            this.tb_entidad.Validating += new System.ComponentModel.CancelEventHandler(this.tb_entidad_Validating);
+            // 
+            // lb_ent_bc
+            // 
+            this.lb_ent_bc.AutoSize = true;
+            this.lb_ent_bc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ent_bc.Location = new System.Drawing.Point(17, 36);
+            this.lb_ent_bc.Name = "lb_ent_bc";
+            this.lb_ent_bc.Size = new System.Drawing.Size(119, 18);
+            this.lb_ent_bc.TabIndex = 72;
+            this.lb_ent_bc.Text = "Entidad Bancaria";
+            // 
+            // tb_n_operacion
+            // 
+            this.tb_n_operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_n_operacion.Location = new System.Drawing.Point(150, 72);
+            this.tb_n_operacion.MaxLength = 100;
+            this.tb_n_operacion.Name = "tb_n_operacion";
+            this.tb_n_operacion.Size = new System.Drawing.Size(156, 24);
+            this.tb_n_operacion.TabIndex = 73;
+            this.tb_n_operacion.Validating += new System.ComponentModel.CancelEventHandler(this.tb_n_operacion_Validating);
+            // 
+            // lb_n_opera
+            // 
+            this.lb_n_opera.AutoSize = true;
+            this.lb_n_opera.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_n_opera.Location = new System.Drawing.Point(19, 75);
+            this.lb_n_opera.Name = "lb_n_opera";
+            this.lb_n_opera.Size = new System.Drawing.Size(117, 18);
+            this.lb_n_opera.TabIndex = 74;
+            this.lb_n_opera.Text = "Num. Operación";
+            // 
+            // tb_notario
+            // 
+            this.tb_notario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_notario.Location = new System.Drawing.Point(149, 111);
+            this.tb_notario.MaxLength = 100;
+            this.tb_notario.Name = "tb_notario";
+            this.tb_notario.Size = new System.Drawing.Size(448, 24);
+            this.tb_notario.TabIndex = 75;
+            this.tb_notario.Validating += new System.ComponentModel.CancelEventHandler(this.tb_notario_Validating);
+            // 
+            // lb_notario
+            // 
+            this.lb_notario.AutoSize = true;
+            this.lb_notario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_notario.Location = new System.Drawing.Point(79, 114);
+            this.lb_notario.Name = "lb_notario";
+            this.lb_notario.Size = new System.Drawing.Size(57, 18);
+            this.lb_notario.TabIndex = 76;
+            this.lb_notario.Text = "Notario";
+            // 
+            // tb_impor_liq
+            // 
+            this.tb_impor_liq.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_impor_liq.Location = new System.Drawing.Point(150, 150);
+            this.tb_impor_liq.MaxLength = 100;
+            this.tb_impor_liq.Name = "tb_impor_liq";
+            this.tb_impor_liq.Size = new System.Drawing.Size(133, 24);
+            this.tb_impor_liq.TabIndex = 77;
+            this.tb_impor_liq.Validating += new System.ComponentModel.CancelEventHandler(this.tb_impor_liq_Validating);
+            // 
+            // lb_impor_liq
+            // 
+            this.lb_impor_liq.AutoSize = true;
+            this.lb_impor_liq.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_impor_liq.Location = new System.Drawing.Point(78, 153);
+            this.lb_impor_liq.Name = "lb_impor_liq";
+            this.lb_impor_liq.Size = new System.Drawing.Size(58, 18);
+            this.lb_impor_liq.TabIndex = 78;
+            this.lb_impor_liq.Text = "Importe";
+            // 
+            // tb_firmado_por
+            // 
+            this.tb_firmado_por.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_firmado_por.Location = new System.Drawing.Point(149, 189);
+            this.tb_firmado_por.MaxLength = 100;
+            this.tb_firmado_por.Name = "tb_firmado_por";
+            this.tb_firmado_por.Size = new System.Drawing.Size(448, 24);
+            this.tb_firmado_por.TabIndex = 79;
+            this.tb_firmado_por.Validating += new System.ComponentModel.CancelEventHandler(this.tb_firmado_por_Validating);
+            // 
+            // lb_firmado_por
+            // 
+            this.lb_firmado_por.AutoSize = true;
+            this.lb_firmado_por.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_firmado_por.Location = new System.Drawing.Point(47, 192);
+            this.lb_firmado_por.Name = "lb_firmado_por";
+            this.lb_firmado_por.Size = new System.Drawing.Size(89, 18);
+            this.lb_firmado_por.TabIndex = 80;
+            this.lb_firmado_por.Text = "Firmado por";
+            // 
             // MRegistros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(784, 564);
+            this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.lb_titulo_rg);
             this.Controls.Add(this.tab_reg);
             this.Controls.Add(this.lb_num_rg_rg);
@@ -1844,7 +2013,6 @@
             this.gb_t_fra.ResumeLayout(false);
             this.gb_t_fra.PerformLayout();
             this.gb_del.ResumeLayout(false);
-            this.gb_del.PerformLayout();
             this.gb_estado.ResumeLayout(false);
             this.gb_reg.ResumeLayout(false);
             this.gb_reg.PerformLayout();
@@ -1853,6 +2021,10 @@
             this.tab_reg.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.gn_f_anul.ResumeLayout(false);
+            this.gn_f_anul.PerformLayout();
+            this.gb_enviado.ResumeLayout(false);
+            this.gb_enviado.PerformLayout();
             this.gp_exp_ntl.ResumeLayout(false);
             this.gp_exp_ntl.PerformLayout();
             this.tab_fra.ResumeLayout(false);
@@ -1861,6 +2033,9 @@
             this.gb_det3.ResumeLayout(false);
             this.gb_det3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_linfac)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.gb_escri.ResumeLayout(false);
+            this.gb_escri.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1886,8 +2061,6 @@
         private System.Windows.Forms.TextBox tb_n_reg;
         private System.Windows.Forms.Label lb_n_reg;
         private System.Windows.Forms.GroupBox gb_del;
-        private System.Windows.Forms.RadioButton rb_del_m;
-        private System.Windows.Forms.RadioButton rb_del_y;
         private System.Windows.Forms.Button btt_tit_buscar;
         private System.Windows.Forms.Button btt_cte_buscar;
         private System.Windows.Forms.TextBox tb_n_tit_rg;
@@ -1897,7 +2070,6 @@
         private System.Windows.Forms.Label lb_cte_rg;
         private System.Windows.Forms.Label lb_fec_ent;
         private System.Windows.Forms.DateTimePicker dtp_fec_rg;
-        private System.Windows.Forms.RadioButton rb_del_a;
         private System.Windows.Forms.ComboBox cb_sec;
         private System.Windows.Forms.Label lb_sec;
         private System.Windows.Forms.ComboBox cb_sec_int;
@@ -2011,5 +2183,22 @@
         private System.Windows.Forms.GroupBox gb_usu;
         private System.Windows.Forms.TextBox tb_usu;
         private System.Windows.Forms.Button btt_ir_hrg;
+        private System.Windows.Forms.ComboBox cb_deleg;
+        private System.Windows.Forms.GroupBox gn_f_anul;
+        private System.Windows.Forms.TextBox tb_f_anul;
+        private System.Windows.Forms.GroupBox gb_enviado;
+        private System.Windows.Forms.TextBox tb_enviado;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox gb_escri;
+        private System.Windows.Forms.TextBox tb_entidad;
+        private System.Windows.Forms.Label lb_ent_bc;
+        private System.Windows.Forms.TextBox tb_firmado_por;
+        private System.Windows.Forms.Label lb_firmado_por;
+        private System.Windows.Forms.TextBox tb_impor_liq;
+        private System.Windows.Forms.Label lb_impor_liq;
+        private System.Windows.Forms.TextBox tb_notario;
+        private System.Windows.Forms.Label lb_notario;
+        private System.Windows.Forms.TextBox tb_n_operacion;
+        private System.Windows.Forms.Label lb_n_opera;
     }
 }

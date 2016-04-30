@@ -867,6 +867,11 @@ namespace Asegest
             tb_usu.Text = General.usuario;
             tb_enviado.Text = " ";
             tb_f_anul.Text = " ";
+            tb_entidad.Text = " ";
+            tb_n_operacion.Text = " ";
+            tb_notario.Text = " ";
+            tb_impor_liq.Text = "0";
+            tb_firmado_por.Text = " ";
         }
 
         public char Seleccionar_deleg()

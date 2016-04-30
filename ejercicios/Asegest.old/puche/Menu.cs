@@ -236,6 +236,27 @@ namespace Asegest
             _Rpt_RegASI.Show();
         }
 
+        private void actualizaNumRegToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //si acceso del usu <> 9, no entra a usuarios
+            if (General.usuario == "ADMIN")
+            {
+                Actualiza_Reg _Actualiza_Reg = new Actualiza_Reg();
+                _Actualiza_Reg.Show();
+            }
+            else
+            {
+                MessageBox.Show("El usuario actual no tiene permisos para entrar en esta opción de menu.", "Atención!", MessageBoxButtons.OK, MessageBoxIcon.Warning);                
+            }
+        }
+       
+        private void liqEscriturasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Rpt_RegLiq _Rpt_RegLiq = new Rpt_RegLiq();
+            _Rpt_RegLiq.Show();
+        }
+
+        
         
 
         

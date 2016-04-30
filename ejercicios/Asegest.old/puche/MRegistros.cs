@@ -55,16 +55,19 @@ namespace Asegest
 
         private void Asigna_campos_rg(Registro pRegistro)
         {
-            
+
             if (pRegistro.delegacion == 'Y')
-                    rb_del_y.Checked = true;
+                //rb_del_y.Checked = true;
+                cb_deleg.Text = "YECLA";
+            else
+            {
+                if (pRegistro.delegacion == 'M')
+                    //rb_del_m.Checked = true;
+                    cb_deleg.Text = "MURCIA";
                 else
-                {
-                    if (pRegistro.delegacion == 'M')
-                        rb_del_m.Checked = true;
-                    else
-                        rb_del_a.Checked = true;
-                }
+                    //rb_del_a.Checked = true;
+                    cb_deleg.Text = "ALBACETE";
+            }
             
             tb_n_reg.Text = Convert.ToString(pRegistro.n_reg); 
             dtp_fec_rg.Value = pRegistro.fec_ent; 
@@ -95,6 +98,13 @@ namespace Asegest
             tb_bate_ant.Text = pRegistro.bate_ant;
             tb_nif.Text = pRegistro.nif;
             tb_usu.Text = pRegistro.usuario;
+            tb_enviado.Text = pRegistro.enviado;
+            tb_f_anul.Text = Convert.ToString(pRegistro.fec_anul);
+            tb_entidad.Text = Convert.ToString(pRegistro.entidad);            
+            tb_n_operacion.Text = Convert.ToString(pRegistro.n_operacion);
+            tb_notario.Text = Convert.ToString(pRegistro.notario);
+            tb_impor_liq.Text = pRegistro.impor_liq.ToString("N2");
+            tb_firmado_por.Text = Convert.ToString(pRegistro.firmado_por);
             tb_d_col.Text = pRegistro.dcho_col.ToString("N2");//Convert.ToString(pRegistro.tasa_tl); 
             if (pRegistro.t_cte_fra == 'C')
                 cb_cte_fra.Text = "CLIENTE";
@@ -196,6 +206,13 @@ namespace Asegest
             pRegistro.ruta_pdf = tb_pdf.Text.Trim();
             pRegistro.vehiculo = tb_vehic.Text.Trim();
             pRegistro.usuario = General.usuario; //tb_usu.Text.Trim();
+            pRegistro.enviado = tb_enviado.Text.Trim();
+            pRegistro.fec_anul = tb_f_anul.Text.Trim();
+            pRegistro.entidad = tb_entidad.Text.Trim();
+            pRegistro.n_operacion = tb_n_operacion.Text.Trim();
+            pRegistro.notario = tb_notario.Text.Trim();
+            pRegistro.impor_liq = Convert.ToDecimal(tb_impor_liq.Text);
+            pRegistro.firmado_por = tb_firmado_por.Text.Trim();
             /*
             if (string.IsNullOrWhiteSpace(tb_letra.Text))
                 tb_letra.Text = " ";
@@ -208,7 +225,7 @@ namespace Asegest
         private void btt_guardar_rg_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(tb_n_reg.Text) || string.IsNullOrWhiteSpace(tb_cte_rg.Text) || string.IsNullOrWhiteSpace(tb_col_rg.Text) ||
-               string.IsNullOrWhiteSpace(tb_tit_rg.Text) || (rb_del_y.Checked==false & rb_del_m.Checked==false & rb_del_a.Checked==false))
+               string.IsNullOrWhiteSpace(tb_tit_rg.Text)) //|| (rb_del_y.Checked==false & rb_del_m.Checked==false & rb_del_a.Checked==false))
 
                 MessageBox.Show("Hay uno o más Campos Vacios, no se puede guardar!", "Campos Vacios!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
@@ -223,7 +240,11 @@ namespace Asegest
                     MessageBox.Show("Registro Guardado Con Exito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     //busco el ultimo reg. insetado
-                    int max_reg = Reg_Opera.Calcular_max_reg(pRegistro.delegacion);
+                    //int max_reg = Reg_Opera.Calcular_max_reg(pRegistro.delegacion);
+                    
+                    //ultimo registro año es el resultado.
+                    int max_reg = resultado;
+
                     //Inserto linea de alta en h_registros
                     HReg_Opera.Agregar(pRegistro.delegacion, max_reg, 'A');
 
@@ -300,11 +321,11 @@ namespace Asegest
             char deleg_act; //solo de la delegacion actual
 
             
-            if (rb_del_y.Checked == true)
+            if (cb_deleg.Text == "YECLA")//(rb_del_y.Checked == true)
                 deleg_act = 'Y';
             else
             {
-                if (rb_del_m.Checked == true)
+                if (cb_deleg.Text == "MURCIA")//(rb_del_m.Checked == true)
                     deleg_act = 'M';
                 else
                     deleg_act = 'A';
@@ -344,7 +365,7 @@ namespace Asegest
         private void btt_modificar_rg_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(tb_n_reg.Text) || string.IsNullOrWhiteSpace(tb_cte_rg.Text) || string.IsNullOrWhiteSpace(tb_col_rg.Text) ||
-               string.IsNullOrWhiteSpace(tb_tit_rg.Text) || (rb_del_y.Checked==false & rb_del_m.Checked==false & rb_del_a.Checked==false))
+               string.IsNullOrWhiteSpace(tb_tit_rg.Text)) // || (rb_del_y.Checked==false & rb_del_m.Checked==false & rb_del_a.Checked==false))
 
                 MessageBox.Show("Hay Uno o mas Campos Vacios!", "Campos Vacios!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
@@ -467,13 +488,16 @@ namespace Asegest
             rb_del_y.Checked = true;
             */
             if (General.delegacion == 'Y')
-                rb_del_y.Checked = true;
+                //rb_del_y.Checked = true;
+                cb_deleg.Text = "YECLA";
             else
             {
                 if (General.delegacion == 'M')
-                    rb_del_m.Checked = true;
+                    //rb_del_m.Checked = true;
+                    cb_deleg.Text = "MURCIA";
                 else
-                    rb_del_a.Checked = true;
+                    //rb_del_a.Checked = true;
+                    cb_deleg.Text = "ALBACETE";
             }
             /*
             cb_est_fra.Items.Clear();
@@ -523,9 +547,9 @@ namespace Asegest
 
         void Limpiar_rg()
         {
-            rb_del_a.Checked = false;
+            /*rb_del_a.Checked = false;
             rb_del_m.Checked = false;
-            rb_del_y.Checked = false;
+            rb_del_y.Checked = false;*/
             tb_n_reg.Clear();
             dtp_fec_rg.ResetText();
             tb_cte_rg.Clear();
@@ -649,9 +673,9 @@ namespace Asegest
 
         void Deshabilitar_rg()
         {
-            rb_del_a.Enabled = false;
-            rb_del_m.Enabled = false;
-            rb_del_y.Enabled = false;
+            //rb_del_a.Enabled = false;
+            //rb_del_m.Enabled = false;
+            //rb_del_y.Enabled = false;
             tb_n_reg.Enabled = false;
             dtp_fec_rg.Enabled = false;
             tb_cte_rg.Enabled = false;
@@ -841,15 +865,17 @@ namespace Asegest
             tb_itasa3.Text = "0";
             tb_itasa4.Text = "0";
             tb_usu.Text = General.usuario;
+            tb_enviado.Text = " ";
+            tb_f_anul.Text = " ";
         }
 
         public char Seleccionar_deleg()
         {
-            if (rb_del_y.Checked == true)
+            if (cb_deleg.Text == "YECLA")//(rb_del_y.Checked == true)
                     return 'Y';
                 else
                 {
-                    if (rb_del_m.Checked == true)
+                    if (cb_deleg.Text == "MURCIA")//(rb_del_m.Checked == true)
                         return 'M';
                     else
                         return 'A';
@@ -927,12 +953,21 @@ namespace Asegest
                     this.cb_tram.Items.Add("Otros");
                     break;
                 */
-                 
-                case 7: case 8: // escritura
+
+                case 7:  // escrituras                   
+                     this.cb_tram.Items.Clear();
+                    this.cb_tram.Items.Add("Herencias");
+                    this.cb_tram.Text = " "; //el text visible = 1er. item
+                    this.cb_tram.Items.Add("Firmas");
+                    this.cb_tram.Items.Add("Asistencia Firma");
+                    this.cb_tram.Items.Add("Cotejo");
+                    this.cb_tram.Items.Add("Liquidación Impuestos");
+                    break;
+
+                case 8: //herencias
                     this.cb_tram.Items.Clear();
                     break;
                 
- 
                 case 9: // Varios
                     this.cb_tram.Items.Clear();
                     this.cb_tram.Items.Add("Varios");
@@ -1829,6 +1864,77 @@ namespace Asegest
         {
             MHRegistros _MHReg = new MHRegistros(RegActual.delegacion,RegActual.n_reg);            
             _MHReg.ShowDialog();
+        }
+
+        private void cb_estado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int seleccionado = Convert.ToInt32(((ComboBox)sender).SelectedIndex);
+            // ver si le podemos pasar la lista entera o item a item
+            switch (seleccionado)
+            {
+                
+                case 4: // Anulado                    
+                    tb_f_anul.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                    break;
+                default:
+                    tb_f_anul.Text = " ";
+                    break;
+            }
+        }
+
+        private void tb_entidad_Validating(object sender, CancelEventArgs e)
+        {
+            if (General.Validar_long(tb_entidad.Text.TrimEnd(), 50) == -1)
+            {
+                tb_entidad.Focus();
+                tb_entidad.Text = tb_entidad.Text.Substring(0, 49);
+                tb_entidad.SelectAll();
+            }
+        }
+
+        private void tb_n_operacion_Validating(object sender, CancelEventArgs e)
+        {
+            if (General.Validar_long(tb_n_operacion.Text.TrimEnd(), 20) == -1)
+            {
+                tb_n_operacion.Focus();
+                tb_n_operacion.Text = tb_n_operacion.Text.Substring(0, 19);
+                tb_n_operacion.SelectAll();
+            }
+        }
+
+        private void tb_notario_Validating(object sender, CancelEventArgs e)
+        {
+            if (General.Validar_long(tb_notario.Text.TrimEnd(), 50) == -1)
+            {
+                tb_notario.Focus();
+                tb_notario.Text = tb_notario.Text.Substring(0, 49);
+                tb_notario.SelectAll();
+            }
+        }
+
+        private void tb_firmado_por_Validating(object sender, CancelEventArgs e)
+        {
+            if (General.Validar_long(tb_firmado_por.Text.TrimEnd(), 50) == -1)
+            {
+                tb_firmado_por.Focus();
+                tb_firmado_por.Text = tb_firmado_por.Text.Substring(0, 49);
+                tb_firmado_por.SelectAll();
+            }
+        }
+
+        private void tb_impor_liq_Validating(object sender, CancelEventArgs e)
+        {
+            //validamos que sea entero y que existe ese id_cte
+            if (General.Validar_real(tb_impor_liq.Text) == -1)
+            {
+                tb_impor_liq.Text = "0";
+                tb_impor_liq.Focus();
+                tb_impor_liq.SelectAll();
+            }
+            else //valido pro cambiar "." x "," 
+            {
+                tb_impor_liq.Text = tb_impor_liq.Text.Replace(".", ",");
+            }
         } 
         
 

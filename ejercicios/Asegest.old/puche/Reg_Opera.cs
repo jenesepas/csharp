@@ -20,16 +20,41 @@ namespace Asegest
             //coversion de los decimales
             string shonorarios = General.Convertir_a_real(pRegistro.honorarios.ToString("N2"));
             string stasa = General.Convertir_a_real(pRegistro.tasa.ToString("N2"));
-            string sdcho_col = General.Convertir_a_real(pRegistro.dcho_col.ToString("0.00"));            
+            string sdcho_col = General.Convertir_a_real(pRegistro.dcho_col.ToString("0.00"));
+            string simpor_liq = General.Convertir_a_real(pRegistro.impor_liq.ToString("N2"));
 
-            string sql = "insert into registros values('" + pRegistro.delegacion + "',(select max(n_reg) from registros where delegacion='" + pRegistro.delegacion + "')+1,'" + pRegistro.fec_ent + "'," + pRegistro.id_cte + "," +
-                         pRegistro.id_titular + ",'" + pRegistro.seccion_int + "','" + pRegistro.seccion + "','" + pRegistro.t_tramite + "','" + pRegistro.matricula + "','" + pRegistro.estado + "'," +
-                         pRegistro.factura + ",'" + pRegistro.fec_fra + "','" + pRegistro.observacion + "','" + shonorarios + "','" + pRegistro.p_iva +
-                         "','" + stasa + "','" + pRegistro.exp_tl + "','" + pRegistro.fec_pre_exp + "','" + pRegistro.et_tasa + "','" + pRegistro.t_tasa + "','" + pRegistro.cambio_serv +
-                         "','" + pRegistro.bate_ant + "','" + pRegistro.nif + "','" + sdcho_col + "','" + pRegistro.t_cte_fra + "','" + pRegistro.et_tasa2 + "','" + pRegistro.t_tasa2 +
-                         "','" + pRegistro.et_tasa3 + "','" + pRegistro.t_tasa3 + "','" + pRegistro.et_tasa4 + "','" + pRegistro.t_tasa4 + "','" + pRegistro.descripcion + "','" + pRegistro.ruta_pdf +
-                         "','" + pRegistro.vehiculo + "'," + pRegistro.id_colabora + ",'" + pRegistro.estado_fac + "','" + pRegistro.exp_ntl +"','" + pRegistro.usuario + "')";
+            short panyo = Convert.ToInt16(pRegistro.fec_ent.Year);
+            //busco el ultimo reg. insertado
+            int max_reg_anyo = Reg_Opera.Calcular_max_reg_anyo(pRegistro.delegacion, panyo);
 
+            string sql = "";
+            if (max_reg_anyo == 0) //numero nuevo, primer numero del año, ej: (2016 - 2000) =16 * 10000 = 160000 + 1= 160001.
+            {
+                max_reg_anyo = ((panyo - 2000) * 10000) + 1;
+                //MessageBox.Show("Nuevo año, nuevo contador: " + max_reg_anyo , "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                sql = "insert into registros values('" + pRegistro.delegacion + "',"+ max_reg_anyo +",'" + pRegistro.fec_ent + "'," + pRegistro.id_cte + "," +
+                     pRegistro.id_titular + ",'" + pRegistro.seccion_int + "','" + pRegistro.seccion + "','" + pRegistro.t_tramite + "','" + pRegistro.matricula + "','" + pRegistro.estado + "'," +
+                     pRegistro.factura + ",'" + pRegistro.fec_fra + "','" + pRegistro.observacion + "','" + shonorarios + "','" + pRegistro.p_iva +
+                     "','" + stasa + "','" + pRegistro.exp_tl + "','" + pRegistro.fec_pre_exp + "','" + pRegistro.et_tasa + "','" + pRegistro.t_tasa + "','" + pRegistro.cambio_serv +
+                     "','" + pRegistro.bate_ant + "','" + pRegistro.nif + "','" + sdcho_col + "','" + pRegistro.t_cte_fra + "','" + pRegistro.et_tasa2 + "','" + pRegistro.t_tasa2 +
+                     "','" + pRegistro.et_tasa3 + "','" + pRegistro.t_tasa3 + "','" + pRegistro.et_tasa4 + "','" + pRegistro.t_tasa4 + "','" + pRegistro.descripcion + "','" + pRegistro.ruta_pdf +
+                     "','" + pRegistro.vehiculo + "'," + pRegistro.id_colabora + ",'" + pRegistro.estado_fac + "','" + pRegistro.exp_ntl + "','" + pRegistro.usuario +
+                     "','" + pRegistro.enviado + "','" + pRegistro.fec_anul + "','" + pRegistro.entidad + "','" + pRegistro.n_operacion + "','" + pRegistro.notario +
+                     "','" + simpor_liq + "','" + pRegistro.firmado_por + "')";
+            }
+            else
+            {
+
+                     sql = "insert into registros values('" + pRegistro.delegacion + "',(select max(n_reg) from registros where delegacion='" + pRegistro.delegacion + "' and (Extract(Year from fec_ent))="+ panyo+")+1,'" + pRegistro.fec_ent + "'," + pRegistro.id_cte + "," +
+                     pRegistro.id_titular + ",'" + pRegistro.seccion_int + "','" + pRegistro.seccion + "','" + pRegistro.t_tramite + "','" + pRegistro.matricula + "','" + pRegistro.estado + "'," +
+                     pRegistro.factura + ",'" + pRegistro.fec_fra + "','" + pRegistro.observacion + "','" + shonorarios + "','" + pRegistro.p_iva +
+                     "','" + stasa + "','" + pRegistro.exp_tl + "','" + pRegistro.fec_pre_exp + "','" + pRegistro.et_tasa + "','" + pRegistro.t_tasa + "','" + pRegistro.cambio_serv +
+                     "','" + pRegistro.bate_ant + "','" + pRegistro.nif + "','" + sdcho_col + "','" + pRegistro.t_cte_fra + "','" + pRegistro.et_tasa2 + "','" + pRegistro.t_tasa2 +
+                     "','" + pRegistro.et_tasa3 + "','" + pRegistro.t_tasa3 + "','" + pRegistro.et_tasa4 + "','" + pRegistro.t_tasa4 + "','" + pRegistro.descripcion + "','" + pRegistro.ruta_pdf +
+                     "','" + pRegistro.vehiculo + "'," + pRegistro.id_colabora + ",'" + pRegistro.estado_fac + "','" + pRegistro.exp_ntl + "','" + pRegistro.usuario +
+                     "','" + pRegistro.enviado + "','" + pRegistro.fec_anul + "','" + pRegistro.entidad + "','" + pRegistro.n_operacion + "','" + pRegistro.notario +
+                     "','" + simpor_liq + "','" + pRegistro.firmado_por + "')";
+            }
 
             // Aquí lanzas el proceso de guardado a la bd etc...
             using (BDConexion.ObtenerConexion())
@@ -41,6 +66,13 @@ namespace Asegest
                 retorno = comando.ExecuteNonQuery();
             }
 
+            //si retorno>0 insercion correcta , sino retorno=0.
+            if (retorno > 0)
+            {
+                //busco el ultimo reg. del año insertado
+                retorno = Reg_Opera.Calcular_max_reg_anyo(pRegistro.delegacion, panyo); 
+            }
+            
             return retorno;
         }
 
@@ -141,6 +173,13 @@ namespace Asegest
                     pRegistro.estado_fac = datos.GetChar(35);
                     pRegistro.exp_ntl = datos.GetString(36);
                     pRegistro.usuario = datos.GetString(37);
+                    pRegistro.enviado = datos.GetString(38);
+                    pRegistro.fec_anul = datos.GetString(39);
+                    pRegistro.entidad = datos.GetString(40);
+                    pRegistro.n_operacion = datos.GetString(41);
+                    pRegistro.notario = datos.GetString(42);
+                    pRegistro.impor_liq = datos.GetDecimal(43);
+                    pRegistro.firmado_por = datos.GetString(44);
 
                     _lista.Add(pRegistro);
                     
@@ -159,7 +198,7 @@ namespace Asegest
             List<Registro> _lista = new List<Registro>();
             string ordena = "";
 
-            //pest_est:(T)odos/(S)in fact./(F)act.
+            //pest_est:(T)odos/(S)in fact./(F)act./(L)no liq.
             switch (pest_reg)
             {
                 case 'T':
@@ -170,6 +209,9 @@ namespace Asegest
                     break;
                 case 'F':
                     ordena = " factura <> 0 order by delegacion, n_reg";
+                    break;
+                case 'L':
+                    ordena = " estado <> 'LIQUIDADO' order by delegacion, fec_ent, n_reg";
                     break;
             }
 
@@ -360,6 +402,13 @@ namespace Asegest
                     pRegistro.estado_fac = datos.GetChar(35);
                     pRegistro.exp_ntl = datos.GetString(36);
                     pRegistro.usuario = datos.GetString(37);
+                    pRegistro.enviado = datos.GetString(38);
+                    pRegistro.fec_anul = datos.GetString(39);
+                    pRegistro.entidad = datos.GetString(40);
+                    pRegistro.n_operacion = datos.GetString(41);
+                    pRegistro.notario = datos.GetString(42);
+                    pRegistro.impor_liq = datos.GetDecimal(43);
+                    pRegistro.firmado_por = datos.GetString(44);
 
                     _lista.Add(pRegistro);
                     
@@ -529,6 +578,14 @@ namespace Asegest
                     pRegistro.estado_fac = datos.GetChar(35);
                     pRegistro.exp_ntl = datos.GetString(36);
                     pRegistro.usuario = datos.GetString(37);
+                    pRegistro.enviado = datos.GetString(38);
+                    pRegistro.fec_anul = datos.GetString(39);
+                    pRegistro.entidad = datos.GetString(40);
+                    pRegistro.n_operacion = datos.GetString(41);
+                    pRegistro.notario = datos.GetString(42);
+                    pRegistro.impor_liq = datos.GetDecimal(43);
+                    pRegistro.firmado_por = datos.GetString(44);
+
 
                     _lista.Add(pRegistro);
 
@@ -721,6 +778,14 @@ namespace Asegest
                     pRegistro.estado_fac = datos.GetChar(35);
                     pRegistro.exp_ntl = datos.GetString(36);
                     pRegistro.usuario = datos.GetString(37);
+                    pRegistro.enviado = datos.GetString(38);
+                    pRegistro.fec_anul = datos.GetString(39);
+                    pRegistro.entidad = datos.GetString(40);
+                    pRegistro.n_operacion = datos.GetString(41);
+                    pRegistro.notario = datos.GetString(42);
+                    pRegistro.impor_liq = datos.GetDecimal(43);
+                    pRegistro.firmado_por = datos.GetString(44);
+
                 }
 
 
@@ -737,6 +802,7 @@ namespace Asegest
             string shonorarios = General.Convertir_a_real(pRegistro.honorarios.ToString("0.00"));
             string stasa = General.Convertir_a_real(pRegistro.tasa.ToString("0.00"));
             string sdcho_col = General.Convertir_a_real(pRegistro.dcho_col.ToString("0.00"));
+            string simpor_liq = General.Convertir_a_real(pRegistro.impor_liq.ToString("0.00"));
             
 
             //+  + pRegistro.tasa pRegistro.tasa_tl
@@ -746,8 +812,9 @@ namespace Asegest
                          "', exp_tl='" + pRegistro.exp_tl + "', fec_pre_exp='" + pRegistro.fec_pre_exp + "', et_tasa='" + pRegistro.et_tasa + "', t_tasa='" + pRegistro.t_tasa + "', cambio_serv='" + pRegistro.cambio_serv +
                          "', bate_ant='" + pRegistro.bate_ant + "', nif='" + pRegistro.nif + "', dcho_col='" + sdcho_col + "', t_cte_fra='" + pRegistro.t_cte_fra + "', et_tasa2='" + pRegistro.et_tasa2 + "', t_tasa2='" + pRegistro.t_tasa2 +
                          "', et_tasa3='" + pRegistro.et_tasa3 + "', t_tasa3='" + pRegistro.t_tasa3 + "', et_tasa4='" + pRegistro.et_tasa4 + "', t_tasa4='" + pRegistro.t_tasa4 + "', descripcion='" + pRegistro.descripcion +
-                         "', ruta_pdf='" + pRegistro.ruta_pdf + "', vehiculo='" + pRegistro.vehiculo + "', id_colabora=" + pRegistro.id_colabora + ", estado_fac='" + pRegistro.estado_fac + 
-                         "'" + ", exp_ntl='" + pRegistro.exp_ntl + "'" +
+                         "', ruta_pdf='" + pRegistro.ruta_pdf + "', vehiculo='" + pRegistro.vehiculo + "', id_colabora=" + pRegistro.id_colabora + ", estado_fac='" + pRegistro.estado_fac +
+                         "'" + ", exp_ntl='" + pRegistro.exp_ntl + "'" + ", enviado='" + pRegistro.enviado + "'" + ", fec_anul='" + pRegistro.fec_anul + "'" + ", entidad='" + pRegistro.entidad +
+                         "'" + ", n_operacion='" + pRegistro.n_operacion + "'" + ", notario='" + pRegistro.notario + "'" + ", impor_liq='" + simpor_liq + "'" + ", firmado_por='" + pRegistro.firmado_por + "'" +
                          " where delegacion='" + pRegistro.delegacion + "' and n_reg=" + pRegistro.n_reg;
 
             using (BDConexion.ObtenerConexion())
@@ -783,7 +850,7 @@ namespace Asegest
 
         
         //public static List<Rg_mes_secc> Reg_Acum_Mes_Seccion(char pdeleg, short panyo, string pseccion)
-        public static int[] Reg_Acum_Mes_Seccion(char pdeleg, short panyo, string pseccion, short popcion)
+        public static int[] Reg_Acum_Mes_Seccion(char pdeleg, short panyo, string pseccion, string pestado, short popcion)
         {         
             int[] pimpor_meses = new int[12];
             //List<Rg_mes_secc> _lista = new List<Rg_mes_secc>();
@@ -793,11 +860,16 @@ namespace Asegest
             //opcion=0 --> seccion
             if (popcion == 0)
                 sql = "select (Extract(Month from fec_ent)) mes, count(*) from registros where delegacion='" + pdeleg + "' and (Extract(Year from fec_ent))="+ panyo +
-                         " and seccion='"+ pseccion +"' group by mes order by mes";
+                         " and seccion='" + pseccion + "'";
             //opcion=1 --> seccion_int
             else
                 sql = "select (Extract(Month from fec_ent)) mes, count(*) from registros where delegacion='" + pdeleg + "' and (Extract(Year from fec_ent))="+ panyo +
-                         " and seccion_int='"+ pseccion +"' group by mes order by mes";
+                         " and seccion_int='" + pseccion + "'";
+
+            if (pestado != "")
+                sql = sql + " and estado='" + pestado + "'";
+
+            sql = sql + " group by mes order by mes";
 
             using (BDConexion.ObtenerConexion())
             {
@@ -898,6 +970,7 @@ namespace Asegest
             }
         }
 
+        /*** se utiliza el de x año, a continuacion.
         public static int Calcular_max_reg(char pt_deleg)
         {
             int max_reg = 0;
@@ -923,7 +996,33 @@ namespace Asegest
                 return max_reg;
             }
         }
+         ***/
 
+        public static int Calcular_max_reg_anyo(char pt_deleg, short panyo)
+        {
+            int max_reg = 0;
+            string sql = "select max(n_reg) as total from registros where delegacion='" + pt_deleg + "' and (Extract(Year from fec_ent))="+ panyo;
+            using (BDConexion.ObtenerConexion())
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());
+                comando.CommandTimeout = 5 * 60;
+
+                NpgsqlDataReader datos = comando.ExecuteReader();
+
+                //si no hay datos, coge valor 0.
+                if (datos.HasRows)
+                {
+                    datos.Read();
+                    if (!datos.IsDBNull(0)) //si dato no null                   
+                        max_reg = Convert.ToInt32(datos.GetValue(0).ToString());//solo un reg.  
+
+                }
+
+                comando.Connection.Close();
+
+                return max_reg;
+            }
+        }
 
         public static string Sacar_tlfos_cte(string pid_cte, char pt_cte)
         {
@@ -1155,6 +1254,29 @@ namespace Asegest
 
         }
 
+        public static int Reg_liquidado(char pt_deleg, int pn_reg) //,int pn_reg, char p_deleg
+        {
+            int updateado = 0;
+            string sql;
+            //ptipo=0 listada/=1: enlazada
+            //if (ptipo == 0)
+            //    sql = "update registros set estado_fac='L' where factura=" + pn_fra + " and estado_fac=' '";
+            //else
+            sql = "update registros set estado='LIQUIDADO' where delegacion='" + pt_deleg + "' and n_reg=" + pn_reg;
+
+            using (BDConexion.ObtenerConexion())
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());
+                comando.CommandTimeout = 5 * 60;
+
+                updateado = comando.ExecuteNonQuery();
+                comando.Connection.Close();
+
+                return updateado;
+            }
+
+        }
+
         //no utilizado, por ahora segun Sergio.
         public static int Saca_serie_numfac(int p_sec_numfac0) //,int pn_reg, char p_deleg
         {
@@ -1185,6 +1307,90 @@ namespace Asegest
             }
             
         }
+
+       
+
+        public static int act_n_reg_anyo() //,int pn_reg, char p_deleg
+        {
+            int existe = 0;
+            int n_reg_old=0;
+
+            //la actual ya no entra aqui, luego solo busco la nueva si exite
+            string sql = "select n_reg from registros where delegacion='"+ General.delegacion+"' and (Extract(Year from fec_ent))=2016 order by n_reg";
+            using (BDConexion.ObtenerConexion())
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());
+                comando.CommandTimeout = 5 * 60;
+
+                NpgsqlDataReader datos = comando.ExecuteReader();
+
+                while (datos.Read())
+                {
+                    n_reg_old = datos.GetInt32(0); 
+                    //actualizamos el reg. actual
+                    existe = act_n_reg_anyo2(General.delegacion, n_reg_old);
+                }
+
+                comando.Connection.Close();
+                return existe;
+            }
+
+        }
+
+        public static int act_n_reg_anyo2(char pdeleg, int p_n_reg_old)
+        {
+            int accion = 0;
+            string sql;
+
+             //busco el ultimo reg. insertado
+            int max_reg_anyo = Reg_Opera.Calcular_max_reg_anyo(pdeleg, 2016);
+
+            if (max_reg_anyo < 160001) //numero nuevo, 160001, sino max + 1.
+            {
+                max_reg_anyo = 160001;
+            }
+            else max_reg_anyo ++;
+
+
+            sql = "update registros set n_reg="+ max_reg_anyo +" where n_reg=" + p_n_reg_old + " and delegacion='" + pdeleg + "'";
+
+            using (BDConexion.ObtenerConexion())
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());
+                comando.CommandTimeout = 5 * 60;
+
+                accion = comando.ExecuteNonQuery();
+                comando.Connection.Close();
+
+                //actualizamos h_registros
+                if (accion > 0)
+                {
+                    accion = act_n_reg_anyo3(pdeleg, p_n_reg_old, max_reg_anyo);
+                }
+                return accion;
+            }
+
+        }
+        public static int act_n_reg_anyo3(char pdeleg, int p_n_reg_old, int p_n_reg_new)
+        {
+            int accion = 0;
+            string sql;
+
+            sql = "update h_registros set n_reg=" + p_n_reg_new + " where n_reg=" + p_n_reg_old + " and delegacion='" + pdeleg + "'";
+
+            using (BDConexion.ObtenerConexion())
+            {
+                NpgsqlCommand comando = new NpgsqlCommand(sql, BDConexion.ObtenerConexion());
+                comando.CommandTimeout = 5 * 60;
+
+                accion = comando.ExecuteNonQuery();
+                comando.Connection.Close();
+
+                return accion;
+            }
+
+        }
+
 
 
         public static string Calcular_tot_fra(string pbase, string pp_iva, string ptasa)
