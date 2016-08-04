@@ -267,6 +267,7 @@ namespace Asegest
             string sql;
 
             int existe = 0;
+            pdni = General.Convertir_texto(pdni);
             
             sql = "select * from clientes where documento='" + pdni +"'";
             

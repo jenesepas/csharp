@@ -1,0 +1,277 @@
+CREATE DATABASE asesoria
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Spanish_Spain.1252'
+       LC_CTYPE = 'Spanish_Spain.1252'
+       CONNECTION LIMIT = -1;
+
+CREATE TABLE clientes
+(
+  
+id_cliente integer NOT NULL,
+  
+nombre character(60),
+  
+tipo_docu character(4),
+  
+documento character(60),
+  
+letra character(1),
+  
+direccion character(60),
+  
+pers_cont character(60),
+  
+email character(60),
+  
+telf1 character(20),
+  
+telf2 character(20),
+  
+cpostal character(10),
+  
+ciudad character(50),
+  
+provin character(60),
+  
+tipo_cte character(1) NOT NULL DEFAULT 'C'::bpchar,
+cta_cble character(12) DEFAULT 430000000,
+  
+CONSTRAINT cte_id_pk PRIMARY KEY (id_cliente)
+)
+WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE clientes
+  OWNER TO postgres;
+
+
+CREATE TABLE registros
+(
+  
+delegacion character(1) NOT NULL,
+  
+n_reg integer NOT NULL,
+  
+fec_ent date,
+  
+id_cte integer NOT NULL DEFAULT 0,
+  
+id_titular integer NOT NULL DEFAULT 0,
+  
+seccion_int character(10),
+  
+seccion character(30),
+  
+t_tramite character(30),
+  
+matricula character(10),
+  
+estado character(20),
+  
+factura integer NOT NULL DEFAULT 0,
+  
+fec_fra date,
+  observacion character(180),
+  
+honorarios numeric(10,2) NOT NULL DEFAULT 0,
+  
+p_iva smallint NOT NULL DEFAULT 0,
+  
+tasa numeric(10,2) NOT NULL DEFAULT 0,
+  
+exp_tl character(20),
+  
+fec_pre_exp date,
+  
+et_tasa bigint NOT NULL DEFAULT 0,
+  
+t_tasa character(5),
+  
+cambio_serv character(20),
+  
+bate_ant character(10),
+  
+nif character(12),
+  
+dcho_col numeric(10,2) NOT NULL DEFAULT 0,
+  
+t_cte_fra character(1),
+  
+et_tasa2 bigint NOT NULL DEFAULT 0,
+  
+t_tasa2 character(5),
+  
+et_tasa3 bigint NOT NULL DEFAULT 0,
+  
+t_tasa3 character(5),
+  
+et_tasa4 bigint NOT NULL DEFAULT 0,
+  
+t_tasa4 character(5),
+  
+descripcion character(150),
+  
+ruta_pdf character(100),
+  
+vehiculo character(50),
+  
+id_colabora integer NOT NULL DEFAULT 0,
+estado_fac character(1) DEFAULT ' '::bpchar,
+  
+exp_ntl character(10) DEFAULT ' '::bpchar,
+usuario character(20),
+enviado character(40) DEFAULT ' '::bpchar,
+  
+fec_anul character(10) DEFAULT ' '::bpchar,
+entidad character(50) DEFAULT ' '::bpchar,
+  n_operacion character(20) DEFAULT ' '::bpchar,
+  notario character(50) DEFAULT ' '::bpchar,
+  impor_liq numeric(10,2) NOT NULL DEFAULT 0,
+  firmado_por character(50) DEFAULT ' '::bpchar,
+CONSTRAINT reg_id_pk PRIMARY KEY (delegacion, n_reg),
+  
+CONSTRAINT reg_col_fk FOREIGN KEY (id_colabora)
+      REFERENCES clientes (id_cliente) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  
+CONSTRAINT reg_cte_fk FOREIGN KEY (id_cte)
+      REFERENCES clientes (id_cliente) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  
+CONSTRAINT reg_tit_fk FOREIGN KEY (id_titular)
+      REFERENCES clientes (id_cliente) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE registros
+  OWNER TO postgres;
+
+CREATE TABLE tasas
+(
+  
+ejercicio smallint NOT NULL,
+  
+codigo character(5) NOT NULL,
+  
+descripcion character(100),
+  
+importe numeric(10,2) NOT NULL DEFAULT 0,
+  
+CONSTRAINT ta_ej_pk PRIMARY KEY (ejercicio, codigo)
+);
+ALTER TABLE tasas
+  OWNER TO postgres;
+
+
+CREATE TABLE linfac
+(
+  
+numfac integer NOT NULL,
+  
+linea smallint NOT NULL,
+  
+descripcion character(150),
+  
+cantidad numeric(10,2) NOT NULL DEFAULT 0,
+  
+importe numeric(10,2) NOT NULL DEFAULT 0,
+  
+p_iva smallint NOT NULL DEFAULT 0,
+cta_cble character(12) DEFAULT 566000023,
+  
+CONSTRAINT pk_lf PRIMARY KEY (numfac, linea)
+)
+WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE linfac
+  OWNER TO postgres;
+
+
+CREATE TABLE usuarios
+(
+  
+codigo character(20) NOT NULL,
+  
+nombre character(50),
+  
+clave character(20),
+  
+acceso smallint NOT NULL DEFAULT 0, 
+CONSTRAINT usu_pk PRIMARY KEY (codigo)
+)
+WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE usuarios
+  OWNER TO postgres;
+
+CREATE TABLE h_registros
+(
+  
+delegacion character(1) NOT NULL,
+  
+n_reg integer NOT NULL,
+  
+linea smallint NOT NULL,
+  
+fec_modif date NOT NULL,
+  
+tipo_modif character(1) NOT NULL DEFAULT 'A'::bpchar,
+  
+cod_usu character(20) NOT NULL,
+  
+CONSTRAINT h_reg_pk PRIMARY KEY (delegacion, n_reg, linea)
+)
+
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE h_registros
+  OWNER TO postgres;
+
+
+insert into clientes values(0,' ','DNI',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','C','430000000');
+
+insert into registros values('Y',0,'29/12/2014',0,0,' ',' ',' ',' ',' ',0,'29/12/2014',' ',0,0,0,' ','29/12/2014',0,' ',' ',' ',' ',0,' ',0,' ',0,' ',0,' ',' ',' ',' ',0,' ',' ','ADMIN');
+
+insert into tasas values(2015,'0',' ',0);
+
+insert into usuarios values('ADMIN','Administrador','istrator',9);
+
+//id_colabora, antes de not null
+update registros set id_colabora=0;
+update registros set estado_fac='L' where factura <> 0;
+update registros set usuario='ADMIN';
+
+//update cta_cble
+update clientes set cta_cble = substr(cta_cble,1,4) || substr(documento,char_length(documento) - 4)
+where documento is not null and char_length(documento)>5;;
+
+//insert h_registros
+insert into h_registros
+select delegacion, n_reg, 1, fec_ent, 'A', usuario
+from registros
+
+//fecha actual en postgres
+select current_timestamp, current_date, current_time
+
+//sacar mes y año
+select (Extract(Month from fec_ent)) mes,count(*) from registros where delegacion='M' and (Extract(Year from fec_ent))=2015
+group by mes
+order by mes;
+
+//sumar a una fecha
+select  (fec_ent + interval '2 years')
+
+//update el reg. min con el valor del max + 1 (previo min=160001)
+update registros set n_reg =(select max(n_reg) from registros where delegacion='M' and (Extract(Year from fec_ent))=2016)+1 
+where n_reg=(select min(n_reg) from registros where delegacion='M' and (Extract(Year from fec_ent))=2016);

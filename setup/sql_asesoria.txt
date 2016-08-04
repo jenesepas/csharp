@@ -123,6 +123,14 @@ estado_fac character(1) DEFAULT ' '::bpchar,
   
 exp_ntl character(10) DEFAULT ' '::bpchar,
 usuario character(20),
+enviado character(40) DEFAULT ' '::bpchar,
+  
+fec_anul character(10) DEFAULT ' '::bpchar,
+entidad character(50) DEFAULT ' '::bpchar,
+  n_operacion character(20) DEFAULT ' '::bpchar,
+  notario character(50) DEFAULT ' '::bpchar,
+  impor_liq numeric(10,2) NOT NULL DEFAULT 0,
+  firmado_por character(50) DEFAULT ' '::bpchar,
 CONSTRAINT reg_id_pk PRIMARY KEY (delegacion, n_reg),
   
 CONSTRAINT reg_col_fk FOREIGN KEY (id_colabora)
@@ -260,3 +268,10 @@ select current_timestamp, current_date, current_time
 select (Extract(Month from fec_ent)) mes,count(*) from registros where delegacion='M' and (Extract(Year from fec_ent))=2015
 group by mes
 order by mes;
+
+//sumar a una fecha
+select  (fec_ent + interval '2 years')
+
+//update el reg. min con el valor del max + 1 (previo min=160001)
+update registros set n_reg =(select max(n_reg) from registros where delegacion='M' and (Extract(Year from fec_ent))=2016)+1 
+where n_reg=(select min(n_reg) from registros where delegacion='M' and (Extract(Year from fec_ent))=2016);

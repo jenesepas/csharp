@@ -86,23 +86,23 @@ namespace Asegest
             {
                 Cliente pCliente = new Cliente();
                 pCliente.Id_Cliente = Convert.ToInt32(tb_id_cte.Text);
-                pCliente.Nombre = tb_nombre.Text.Trim();
-                pCliente.Tipo_docu = cb_t_docu.Text.Trim(); 
-                pCliente.Documento = tb_documento.Text.Trim();
+                pCliente.Nombre = General.Convertir_texto(tb_nombre.Text.Trim());
+                pCliente.Tipo_docu =  cb_t_docu.Text.Trim(); 
+                pCliente.Documento =  General.Convertir_texto2(tb_documento.Text.Trim());
                 if (string.IsNullOrWhiteSpace(tb_letra.Text))
                     tb_letra.Text = " ";
                 else 
                     tb_letra.Text=tb_letra.Text.Trim();
                 pCliente.Letra = Convert.ToChar(tb_letra.Text);
-                pCliente.Direccion = tb_direccion.Text.Trim();
-                pCliente.Pers_cont = tb_p_cont.Text.Trim();
-                pCliente.Email = tb_email.Text.Trim();
-                pCliente.Telf1 = tb_tf1.Text.Trim();
-                pCliente.Telf2 = tb_tf2.Text.Trim();
-                pCliente.Cpostal = tb_cp.Text.Trim();
-                pCliente.Ciudad = tb_ciudad.Text.Trim();
-                pCliente.Provin = tb_provin.Text.Trim();
-                pCliente.cta_cble = tb_cta.Text.Trim();
+                pCliente.Direccion =  General.Convertir_texto(tb_direccion.Text.Trim());
+                pCliente.Pers_cont =  General.Convertir_texto(tb_p_cont.Text.Trim());
+                pCliente.Email =  General.Convertir_texto2(tb_email.Text.Trim());
+                pCliente.Telf1 =  General.Convertir_texto2(tb_tf1.Text.Trim());
+                pCliente.Telf2 =  General.Convertir_texto2(tb_tf2.Text.Trim());
+                pCliente.Cpostal =  General.Convertir_texto2(tb_cp.Text.Trim());
+                pCliente.Ciudad =  General.Convertir_texto(tb_ciudad.Text.Trim());
+                pCliente.Provin =  General.Convertir_texto(tb_provin.Text.Trim());
+                pCliente.cta_cble = General.Convertir_texto2(tb_cta.Text.Trim());
                 if (rb_cte.Checked == true)
                     pCliente.Tipo_cte = 'C';
                 else
@@ -240,23 +240,23 @@ namespace Asegest
             {                
                 Cliente pCliente = new Cliente();
                 pCliente.Id_Cliente = Convert.ToInt32(tb_id_cte.Text);
-                pCliente.Nombre = tb_nombre.Text.Trim();
-                pCliente.Tipo_docu = cb_t_docu.Text.Trim();
-                pCliente.Documento = tb_documento.Text.Trim();
+                pCliente.Nombre =  General.Convertir_texto(tb_nombre.Text.Trim());
+                pCliente.Tipo_docu =  cb_t_docu.Text.Trim();
+                pCliente.Documento =  General.Convertir_texto2(tb_documento.Text.Trim());
                 if (string.IsNullOrWhiteSpace(tb_letra.Text))
                     tb_letra.Text = " ";
                 else
                     tb_letra.Text = tb_letra.Text.Trim();
                 pCliente.Letra = Convert.ToChar(tb_letra.Text);
-                pCliente.Direccion = tb_direccion.Text.Trim();
-                pCliente.Pers_cont = tb_p_cont.Text.Trim();
-                pCliente.Email = tb_email.Text.Trim();
-                pCliente.Telf1 = tb_tf1.Text.Trim();
-                pCliente.Telf2 = tb_tf2.Text.Trim();
-                pCliente.Cpostal = tb_cp.Text.Trim();
-                pCliente.Ciudad = tb_ciudad.Text.Trim();
-                pCliente.Provin = tb_provin.Text.Trim();
-                pCliente.cta_cble = tb_cta.Text.Trim();
+                pCliente.Direccion =  General.Convertir_texto(tb_direccion.Text.Trim());
+                pCliente.Pers_cont =  General.Convertir_texto(tb_p_cont.Text.Trim());
+                pCliente.Email =  General.Convertir_texto2(tb_email.Text.Trim());
+                pCliente.Telf1 =  General.Convertir_texto2(tb_tf1.Text.Trim());
+                pCliente.Telf2 =  General.Convertir_texto2(tb_tf2.Text.Trim());
+                pCliente.Cpostal = General.Convertir_texto2(tb_cp.Text.Trim());
+                pCliente.Ciudad =  General.Convertir_texto(tb_ciudad.Text.Trim());
+                pCliente.Provin =  General.Convertir_texto(tb_provin.Text.Trim());
+                pCliente.cta_cble = General.Convertir_texto2(tb_cta.Text.Trim());
 
                 if (rb_cte.Checked == true)
                     pCliente.Tipo_cte = 'C';

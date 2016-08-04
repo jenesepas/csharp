@@ -162,22 +162,22 @@ namespace Asegest
             pRegistro.seccion_int = cb_sec_int.Text.Trim();
             pRegistro.seccion = cb_sec.Text.Trim();
             pRegistro.t_tramite = cb_tram.Text.Trim();
-            pRegistro.matricula = tb_matri.Text.Trim();
+            pRegistro.matricula = General.Convertir_texto(tb_matri.Text.Trim());
             pRegistro.estado = cb_estado.Text.Trim();
             pRegistro.factura = Convert.ToInt32(tb_fra.Text);
             pRegistro.fec_fra = Convert.ToDateTime(dtp_fec_fra.Value);
-            pRegistro.observacion = tb_observ.Text.Trim();
+            pRegistro.observacion = General.Convertir_texto(tb_observ.Text.Trim());
             pRegistro.honorarios = Convert.ToDecimal(tb_hono.Text);
             pRegistro.p_iva = Convert.ToInt16(tb_p_iva.Text);
             pRegistro.tasa = Convert.ToDecimal(tb_tasa_fra.Text);
-            pRegistro.exp_tl = tb_exp.Text.Trim();
-            pRegistro.exp_ntl = tb_exp_ntl.Text.Trim();
+            pRegistro.exp_tl = General.Convertir_texto2(tb_exp.Text.Trim());
+            pRegistro.exp_ntl = General.Convertir_texto(tb_exp_ntl.Text.Trim());
             pRegistro.fec_pre_exp = Convert.ToDateTime(dtp_fec_pre.Value);
             pRegistro.et_tasa = Convert.ToInt64(tb_tasa.Text);  //float.Parse(tb_tasa.Text);
-            pRegistro.t_tasa = tb_tipo.Text.Trim();
-            pRegistro.cambio_serv = tb_c_serv.Text.Trim();
-            pRegistro.bate_ant = tb_bate_ant.Text.Trim();
-            pRegistro.nif = tb_nif.Text.Trim();
+            pRegistro.t_tasa = General.Convertir_texto2(tb_tipo.Text.Trim());
+            pRegistro.cambio_serv = General.Convertir_texto(tb_c_serv.Text.Trim());
+            pRegistro.bate_ant = General.Convertir_texto(tb_bate_ant.Text.Trim());
+            pRegistro.nif = General.Convertir_texto2(tb_nif.Text.Trim());
             pRegistro.dcho_col = Convert.ToDecimal(tb_d_col.Text);
             if (cb_cte_fra.Text == "CLIENTE")
                 pRegistro.t_cte_fra = 'C';
@@ -197,22 +197,22 @@ namespace Asegest
                 else pRegistro.estado_fac = ' ';
             }
             pRegistro.et_tasa2 = Convert.ToInt64(tb_tasa2.Text);
-            pRegistro.t_tasa2 = tb_tipo2.Text.Trim();
+            pRegistro.t_tasa2 = General.Convertir_texto2(tb_tipo2.Text.Trim());
             pRegistro.et_tasa3 = Convert.ToInt64(tb_tasa3.Text);
-            pRegistro.t_tasa3 = tb_tipo3.Text.Trim();
+            pRegistro.t_tasa3 = General.Convertir_texto2(tb_tipo3.Text.Trim());
             pRegistro.et_tasa4 = Convert.ToInt64(tb_tasa4.Text);
-            pRegistro.t_tasa4 = tb_tipo4.Text.Trim();
-            pRegistro.descripcion = tb_descrip.Text.Trim();
-            pRegistro.ruta_pdf = tb_pdf.Text.Trim();
-            pRegistro.vehiculo = tb_vehic.Text.Trim();
+            pRegistro.t_tasa4 = General.Convertir_texto2(tb_tipo4.Text.Trim());
+            pRegistro.descripcion = General.Convertir_texto(tb_descrip.Text.Trim());
+            pRegistro.ruta_pdf = General.Convertir_texto2(tb_pdf.Text.Trim());
+            pRegistro.vehiculo = General.Convertir_texto(tb_vehic.Text.Trim());
             pRegistro.usuario = General.usuario; //tb_usu.Text.Trim();
-            pRegistro.enviado = tb_enviado.Text.Trim();
+            pRegistro.enviado = General.Convertir_texto(tb_enviado.Text.Trim());
             pRegistro.fec_anul = tb_f_anul.Text.Trim();
-            pRegistro.entidad = tb_entidad.Text.Trim();
-            pRegistro.n_operacion = tb_n_operacion.Text.Trim();
-            pRegistro.notario = tb_notario.Text.Trim();
+            pRegistro.entidad = General.Convertir_texto(tb_entidad.Text.Trim());
+            pRegistro.n_operacion = General.Convertir_texto2(tb_n_operacion.Text.Trim());
+            pRegistro.notario = General.Convertir_texto(tb_notario.Text.Trim());
             pRegistro.impor_liq = Convert.ToDecimal(tb_impor_liq.Text);
-            pRegistro.firmado_por = tb_firmado_por.Text.Trim();
+            pRegistro.firmado_por = General.Convertir_texto(tb_firmado_por.Text.Trim());
             /*
             if (string.IsNullOrWhiteSpace(tb_letra.Text))
                 tb_letra.Text = " ";

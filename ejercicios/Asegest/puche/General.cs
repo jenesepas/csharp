@@ -23,6 +23,18 @@ namespace Asegest
             return preal = preal.Replace(",", ".");
         }
 
+        //sustituimos "'" x "''" para insert o update bd en los campos texto.
+        public static string Convertir_texto(string ptexto)
+        {
+            return ptexto = ptexto.Replace("'", "''");
+        }
+
+        //sustituimos "'" x "" para insert o update bd en los campos texto.
+        public static string Convertir_texto2(string ptexto)
+        {
+            return ptexto = ptexto.Replace("'", "");
+        }
+
         //Campos enteros
         public static int Validar_entero(string pentero)
         {
